@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>10 - Media - Canvas</title>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <script>
+        (function draw() {
+            var canvas = document.getElementById('canvas');
+
+            if (!canvas.getContext) {
+                canvas.innerHTML = 'The <canvas> tag is not supported.';
+
+                return;
+            }
+
+            var ctx = canvas.getContext('2d');
+
+            ctx.fillStyle = '#ddd';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = 'red';
+            ctx.fillRect(0, 0, 100, 100);
+
+            ctx.beginPath();
+            ctx.arc(150, 50, 50, 0, 2 * Math.PI);
+            ctx.fillStyle = 'blue';
+            ctx.fill();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(50, 150, 50, 0, 2 * Math.PI);
+            ctx.fillStyle = 'transparent';
+            ctx.strokeStyle = 'green';
+            ctx.setLineDash([ 10, 10 ]);
+            ctx.lineWidth = 4;
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.strokeStyle = 'black';
+            ctx.setLineDash([ 10, 10 ]);
+            ctx.lineWidth = 4;
+            ctx.strokeRect(100, 100, 100, 100);
+
+            ctx.beginPath();
+            ctx.fillStyle = 'black';
+            ctx.moveTo(200, 200);
+            ctx.lineTo(300, 300);
+            ctx.setLineDash([ ]);
+            ctx.stroke();
+            ctx.closePath();
+            
+            ctx.font = '24px Arial';
+            ctx.fillStyle = 'black';
+            ctx.fillText('Hello, world!', 0, 250);
+        })();
+    </script>
+</body>
+</html>
