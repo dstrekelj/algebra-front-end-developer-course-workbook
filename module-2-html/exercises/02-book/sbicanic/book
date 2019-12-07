@@ -5,7 +5,7 @@
     <title>Table of contents</title>
 </head>
 <body>
-    <h1><b>1. Markup languages</b></h1>
+    <h1>1. Markup languages</h1>
     <br>
     <p>A <strong>markup language</strong> is a computer language that uses tags to define elements within a document. Markup languages are used to annotate a document in a way that is syntactically distinguishable from the text, and can assign semantic meaning to the text.</p>
     <br>
