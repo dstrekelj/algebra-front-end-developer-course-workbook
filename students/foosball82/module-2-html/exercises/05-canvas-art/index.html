@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas art</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="400">
+    </canvas>
+    
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        
+        // zelena pozadina
+        ctx.fillStyle = "#93E497";
+        ctx.fillRect(0, 0, 400, 400);
+        ctx.fillStyle = "#F5EFD5";
+        ctx.fillRect(113, 110, 175, 190);
+        ctx.fillStyle = "#3D3329";
+        ctx.fillRect(113, 80, 175, 30);
+        
+        // bjeloočnice
+        ctx.beginPath();
+        ctx.arc(160, 162, 22, 0,  2 * Math.PI);
+        ctx.fillStyle = "white";
+        ctx.fill();
+        
+        ctx.beginPath();
+        ctx.arc(240, 162, 22, 0,  2 * Math.PI);
+        ctx.fillStyle = "white";
+        ctx.fill();
+        
+        // šarenica lijeva
+        ctx.beginPath();
+        ctx.arc(160, 162, 12, 0,  2 * Math.PI);
+        ctx.fillStyle = "#3E6D27";
+        ctx.fill();
+        
+        // šarenica desna
+        ctx.beginPath();
+        ctx.arc(240, 162, 12, 0,  2 * Math.PI);
+        ctx.fillStyle = "#2C4F17";
+        ctx.fill();
+        
+        // usta
+        ctx.beginPath();
+        ctx.arc(200, 225, 50, 0,  1 * Math.PI);
+        ctx.fillStyle = "#E88182";
+        ctx.fill();
+        
+        // nos
+        ctx.beginPath();
+        ctx.moveTo(200, 196);
+        ctx.lineTo(215, 208);
+        ctx.lineTo(185, 208);
+        ctx.closePath();
+        ctx.fillStyle = "#C3BDA3";
+        ctx.fill();
+        
+    </script>
+</body>
+</html>
