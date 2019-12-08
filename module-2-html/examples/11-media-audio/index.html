@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>MP3 format:</p>
+    <audio src="music.mp3" controls>
+        <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <br>
+    <p>OGG format:</p>
+    <audio src="music.ogg" controls>
+        <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <br>
+    <p>WAV format:</p>
+    <audio src="music.wav" controls>
+        <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <br>
+    <p>Browser's choice:</p>
+    <audio controls>
+        <source src="music.ogg" type="audio/ogg"/>
+        <source src="music.mp3" type="audio/mpeg"/>
+        <source src="music.wav" type="audio/wav"/>
+        <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+    <br>
+    <p>Muted:</p>
+    <audio src="music.wav" controls muted>
+        <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+</body>
+</html>

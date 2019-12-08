@@ -2,6 +2,8 @@
 
 Course materials for my take on Algebra's "Front End Developer" course.
 
+> Are you a student? Do you want to contribute your solution? Read the [contribution guidelines](GUIDELINES.md) to find out how!
+
 ---
 
 ## Table of Contents
