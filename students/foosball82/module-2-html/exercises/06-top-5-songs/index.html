@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monthly Top 5 - Free Music Archive</title>
+    <style>
+        h1, h2 {
+            text-align: center;
+        }
+
+        ol {
+            list-style: none;
+            text-align: center;           
+            counter-reset: list-counter;           
+            margin: 0 auto;
+            padding: 0;            
+        }
+
+        ol li {
+            counter-increment: list-counter;            
+            
+        }
+
+        ol li::before {            
+            content: "#" counter(list-counter) " ";
+            font-size: 300%;
+        }
+
+        table {            
+            margin: 0 auto;
+            text-align: center;            
+        }
+
+        td {
+            text-align: left;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h1>Free Music Archive</h1>
+    <h2>Monthly Top 5 (December 2019)</h2>
+    <br>
+
+    <ol>
+        <li>
+            <table>                
+                <tr>
+                    <td>Artist:</td>
+                    <td>Broke For Free</td>
+                    
+                </tr>
+                <tr>
+                    <td>Track:</td>
+                    <td>Night Owl</td>
+                </tr>
+                <tr>
+                    <td>Album:</td>
+                    <td>Directionless EP</td>
+                </tr>
+                <tr>
+                    <td>Genre:</td>
+                    <td>Electronic, Minimal</td>
+                  
+                </tr>
+            </table><br>           
+            <audio controls>      
+                <source src="https://github.com/dstrekelj/algebra-front-end-developer-2019/raw/master/module-2-html/exercises/06-top-5-songs/Broke_For_Free_-_01_-_Night_Owl.mp3" type="audio/mpeg">
+                <p>Your browser doesn't support HTML5 audio.</p>                 
+            </audio>
+        </li>
+
+        <br><br><br>
+
+        <li>
+            <table>                
+                <tr>
+                    <td>Artist:</td>
+                    <td>Tours</td>
+                </tr>
+                <tr>
+                    <td>Track:</td>
+                    <td>Enthusiast</td>
+                </tr>
+                <tr>
+                    <td>Album:</td>
+                    <td>Enthusiast</td>
+                </tr>
+                <tr>
+                    <td>Genre:</td>
+                    <td>Electronic, Dubstep</td>
+                </tr>    
+            </table><br>                
+            <audio controls>       
+                <source src="https://github.com/dstrekelj/algebra-front-end-developer-2019/raw/master/module-2-html/exercises/06-top-5-songs/Tours_-_01_-_Enthusiast.mp3" type="audio/mpeg">
+                <p>Your browser doesn't support HTML5 audio.</p>                 
+            </audio>
+        </li>
+
+        <br><br><br>
+
+        <li>
+            <table>                
+                <tr>
+                    <td>Artist:</td>
+                    <td>Monk Turner + Fascinoma</td>
+                </tr>
+                <tr>
+                    <td>Track:</td>
+                    <td>It's Your Birthday!</td>
+                </tr>
+                <tr>
+                    <td>Album:</td>
+                    <td>The New Birthday Song Contest</td>
+                </tr>
+                <tr>
+                    <td>Genre:</td>
+                    <td>Uncategorized</td>
+                </tr>
+            </table><br>                
+            <audio controls>       
+                <source src="https://github.com/dstrekelj/algebra-front-end-developer-2019/raw/master/module-2-html/exercises/06-top-5-songs/Monk_Turner__Fascinoma_-_01_-_Its_Your_Birthday.mp3" type="audio/mpeg">
+                <p>Your browser doesn't support HTML5 audio.</p>                    
+            </audio>
+        </li>
+
+        <br><br><br>
+
+        <li>
+            <table>                
+                <tr>
+                    <td>Artist:</td>
+                    <td>Podington Bear</td>
+                </tr>
+                <tr>
+                    <td>Track:</td>
+                    <td>Starling</td>
+                </tr>
+                <tr>
+                    <td>Album:</td>
+                    <td>Solo Instruments</td>
+                </tr>
+                <tr>
+                    <td>Genre:</td>
+                    <td>Electronic, Soundtrack</td>
+                </tr>    
+            </table><br>                
+            <audio controls>       
+                <source src="https://github.com/dstrekelj/algebra-front-end-developer-2019/raw/master/module-2-html/exercises/06-top-5-songs/Podington_Bear_-_Starling.mp3" type="audio/mpeg">   
+                <p>Your browser doesn't support HTML5 audio.</p>                 
+            </audio>
+        </li>
+
+        <br><br><br>
+
+        <li>
+            <table>                
+                <tr>
+                    <td>Artist:</td>
+                    <td>Jahzzar</td>
+                </tr>
+                <tr>
+                    <td>Track:</td>
+                    <td>Siesta</td>
+                </tr>
+                <tr>
+                    <td>Album:</td>
+                    <td>Traveller's Guide</td>
+                </tr>
+                <tr>
+                    <td>Genre:</td>
+                    <td>Pop, Indie-Rock</td>
+                </tr>    
+            </table><br>                
+            <audio controls>       
+                <source src="https://github.com/dstrekelj/algebra-front-end-developer-2019/raw/master/module-2-html/exercises/06-top-5-songs/Jahzzar_-_05_-_Siesta.mp3" type="audio/mpeg">  
+                <p>Your browser doesn't support HTML5 audio.</p>                  
+            </audio>
+        </li>       
+    </ol>
+    <br>
+    <p style="text-align: center;"><em>Music courtesy of the Free Music Archive (FMA)</em></p>
+</body>
+</html>
