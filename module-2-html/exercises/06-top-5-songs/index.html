@@ -6,18 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Monthly Top 5 - Free Music Archive</title>
     <style>
+        h1, h2 {
+            text-align: center;
+        }
+
         ol {
             list-style: none;
-            counter-reset: list-counter;
+            text-align: center;           
+            counter-reset: list-counter;           
+            margin: 0 auto;
+            padding: 0;            
         }
+
         ol li {
-            counter-increment: list-counter;
+            counter-increment: list-counter;            
+            
         }
-        ol li::before {
+
+        ol li::before {            
             content: "#" counter(list-counter) " ";
-            font-size: 160%;
+            font-size: 300%;
         }
+
+        table {            
+            margin: 0 auto;
+            text-align: center;            
+        }
+
+        td {
+            text-align: left;
+        }
+
     </style>
+    
 </head>
 <body>
     <h1>Free Music Archive</h1>
@@ -26,10 +47,11 @@
 
     <ol>
         <li>
-            <table style="display: inline;"  >                
+            <table>                
                 <tr>
                     <td>Artist:</td>
                     <td>Broke For Free</td>
+                    
                 </tr>
                 <tr>
                     <td>Track:</td>
@@ -42,17 +64,19 @@
                 <tr>
                     <td>Genre:</td>
                     <td>Electronic, Minimal</td>
+                  
                 </tr>
-            </table> <br><br>            
-            <audio controls>       
-                <source src="https://github.com/dstrekelj/algebra-front-end-developer-2019/raw/master/module-2-html/exercises/06-top-5-songs/Broke_For_Free_-_01_-_Night_Owl.mp3" type="audio/mpeg">                    
+            </table><br>           
+            <audio controls>      
+                <source src="https://github.com/dstrekelj/algebra-front-end-developer-2019/raw/master/module-2-html/exercises/06-top-5-songs/Broke_For_Free_-_01_-_Night_Owl.mp3" type="audio/mpeg">
+                <p>Your browser doesn't support HTML5 audio.</p>                 
             </audio>
         </li>
 
         <br><br><br>
 
         <li>
-            <table style="display: inline;"  >                
+            <table>                
                 <tr>
                     <td>Artist:</td>
                     <td>Tours</td>
@@ -69,16 +93,17 @@
                     <td>Genre:</td>
                     <td>Electronic, Dubstep</td>
                 </tr>    
-            </table> <br><br>                
+            </table><br>                
             <audio controls>       
-                <source src="https://github.com/dstrekelj/algebra-front-end-developer-2019/raw/master/module-2-html/exercises/06-top-5-songs/Tours_-_01_-_Enthusiast.mp3" type="audio/mpeg">                    
+                <source src="https://github.com/dstrekelj/algebra-front-end-developer-2019/raw/master/module-2-html/exercises/06-top-5-songs/Tours_-_01_-_Enthusiast.mp3" type="audio/mpeg">
+                <p>Your browser doesn't support HTML5 audio.</p>                 
             </audio>
         </li>
 
         <br><br><br>
 
         <li>
-            <table style="display: inline;"  >                
+            <table>                
                 <tr>
                     <td>Artist:</td>
                     <td>Monk Turner + Fascinoma</td>
@@ -95,16 +120,17 @@
                     <td>Genre:</td>
                     <td>Uncategorized</td>
                 </tr>
-            </table> <br><br>                
+            </table><br>                
             <audio controls>       
-                <source src="https://github.com/dstrekelj/algebra-front-end-developer-2019/raw/master/module-2-html/exercises/06-top-5-songs/Monk_Turner__Fascinoma_-_01_-_Its_Your_Birthday.mp3" type="audio/mpeg">                    
+                <source src="https://github.com/dstrekelj/algebra-front-end-developer-2019/raw/master/module-2-html/exercises/06-top-5-songs/Monk_Turner__Fascinoma_-_01_-_Its_Your_Birthday.mp3" type="audio/mpeg">
+                <p>Your browser doesn't support HTML5 audio.</p>                    
             </audio>
         </li>
 
         <br><br><br>
 
         <li>
-            <table style="display: inline;"  >                
+            <table>                
                 <tr>
                     <td>Artist:</td>
                     <td>Podington Bear</td>
@@ -121,16 +147,17 @@
                     <td>Genre:</td>
                     <td>Electronic, Soundtrack</td>
                 </tr>    
-            </table> <br><br>                
+            </table><br>                
             <audio controls>       
-                <source src="https://github.com/dstrekelj/algebra-front-end-developer-2019/raw/master/module-2-html/exercises/06-top-5-songs/Podington_Bear_-_Starling.mp3" type="audio/mpeg">                    
+                <source src="https://github.com/dstrekelj/algebra-front-end-developer-2019/raw/master/module-2-html/exercises/06-top-5-songs/Podington_Bear_-_Starling.mp3" type="audio/mpeg">   
+                <p>Your browser doesn't support HTML5 audio.</p>                 
             </audio>
         </li>
 
         <br><br><br>
-        
+
         <li>
-            <table style="display: inline;"  >                
+            <table>                
                 <tr>
                     <td>Artist:</td>
                     <td>Jahzzar</td>
@@ -147,19 +174,14 @@
                     <td>Genre:</td>
                     <td>Pop, Indie-Rock</td>
                 </tr>    
-            </table> <br><br>                
+            </table><br>                
             <audio controls>       
-                <source src="https://github.com/dstrekelj/algebra-front-end-developer-2019/raw/master/module-2-html/exercises/06-top-5-songs/Jahzzar_-_05_-_Siesta.mp3" type="audio/mpeg">                    
+                <source src="https://github.com/dstrekelj/algebra-front-end-developer-2019/raw/master/module-2-html/exercises/06-top-5-songs/Jahzzar_-_05_-_Siesta.mp3" type="audio/mpeg">  
+                <p>Your browser doesn't support HTML5 audio.</p>                  
             </audio>
         </li>       
     </ol>
     <br>
-    <small>Music courtesy of the Free Music Archive (FMA)</small>
+    <p style="text-align: center;"><em>Music courtesy of the Free Music Archive (FMA)</em></p>
 </body>
 </html>
-
-
-
-
-
-
