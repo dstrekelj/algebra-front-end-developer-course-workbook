@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas art</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="500" height="500">
+    </canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+        // pozadina
+        ctx.fillStyle = "#1E5E00";
+        ctx.fillRect(0,0,500,500)
+
+        // lice
+        ctx.fillStyle = "#E2DC9F"
+        ctx.fillRect(104, 95, 270, 300)
+
+        //kosa
+        ctx.fillStyle = "#490101"
+        ctx.fillRect(104,90,270,40)
+        
+        // Ljevo bjelo oko
+        ctx.beginPath()
+        ctx.arc(170, 210, 32 ,0, 2* Math.PI)
+        ctx.fillStyle = "#FFFFFF"
+        ctx.fill();
+
+        // Desno bjelo oko
+        ctx.beginPath()
+        ctx.arc(305, 210, 32 ,0, 2* Math.PI)
+        ctx.fillStyle = "#FFFFFF"
+        ctx.fill();
+
+        //Desno zeleno oko
+        ctx.beginPath()
+        ctx.arc(305, 210, 16 ,0, 2* Math.PI)
+        ctx.fillStyle = "#067718"
+        ctx.fill();
+
+        // Bjelo zeleno oko
+        ctx.beginPath()
+        ctx.arc(170, 210, 16 ,0, 2* Math.PI)
+        ctx.fillStyle = "#067718"
+        ctx.fill();
+
+        // nos
+        ctx.beginPath();
+        ctx.moveTo(227, 275);
+        ctx.lineTo(247,275);
+        ctx.lineTo(237,245);
+        ctx.lineTo(229,275);
+        ctx.fillStyle = "#C4C4C4"
+        ctx.fill();
+
+        // usta
+        ctx.beginPath();
+        ctx.beginPath()
+        ctx.arc(239, 305, 70 ,0, 1* Math.PI)
+        ctx.fillStyle = "#E14E4E"
+        ctx.fill();
+    </script>
+</body>
+</html>
+
