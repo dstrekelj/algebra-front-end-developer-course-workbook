@@ -13,20 +13,31 @@
         <a href="login.html">Login</a>,
         <a href="login-autocomplete-off.html">Login (Autocomplete Off)</a>,
         <a href="login-validation-off.html">Login (Validation Off)</a>,
+        <a href="contact.html">Contact</a>,
+        <a href="booking.html">Booking</a>,
+        <a href="gateway.html">Gateway</a>,
+        <a href="newsletter.html">Newsletter</a>,
+        <a href="poll.html">Poll</a>,
+        <a href="checkout.html">Checkout</a>,
     </p>
     <p><strong>Contact form:</strong></p>
     <form action="" method="POST">
+        <h1>Contact us</h1>
         <label for="name">First and last name: *</label>
         <br>
-        <input id="name" type="text" name="name" required>
+        <input id="name" type="text" name="name" pattern="\D+\s{1}\D+" required placeholder="John Doe">
         <br><br>
         <label for="email">Email: *</label>
         <br>
         <input id="email" type="email" name="email" required>
         <br><br>
+        <label for="subject">Subject: *</label>
+        <br>
+        <input id="subject" type="text" name="subject" required value="Hello">
+        <br><br>
         <label for="message">Message: *</label>
         <br>
-        <textarea id="message" name="message" required cols="50" rows="10"></textarea>
+        <textarea id="message" name="message" required cols="50" rows="10">Lorem ipsum.</textarea>
         <br><br>
         <button type="submit">Send</button>
         <p><small>* - Required</small></p>
