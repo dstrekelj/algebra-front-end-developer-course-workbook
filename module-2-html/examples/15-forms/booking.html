@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <a href="index.html">Index</a>,
+        <a href="search.html">Search</a>,
+        <a href="login.html">Login</a>,
+        <a href="login-autocomplete-off.html">Login (Autocomplete Off)</a>,
+        <a href="login-validation-off.html">Login (Validation Off)</a>,
+    </p>
+    <p><strong>Booking form:</strong></p>
+    <form action="" method="GET">
+        <label for="from">From: *</label>
+        <input id="from" type="date" name="from" value="2020-01-01" min="2020-01-01" max="2020-12-31" required>
+        <label for="to">To: *</label>
+        <input id="to" type="date" name="to" value="2020-01-02" min="2020-01-02" max="2020-12-31" required>
+        <br><br>
+        <label>Adults: *</label>
+        <input type="number" min="1" max="99" value="1">
+        <label>Children: *</label>
+        <input type="number" min="0" max="99" value="0">
+        <br><br>
+        <button type="submit">Check availability</button>
+        <p><small>* - Required</small></p>
+    </form>
+</body>
+</html>

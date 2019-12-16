@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <a href="index.html">Index</a>,
+        <a href="search.html">Search</a>,
+        <a href="login.html">Login</a>,
+        <a href="login-autocomplete-off.html">Login (Autocomplete Off)</a>,
+        <a href="login-validation-off.html">Login (Validation Off)</a>,
+    </p>
+    <p><strong>Checkout form:</strong></p>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Shipping information</legend>
+            <label for="first_name">First name: *</label><br>
+            <input id="first_name" name="first_name" type="text" placeholder="John" required>
+            <br><br>
+            <label for="last_name">Last name: *</label><br>
+            <input id="last_name" name="last_name" type="text" placeholder="Doe" required>
+            <br><br>
+            <label for="email">Email: *</label><br>
+            <input id="email" name="email" type="email" placeholder="john.doe@example.com" required>
+            <br><br>
+            <label for="phone">Phone: *</label><br>
+            <input id="phone" name="phone" type="tel" placeholder="+123456798" required>
+            <br><br>
+            <label for="address">Address: *</label><br>
+            <input id="address" name="address" type="text" placeholder="Example Street 123" required>
+            <br><br>
+            <label for="city">City: *</label><br>
+            <input id="city" name="city" type="text" placeholder="Example City" required>
+            <br><br>
+            <label for="zip_code">Zip code: *</label><br>
+            <input id="zip_code" name="zip_code" type="text" placeholder="12345" required>
+            <br><br>
+            <label for="">Country: *</label><br>
+            <select name="country" required>
+                <option selected disabled>Choose...</option>
+                <option value="hr">Croatia</option>
+                <option value="en">England</option>
+                <option value="de">Germany</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Payment information</legend>
+            <fieldset>
+                <legend>Payment method</legend>
+                <label><input type="radio" name="payment_method" required> Credit card</label>
+                <label><input type="radio" name="payment_method" required> Debit card</label>
+                <label><input type="radio" name="payment_method" required> PayPal</label>
+            </fieldset>
+            <br>
+            <label for="card_holder">Name on card: *</label><br>
+            <input id="card_holder" name="card_holder" type="text" required>
+            <br><br>
+            <label for="card_number">Credit card number: *</label><br>
+            <input id="card_number" name="card_number" type="text" pattern="\d" required>
+            <br><br>
+            <label for="expiration">Expiration: *</label><br>
+            <input id="expiration" name="expiration" type="text" placeholder="12/22" pattern="\d{2}/\d{2}" required>
+            <br><br>
+            <label for="cvv">CVV: *</label><br>
+            <input id="cvv" name="cvv" type="text" pattern="\d" required>
+            <br><br>
+        </fieldset>
+        <button type="submit">Continue to checkout</button>
+        <p><small>* - Required</small></p>
+    </form>
+</body>
+</html>

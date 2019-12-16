@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>14 - Tables</title>
+</head>
+<body>
+    <!--
+        @note the "border" attribute is deprecated, but it helps us visualise
+        the table structure
+    -->
+    <table border="1">
+        <caption>Simple table</caption>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+            <td>Row 1, Cell 4</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+            <td>Row 2, Cell 4</td>
+        </tr>
+        <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>Row 3, Cell 3</td>
+            <td>Row 3, Cell 4</td>
+        </tr>
+        <tr>
+            <td>Row 4, Cell 1</td>
+            <td>Row 4, Cell 2</td>
+            <td>Row 4, Cell 3</td>
+            <td>Row 4, Cell 4</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <caption>Table with cells spanning multiple columns</caption>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+            <td>Row 1, Cell 4</td>
+        </tr>
+        <tr>
+            <td colspan="2">Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+        <tr>
+            <td colspan="3">Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+        </tr>
+        <tr>
+            <td colspan="4">Row 4, Cell 1</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <caption>Table with cells spanning multiple rows</caption>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td rowspan="2">Row 1, Cell 2</td>
+            <td rowspan="3">Row 1, Cell 3</td>
+            <td rowspan="4">Row 1, Cell 4</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+        </tr>
+        <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+        </tr>
+        <tr>
+            <td>Row 4, Cell 1</td>
+            <td>Row 4, Cell 2</td>
+            <td>Row 4, Cell 3</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <caption>Nested tables</caption>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+            <td>Row 1, Cell 4</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>Row 1, Cell 1</td>
+                        <td>Row 1, Cell 2</td>
+                        <td>Row 1, Cell 3</td>
+                        <td>Row 1, Cell 4</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, Cell 1</td>
+                        <td>Row 2, Cell 2</td>
+                        <td>Row 2, Cell 3</td>
+                        <td>Row 2, Cell 4</td>
+                    </tr>
+                    <tr>
+                        <td>Row 3, Cell 1</td>
+                        <td>Row 3, Cell 2</td>
+                        <td>Row 3, Cell 3</td>
+                        <td>Row 3, Cell 4</td>
+                    </tr>
+                    <tr>
+                        <td>Row 4, Cell 1</td>
+                        <td>Row 4, Cell 2</td>
+                        <td>Row 4, Cell 3</td>
+                        <td>Row 4, Cell 4</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Row 2, Cell 3</td>
+            <td>Row 2, Cell 4</td>
+        </tr>
+        <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>Row 1, Cell 1</td>
+                        <td>Row 1, Cell 2</td>
+                        <td>Row 1, Cell 3</td>
+                        <td>Row 1, Cell 4</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, Cell 1</td>
+                        <td>Row 2, Cell 2</td>
+                        <td>Row 2, Cell 3</td>
+                        <td>Row 2, Cell 4</td>
+                    </tr>
+                    <tr>
+                        <td>Row 3, Cell 1</td>
+                        <td>Row 3, Cell 2</td>
+                        <td>Row 3, Cell 3</td>
+                        <td>Row 3, Cell 4</td>
+                    </tr>
+                    <tr>
+                        <td>Row 4, Cell 1</td>
+                        <td>Row 4, Cell 2</td>
+                        <td>Row 4, Cell 3</td>
+                        <td>Row 4, Cell 4</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Row 3, Cell 4</td>
+        </tr>
+        <tr>
+            <td>Row 4, Cell 1</td>
+            <td>Row 4, Cell 2</td>
+            <td>Row 4, Cell 3</td>
+            <td>Row 4, Cell 4</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <caption>Order summary</caption>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Item</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Fender Player Series Tele MN PWT</td>
+                <td>1</td>
+                <td>€589</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Vox AC15 C1</td>
+                <td>1</td>
+                <td>€599</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Fender Prof. Cable Angle Plug 3m</td>
+                <td>2</td>
+                <td>€22.60</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2" scope="row">Total:</th>
+                <td>4</td>
+                <td>€1,210.60</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
