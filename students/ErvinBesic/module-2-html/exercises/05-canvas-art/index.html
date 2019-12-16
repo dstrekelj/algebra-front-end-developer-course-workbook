@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ervin Besic">
+    <meta name="description" content="Vjezba 5-canvas art">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas art</title>
+</head>
+
+<body>
+    <img src="face.jpg" alt="face" width="400" height="400">
+    <h1>Face</h1>
+    <h2>..drawing in canvas:</h2>
+
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <script>
+        (function draw() {
+            var canvas = document.getElementById('canvas');
+            if (!canvas.getContext) {
+                canvas.innerHTML = 'The <canvas> tag is not supported.';
+                return;
+            }
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#93E497';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            //lice
+            ctx.fillStyle = '#F5EFD5';
+            ctx.fillRect(110, 110, 180, 200);
+            //kosa
+            ctx.fillStyle = 'black';
+            ctx.fillRect(110, 90, 180, 40);
+            //bjeločnica lijevo
+            ctx.beginPath();
+            ctx.arc(160, 185, 25, 0, 2 * Math.PI);
+            ctx.fillStyle = 'white';
+            ctx.fill();
+            ctx.closePath();
+            //zjenica lijevo
+            ctx.beginPath();
+            ctx.arc(160, 185, 13, 0, 2 * Math.PI);
+            ctx.fillStyle = 'black';
+            ctx.fill();
+            ctx.closePath();
+            //bjeločnica desno
+            ctx.beginPath();
+            ctx.arc(240, 185, 25, 0, 2 * Math.PI);
+            ctx.fillStyle = 'white';
+            ctx.fill();
+            ctx.closePath();
+            //zjenica desno
+            ctx.beginPath();
+            ctx.arc(240, 185, 13, 0, 2 * Math.PI);
+            ctx.fillStyle = 'black';
+            ctx.fill();
+            ctx.closePath();
+            //nos
+            ctx.beginPath();
+            ctx.moveTo(200, 215);
+            ctx.lineTo(185, 225);
+            ctx.lineTo(215, 225);
+            ctx.fillStyle = '#C3BDA3';
+            ctx.fill();
+            ctx.closePath();
+            //usta
+            ctx.beginPath();
+            ctx.arc(200, 240, 50, 0, 1 * Math.PI);
+            ctx.fillStyle = '#E88182';
+            ctx.fill();
+            ctx.closePath();
+        })();
+    </script>
+
+</body>
+
+</html>

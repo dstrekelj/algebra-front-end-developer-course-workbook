@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ervin Besic">
+    <meta name="description" content="Vjezba 4-SVG art">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVG art</title>
+</head>
+
+<body>
+    <img src="house.jpg" alt="house" width="400" height="300">
+    <h1>House</h1>
+    <h2>..drawing in vector graphics:</h2>
+
+
+    <svg width="400" height="400">
+
+        <!-- nebo-->
+        <rect x="0" y="0" width="400" height="300" fill="#C9FAFE" />
+        <!-- livada-->
+        <rect x="0" y="300" width="400" height="100" fill="#7BC570" />
+        <!-- deblo -->
+        <rect x="92" y="240" width="30" height="60" fill="#752D31" />
+        <!-- krošnja-->
+        <ellipse cx="105" cy="200" rx="55" ry="45" fill="#2C4F17" />
+        <!-- sunce-->
+        <ellipse cx="350" cy="40" rx="25" ry="20" fill="#FFF9C5" />
+        <!--zgrada-->
+        <rect x="220" y="200" width="100" height="100" fill="#E0E2DF" />
+        <!--krov-->
+        <polygon points="270,163 335,200.5 205,200.5" fill="red" />
+        <!--vrata-->
+        <rect x="283" y="250" width="25" height="50" fill="#7E7E7E" />
+        <!--kvaka-->
+        <circle cx="288" cy="275" r="2" fill="yellow" />
+        <!--prozori-->
+        <rect x="230" y="210" width="25" height="25" fill="white" />
+        <rect x="230" y="250" width="25" height="25" fill="white" />
+        <rect x="283" y="210" width="25" height="25" fill="white" />
+        <!--okvir prozora vanjski-->
+        <line x1="230" y1="223" x2="255" y2="223" stroke="black" stroke-width="2" />
+        <line x1="230" y1="263" x2="255" y2="263" stroke="black" stroke-width="2" />
+        <line x1="283" y1="223" x2="308" y2="223" stroke="black" stroke-width="2" />
+        <!--okvir prozora unutarnji horizontalni-->
+        <rect x="230.5" y="210.5" width="24" height="24" fill="none" stroke="black" stroke-width="1" />
+        <rect x="230.5" y="250.5" width="24" height="24" fill="none" stroke="black" stroke-width="1" />
+        <rect x="283.5" y="210.5" width="24" height="24" fill="none" stroke="black" stroke-width="1" />
+        <!-- okvir prozora unutarnji vertikalni-->
+        <line x1="242.5" y1="210" x2="242.5" y2="235" stroke="black" stroke-width="1" />
+        <line x1="242.5" y1="250" x2="242.5" y2="275" stroke="black" stroke-width="1" />
+        <line x1="295.5" y1="210" x2="295.5" y2="235" stroke="black" stroke-width="1" />
+
+    </svg>
+
+
+</body>
+
+</html>
