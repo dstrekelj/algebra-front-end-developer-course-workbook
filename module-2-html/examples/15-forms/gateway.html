@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>15 - Forms</title>
+</head>
+<body>
+    <p>
+        <a href="index.html">Index</a>,
+        <a href="search.html">Search</a>,
+        <a href="login.html">Login</a>,
+        <a href="login-autocomplete-off.html">Login (Autocomplete Off)</a>,
+        <a href="login-validation-off.html">Login (Validation Off)</a>,
+        <a href="contact.html">Contact</a>,
+        <a href="booking.html">Booking</a>,
+        <a href="gateway.html">Gateway</a>,
+        <a href="newsletter.html">Newsletter</a>,
+        <a href="poll.html">Poll</a>,
+        <a href="checkout.html">Checkout</a>,
+    </p>
+    <!-- Gateway form -->
+    <form action="" method="GET" novalidate autocomplete="off">
+        <h1>You must be 18+ to enter</h1>
+        <select name="date" required>
+            <option disabled selected>Date</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <select name="month" required>
+            <option disabled selected>Month</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <select name="year" required>
+            <option disabled selected>Year</option>
+            <option value="1990">1990</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+        </select>
+        <br><br>
+        <button type="submit">Sign in</button>
+    </form>
+</body>
+</html>
