@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up | 15 - Forms</title>
+</head>
+<body>
+    <p>
+        <a href="index.html">Index</a>,
+        <a href="search.html">Search</a>,
+        <a href="login.html">Login</a>,
+        <a href="login-autocomplete-off.html">Login (Autocomplete Off)</a>,
+        <a href="login-validation-off.html">Login (Validation Off)</a>,
+        <a href="contact.html">Contact</a>,
+        <a href="booking.html">Booking</a>,
+        <a href="gateway.html">Gateway</a>,
+        <a href="newsletter.html">Newsletter</a>,
+        <a href="poll.html">Poll</a>,
+        <a href="checkout.html">Checkout</a>,
+        <a href="register.html">Register</a>,
+        <a href="job-application.html">Job application</a>,
+        <a href="add-to-cart.html">Add to cart</a>,
+        <a href="meal-order.html">Meal order</a>
+    </p>
+
+    <form action="" method="GET" novalidate autocomplete="off">
+        <h1>Sign up</h1>
+
+        <label for="first_name">First name:</label>
+        <br>
+        <input id="first_name" type="text" name="first_name" required>
+        <br><br>
+
+        <label for="last_name">Last name:</label>
+        <br>
+        <input id="last_name" type="text" name="last_name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <br>
+        <input id="email" type="email" name="email" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <br>
+        <input id="password" type="password" name="password" required>
+        <br><br>
+
+        <label for="address">Address:</label>
+        <br>
+        <input id="address" type="text" name="address" required>
+        <br><br>
+
+        <label for="city">City:</label>
+        <br>
+        <input id="city" type="text" name="city" required>
+        <br><br>
+
+        <label for="zip_code">Zip code:</label>
+        <br>
+        <input id="zip_code" type="text" name="zip_code" required>
+        <br><br>
+
+        <label for="country">Country:</label>
+        <br>
+        <select id="country" name="country" required>
+            <option disabled selected>Choose...</option>
+            <option value="hr">Croatia</option>
+            <option value="en">England</option>
+            <option value="fr">France</option>
+            <option value="de">Germany</option>
+            <option value="hu">Hungary</option>
+            <option value="is">Iceland</option>
+        </select>
+        <br><br>
+
+        <label for="consent">
+            <input id="consent" type="checkbox" name="consent" value="entertainment" checked>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam eligendi ullam quis amet quibusdam excepturi odio provident. Molestiae qui asperiores magni error commodi ratione ipsam sit exercitationem voluptate. Qui, officia. Read our <a href="#" target="_blank">privacy policy</a>.
+        </label>
+        <br><br>
+
+        <button type="submit">Sign up</button>
+    </form>
+</body>
+</html>

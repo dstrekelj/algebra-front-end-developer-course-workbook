@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>15 - Forms</title>
+    <title>You must be 18+ to enter | 15 - Forms</title>
 </head>
 <body>
     <p>
@@ -19,10 +19,15 @@
         <a href="newsletter.html">Newsletter</a>,
         <a href="poll.html">Poll</a>,
         <a href="checkout.html">Checkout</a>,
+        <a href="register.html">Register</a>,
+        <a href="job-application.html">Job application</a>,
+        <a href="add-to-cart.html">Add to cart</a>,
+        <a href="meal-order.html">Meal order</a>
     </p>
-    <!-- Gateway form -->
-    <form action="" method="GET" novalidate autocomplete="off">
+
+    <form action="" method="POST">
         <h1>You must be 18+ to enter</h1>
+
         <select name="date" required>
             <option disabled selected>Date</option>
             <option value="1">1</option>
@@ -36,6 +41,7 @@
             <option value="9">9</option>
             <option value="10">10</option>
         </select>
+
         <select name="month" required>
             <option disabled selected>Month</option>
             <option value="1">1</option>
@@ -51,6 +57,7 @@
             <option value="11">11</option>
             <option value="12">12</option>
         </select>
+
         <select name="year" required>
             <option disabled selected>Year</option>
             <option value="1990">1990</option>
@@ -65,6 +72,7 @@
             <option value="1999">1999</option>
         </select>
         <br><br>
+
         <button type="submit">Sign in</button>
     </form>
 </body>

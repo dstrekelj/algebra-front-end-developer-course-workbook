@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Search | 15 - Forms</title>
+    <title>Order your meal | 15 - Forms</title>
 </head>
 <body>
     <p>
@@ -25,12 +25,24 @@
         <a href="meal-order.html">Meal order</a>
     </p>
 
-    <form action="" method="GET">
-        <h1>Search</h1>
+    <form action="" method="POST">
+        <h1>Order your meal</h1>
 
-        <label for="query">Search query:</label>
-        <input id="query" name="query" type="search" placeholder="Enter a keyword">
-        <button type="submit">Search</button>
+        <label for="meal">Meal:</label><br>
+        <input id="meal" list="meal-list" type="text" name="meal" required>
+        <br><br>
+
+        <datalist id="meal-list">
+            <option value="Palačinke">Slasne palačinke na domaći način s Eurokremom</option>
+            <option value="Mlinci">Domaći mlinci</option>
+            <option value="Piletina">Pečena piletina</option>
+        </datalist>
+
+        <input type="checkbox" name="order_confirmation"> Izdaj potvrdu
+        <br><br>
+
+        <button type="reset">Reset my order</button>
+        <button type="submit">Order</button>
     </form>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Sign in (no validation) | 15 - Forms</title>
 </head>
 <body>
     <p>
@@ -19,18 +19,27 @@
         <a href="newsletter.html">Newsletter</a>,
         <a href="poll.html">Poll</a>,
         <a href="checkout.html">Checkout</a>,
+        <a href="register.html">Register</a>,
+        <a href="job-application.html">Job application</a>,
+        <a href="add-to-cart.html">Add to cart</a>,
+        <a href="meal-order.html">Meal order</a>
     </p>
-    <p><strong>Login form:</strong> (no validation)</p>
+
     <form action="" method="POST" novalidate>
         <h1>Sign in</h1>
+
+        <p>(No validation)</p>
+
         <label for="email">Email: *</label>
         <br>
         <input id="email" type="email" name="email" required>
         <br><br>
+
         <label for="password">Password: *</label>
         <br>
         <input id="password" type="password" name="password" required>
         <br><br>
+
         <button type="submit">Sign in</button>
         <p><small>* - Required</small></p>
     </form>

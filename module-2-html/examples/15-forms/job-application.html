@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact us | 15 - Forms</title>
+    <title>Job application | 15 - Forms</title>
 </head>
 <body>
     <p>
@@ -26,30 +26,37 @@
     </p>
 
     <form action="" method="POST">
-        <h1>Contact us</h1>
+        <h1>Job application</h1>
 
-        <label for="name">First and last name: *</label>
-        <br>
-        <input id="name" type="text" name="name" pattern="\D+\s{1}\D+" required placeholder="John Doe">
+        <label for="full_name">First and last name</label><br>
+        <input id="full_name" type="text" name="full_name" required>
         <br><br>
 
-        <label for="email">Email: *</label>
-        <br>
+        <label for="email">Email</label><br>
         <input id="email" type="email" name="email" required>
         <br><br>
 
-        <label for="subject">Subject: *</label>
-        <br>
-        <input id="subject" type="text" name="subject" required value="Hello">
+        <label for="phone">Phone</label><br>
+        <input id="phone" type="tel" name="phone" required>
         <br><br>
 
-        <label for="message">Message: *</label>
+        <fieldset>
+            <legend>Position</legend>
+            <label for="position-frontend">Front-end <input id="position-frontend" type="checkbox" name="position[]" value="frontend"></label>
+            Back-end <input type="checkbox" name="position[]" value="backend">
+            Design-end <input type="checkbox" name="position[]" value="design">
+        </fieldset>
         <br>
-        <textarea id="message" name="message" required cols="50" rows="10">Lorem ipsum.</textarea>
+
+        <label for="cv">CV</label><br>
+        <input id="cv"type="file" name="cv" accept=".pdf,.doc,.docx,.zip" multiple required>
         <br><br>
 
-        <button type="submit">Send</button>
-        <p><small>* - Required</small></p>
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" required cols="50" rows="10"></textarea>
+        <br><br>
+
+        <button type="submit">Submit application</button>
     </form>
 </body>
 </html>
