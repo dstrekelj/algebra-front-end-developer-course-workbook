@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create an account | Web Shop</title>
+</head>
+<body>
+    <h1>Create an account</h1>
+
+    <h2>Sign up form</h2>
+    <form action="Login.html" method="GET">
+        
+        <label for="fn">First name: *</label><br>
+        <input type="text" name="first_name" id="fn" required>
+        <br><br>
+    
+        <label for="ln">Last name: *</label><br>
+        <input type="text" name="last_name" id="ln" required>
+        <br><br>
+    
+        <label for="email">Email: *</label><br>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+    
+        <label for="phone">Phone:</label><br>
+        <input type="tel" name="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" size="8">
+        <br><br>
+    
+        <label for="password">Password: *</label><br>
+        <input type="password" name="password" id="password" minlength="1" maxlength="6" required>
+        <br><br>
+    
+        <label for="gdpr">Gdpr: *</label><br>  
+        <input type="checkbox" name="gdpr" checked value="on" required>
+        <br><br>
+
+        <button type="reset">Reset</button>
+        <button type="sumbit">Sign up</button> 
+    </form>
+
+</body>
+</html>
