@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Book now | 15 - Forms</title>
 </head>
 <body>
     <p>
@@ -19,22 +19,28 @@
         <a href="newsletter.html">Newsletter</a>,
         <a href="poll.html">Poll</a>,
         <a href="checkout.html">Checkout</a>,
+        <a href="register.html">Register</a>,
+        <a href="job-application.html">Job application</a>,
+        <a href="add-to-cart.html">Add to cart</a>,
+        <a href="meal-order.html">Meal order</a>
     </p>
-    <p><strong>Booking form:</strong></p>
+
     <form action="" method="GET">
         <h1>Book now</h1>
-        <label for="from">From: *</label>
+
+        <label for="from">From:</label>
         <input id="from" type="date" name="from" value="2020-01-01" min="2020-01-01" max="2020-12-31" required>
-        <label for="to">To: *</label>
+        <label for="to">To:</label>
         <input id="to" type="date" name="to" value="2020-01-02" min="2020-01-02" max="2020-12-31" required>
         <br><br>
-        <label>Adults: *</label>
+
+        <label>Adults:</label>
         <input type="number" min="1" max="99" value="1" required>
-        <label>Children: *</label>
+        <label>Children:</label>
         <input type="number" min="0" max="99" value="0" required>
         <br><br>
+
         <button type="submit">Check availability</button>
-        <p><small>* - Required</small></p>
     </form>
 </body>
 </html>
