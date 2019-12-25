@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Checkout | Web Shop</title>
+</head>
+<body>
+    <h1>Web shop</h1>
+
+    <h2>Checkout</h2>
+
+    <!-- checkout form -->
+    <form id="checkout_form" action="success.html" method="GET">
+        <fieldset>
+            <legend>Shipping information</legend>
+            <label for="sender_first_name">First name: *</label><br>
+            <input id="sender_first_name" name="sender_first_name" type="text" pattern="\D+" required>
+            <br><br>
+
+            <label for="sender_last_name">Last name: *</label><br>
+            <input id="sender_last_name" name="sender_last_name" type="text" pattern="\D+" required>
+            <br><br>
+
+            <label for="email">E-mail: *</label><br>
+            <input id="email" name="email" type="email" required>
+            <br><br>
+
+            <label for="phone">Phone number: *</label><br>
+            <input id="phone" name="phone" type="tel" required>
+            <br><br>
+
+            <label for="sender_address_line_1">Address line 1: *</label><br>
+            <input id="sender_address_line_1" name="sender_address_line_1" type="text" required>
+            <br><br>
+
+            <label for="sender_address_line_2">Address line 2:</label><br>
+            <input id="sender_address_line_2" name="sender_address_line_2" type="text">
+            <br><br>
+
+            <label for="sender_city">City: *</label><br>
+            <input id="sender_city" name="sender_city" type="text" required>
+            <br><br>
+
+            <label for="sender_zip">Zip: *</label><br>
+            <input id="sender_zip" name="sender_zip" type="text" required>
+            <br><br>
+
+            <label for="sender_country"> Country: *</label><br>
+            <select id="sender_country" name="sender_country">
+                <option selected disabled value="none">Choose...</option>        
+                <option value="hr">Croatia</option>
+                <option value="rs">Serbia</option>
+                <option value="ba">Bosnia and Herzegovina</option>
+                <option value="si">Slovenia</option>
+                <option value="me">Montenegro</option>
+                <option value="al">Albania</option>
+                <option value="mk">Republic of North Macedonia</option>
+            </select>
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Payment information</legend>
+            <fieldset>
+                <legend>Payment method</legend>
+                <label for="credit">
+                    <input id="credit" name="payment_method" type="radio" value="credit" onclick="showCardDiv()"> Credit card</label>                    
+                    <label for="debit">
+                    <input id="debit" name="payment_method" type="radio" value="debit" onclick="showCardDiv()"> Debit card</label>                    
+                    <label for="paypal">
+                    <input id="paypal" name="payment_method" type="radio" value="paypal" onclick="hideCardDiv()"> PayPal</label>
+            </fieldset>
+            <br>
+            <div id="card_extra">
+            <label for="payment_card_holder">Name on card: *</label><br>
+            <input class="card_info" id="payment_card_holder" name="payment_card_holder" type="text" required>
+            <br><br>
+            <label for="payment_card_number">Credit card number: *</label><br>
+            <input class="card_info" id="payment_card_number" name="payment_card_number" type="text" pattern="\d+" required>
+            <br><br>
+            <label for="payment_card_expiration_month">Expiration: *</label><br>
+            <input class="card_info" id="payment_card_expiration_month" name="payment_card_expiration_month" type="text" placeholder="12/22" pattern="\d{2}/\d{2}" required>
+            <br><br>
+            </div>
+                        
+        </fieldset>
+        <br>
+        <button onclick="checkCountry()" type="button">Confirm order</button>
+        <button id="btn_hidden" type="submit" hidden></button>
+        <br><br><br><br><br><br><br><br><br>
+        
+
+
+    </form>
+
+    <div id="img_container">           
+        
+    </div>
+
+    <script src="checkout.js"></script>                  
+    
+</body>
+</html>

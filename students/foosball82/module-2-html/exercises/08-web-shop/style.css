@@ -1,0 +1,104 @@
+body {    
+    margin: 20px 20px 0px 20px;
+    overflow-x: hidden;
+    background-color: rgb(187, 255, 223);
+}
+
+img.ltr {
+    width: 200px;
+    position: absolute;
+    top: 75vh;
+    left: -10vw;   
+    animation-name: running;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-duration: 2s;    
+}  
+
+img.ltr1 {
+    width: 68px;
+    position: absolute;
+    top: 83vh;
+    left: -10vw;   
+    animation-name: running;
+    animation-timing-function: linear;
+    animation-delay: 3.2s;
+    animation-duration: 1.95s;    
+} 
+
+img.ltr2 {
+    width: 68px;
+    position: absolute;
+    top: 83vh;
+    left: -10vw;   
+    animation-name: rrunning;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-duration: 1.95s;    
+} 
+
+img.ltry1 {
+    width: 200px;
+    position: absolute;
+    top: 75vh;
+    left: -30vw;     
+    animation-name: rrunning;
+    animation-timing-function: linear;
+    animation-delay: 0.2s;
+    animation-duration: 1.95s;    
+} 
+
+img.ltry {
+    width: 200px;
+    position: absolute;
+    top: 75vh;
+    left: -30vw;   
+    animation-name: running;
+    animation-timing-function: linear;
+    animation-delay: 5.5s;
+    animation-duration: 1.4s;    
+}  
+ 
+img.rtl {
+    width: 200px;
+    position: absolute;
+    top: 75vh;
+    left: 110vw;   
+    animation-name: rrunning;
+    animation-timing-function: linear;
+    animation-delay: 9s;
+    animation-duration: 2s;    
+}
+
+div#img_container {
+    position: fixed;
+    height: 109px;
+    bottom: 0px;     
+}
+
+img#bottom {    
+    position: relative;
+    bottom: -109px;
+    left: 45vw;    
+    animation-name: rising;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 2;
+    animation-direction: alternate;    
+    animation-duration: 2s;   
+}
+
+@keyframes running {
+    from {left: -30vw;}
+    to {left: 100vw;}
+}
+ 
+@keyframes rrunning {
+    from {left: 110vw;}
+    to {left: -30vw;}    
+}
+
+@keyframes rising {
+    from {bottom: -40px;}
+    to {bottom: 0px;}    
+}
+
