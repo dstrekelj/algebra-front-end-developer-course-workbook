@@ -1,5 +1,4 @@
-function checkCountry(){
-    var country = document.getElementById("sender_country").value;
+function checkCountry(){    
     var isValid = document.querySelector('#checkout_form').reportValidity();
     if (isValid == false) {        
         document.getElementById("btn_hidden").click();              
