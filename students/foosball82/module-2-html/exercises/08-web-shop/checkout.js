@@ -1,17 +1,11 @@
-function validationCheck(){
-    var country = document.getElementById("sender_country").value;
+function validationCheck(){    
     var isValid = document.querySelector('#checkout_form').reportValidity();
     if (isValid == false) {        
         document.getElementById("btn_hidden").click();              
     }    
-    else 
-    if (country == "none") {
-        alert("Please select country...")
-    }
     else {        
         var x = document.getElementById("img_container");
-        x.innerHTML = "<img id='bottom' src='smd.gif' alt='Mario waving'>"
-        //caching problem....
+        x.innerHTML = "<img id='bottom' src='smd.gif' alt='Mario waving'>"        
         setTimeout(function(){x.removeChild(x.childNodes[0])},4000);
         setTimeout(function(){document.getElementById("btn_hidden").click();}, 4000);    
     }
