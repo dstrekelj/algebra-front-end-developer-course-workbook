@@ -1,8 +1,8 @@
 function checkCountry(){
     var country = document.getElementById("sender_country").value;
-    if (country == "none") {
-        alert("Select country!");
-        returnToPreviousPage();              
+    var isValid = document.querySelector('#checkout_form').reportValidity();
+    if (isValid == false) {        
+        document.getElementById("btn_hidden").click();              
     }    
     else {        
         var x = document.getElementById("img_container");

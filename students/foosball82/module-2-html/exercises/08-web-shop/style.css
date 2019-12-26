@@ -2,13 +2,14 @@ body {
     margin: 20px 20px 0px 20px;
     overflow-x: hidden;
     background-color: rgb(187, 255, 223);
+    width: 100vw;
 }
 
 img.ltr {
-    width: 200px;
+    width: 11vw;
     position: absolute;
-    top: 75vh;
-    left: -10vw;   
+    bottom: 5vh;
+    left: -40vw;   
     animation-name: running;
     animation-timing-function: linear;
     animation-delay: 3s;
@@ -16,10 +17,10 @@ img.ltr {
 }  
 
 img.ltr1 {
-    width: 68px;
+    width: 4vw;
     position: absolute;
-    top: 83vh;
-    left: -10vw;   
+    bottom: 6vh;
+    left: -40vw;   
     animation-name: running;
     animation-timing-function: linear;
     animation-delay: 3.2s;
@@ -27,10 +28,10 @@ img.ltr1 {
 } 
 
 img.ltr2 {
-    width: 68px;
+    width: 4vw;
     position: absolute;
-    top: 83vh;
-    left: -10vw;   
+    bottom: 6vh;
+    left: -40vw;   
     animation-name: rrunning;
     animation-timing-function: linear;
     animation-delay: 0s;
@@ -38,10 +39,10 @@ img.ltr2 {
 } 
 
 img.ltry1 {
-    width: 200px;
+    width: 11vw;
     position: absolute;
-    top: 75vh;
-    left: -30vw;     
+    bottom: 5vh;
+    left: -40vw;     
     animation-name: rrunning;
     animation-timing-function: linear;
     animation-delay: 0.2s;
@@ -49,10 +50,10 @@ img.ltry1 {
 } 
 
 img.ltry {
-    width: 200px;
+    width: 11vw;
     position: absolute;
-    top: 75vh;
-    left: -30vw;   
+    bottom: 5vh;
+    left: -40vw;   
     animation-name: running;
     animation-timing-function: linear;
     animation-delay: 5.5s;
@@ -60,10 +61,10 @@ img.ltry {
 }  
  
 img.rtl {
-    width: 200px;
+    width: 11vw;
     position: absolute;
-    top: 75vh;
-    left: 110vw;   
+    bottom: 5vh;
+    left: -40vw;   
     animation-name: rrunning;
     animation-timing-function: linear;
     animation-delay: 9s;
@@ -89,11 +90,11 @@ img#bottom {
 
 @keyframes running {
     from {left: -30vw;}
-    to {left: 100vw;}
+    to {left: 130vw;}
 }
  
 @keyframes rrunning {
-    from {left: 110vw;}
+    from {left: 130vw;}
     to {left: -30vw;}    
 }
 
