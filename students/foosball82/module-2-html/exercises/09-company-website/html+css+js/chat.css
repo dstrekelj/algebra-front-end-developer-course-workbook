@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 220px;
+    height: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: rgb(218, 218, 218);
+    text-align: center;
+    
+}
+
+div#main-container { 
+    display: none;   
+    /*animation: showChat 350ms ease-in;*/
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: rgba(68, 5, 82, 0.85);
+    /*border-radius: 10px;*/
+    width: 220px;
+    height: 250px;
+    border: 1px solid grey;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);    
+}
+
+h1 {
+    font-size: 100%;
+    padding-top: 6px;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-size: 150%;
+    padding-bottom: 5px;
+}
+
+textarea {
+    color: black;
+    font-weight: bold;
+    resize: none;
+    padding: 5px;
+    opacity: 0.85;
+}
+
+button#start-chat {
+    margin-top: 13px;
+    padding: 5px 6px 6px 6px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255, 0.7);
+    border: 1px solid #2eabff;
+    outline:none;    
+}
+
+button#start-chat:hover {    
+    background-color: #81bae0;
+    cursor: pointer;    
+}
+
+button#start-chat:active {
+    border: 1px solid #113852;
+}
+
+img {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: none;    
+}
+
+img:hover {
+    cursor: pointer;    
+}
+
+img#icon-open-chat {
+    display: block;
+}
+
+@keyframes showChat {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes hideChat {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
