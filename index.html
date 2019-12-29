@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create an account | Web Shop</title>
+</head>
+
+<body>
+    <h1>Web shop</h1>
+
+    <h2>Create an account</h2>
+
+    <p>Create an account to purchase items on our web shop!</p>
+
+    <!-- sign up form -->
+    <form action="/login.html" method="GET">
+        <h1>Sign up</h1>
+        <label for="first name">First name: *</label>
+        <br>
+        <input id="first name" type="text" name="first name" required placeholder="Pero">
+        <br><br>
+        <label for="last name">Last name: *</label>
+        <br>
+        <input id="last name" type="text" name="last name" required placeholder="Peric">
+        <br><br>
+        <label for="email">Email: *</label>
+        <br>
+        <input id="email" type="email" name="email" placeholder="pero.peric@example.com" required>
+        <br><br>
+        <label for="phone">Phone: *</label>
+        <br>
+        <input id="phone" type="phone" name="tel" placeholder="+123456798" required>
+        <br><br>
+        <label for="password">Password: *</label>
+        <br>
+        <input id="password" type="text" name="password" pattern=".{6,}" required title="6 characters minimum" required>
+        <br><br>
+        <br>
+        <label for="consent">
+            <input id="consent" type="checkbox" name="GDPR" value="on">
+            If you agree with our privacy policy (GDPR), please click.
+        </label>
+        <br><br>
+        <button type="submit">Sign up</button>
+        <p><small>* - Required</small></p>
+
+    </form>
+
+</body>
+
+</html>

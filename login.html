@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign in | Web Shop</title>
+</head>
+
+<body>
+    <h1>Web shop</h1>
+
+    <h2>Sign in to continue</h2>
+
+    <p>Thank you for creating an account.</p>
+
+    <p>Sign into your account to activate it and begin shopping!</p>
+
+    <!-- sign in form -->
+
+    <form action="/products.html" method="GET" novalidate autocomplete="on">
+        <p><strong>Sign-in form:</strong></p>
+        <label for="email">Email: *</label>
+        <br>
+        <input id="email" type="text" name="email" required>
+        <br><br>
+        <label for="password">Password: *</label>
+        <br>
+        <input id="password" type="text" name="password" pattern=".{6,}" required title="6 characters minimum" required>
+        <br><br>
+        <button type="submit">Sign in</button>
+        <p><small>* - Required</small></p>
+    </form>
+</body>
+
+</html>
