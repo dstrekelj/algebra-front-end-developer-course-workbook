@@ -167,8 +167,10 @@ nav ul {
     padding: 0;
     overflow: hidden;    
     /*background-color: rgb(68, 5, 82);*/
-    background: rgb(61,3,74);
-    background: linear-gradient(135deg, rgba(61,3,74,0.9) 0%, rgba(135,74,150,0.9) 100%);
+    /*background: rgb(61,3,74);
+    background: linear-gradient(135deg, rgba(61,3,74,0.9) 0%, rgba(135,74,150,0.9) 100%);*/    
+    background: rgb(51,0,62);
+    background: linear-gradient(135deg, rgba(51,0,62,0.9) 0%, rgba(135,74,150,0.9) 78%, rgba(163,124,172,1) 100%);
     margin-top: 10px;
     margin-bottom: 120px;   
 }
@@ -195,12 +197,12 @@ nav ul li a {
 }
 
 nav li a.active {
-    background-color: rgb(78, 59, 150, 0.85);
+    background-color: rgb(78, 59, 150);
     color: white;
 }
 
 nav ul li a:hover:not(.active) {
-    background-color: rgb(24, 24, 24,0.8);
+    background-color: rgb(24, 24, 24);
 }
 
 
