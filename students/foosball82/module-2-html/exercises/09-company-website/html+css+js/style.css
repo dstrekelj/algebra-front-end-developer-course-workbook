@@ -126,7 +126,7 @@ section#employee {
 }
 
 .parallax { 
-    /*ne radi na mobu*/
+    /*ne radi na Androidu, a pogotovo ne radi na iOSu :)*/
     background-attachment: fixed; 
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -155,6 +155,7 @@ section#employee {
 
 .main-nav {
     position: sticky;
+    position: -webkit-sticky;
     top: 0px;
     margin-top: 0px;
     margin-left: -5vw;
