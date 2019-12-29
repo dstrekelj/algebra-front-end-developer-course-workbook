@@ -165,7 +165,7 @@ nav ul {
     overflow: hidden;    
     /*background-color: rgb(68, 5, 82);*/
     background: rgb(61,3,74);
-    background: linear-gradient(135deg, rgba(61,3,74,0.85) 0%, rgba(135,74,150,0.85) 100%);
+    background: linear-gradient(135deg, rgba(61,3,74,0.9) 0%, rgba(135,74,150,0.9) 100%);
 }
 
 nav ul li {
