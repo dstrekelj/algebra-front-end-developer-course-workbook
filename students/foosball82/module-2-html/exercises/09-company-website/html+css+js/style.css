@@ -52,7 +52,11 @@ p {
 /*-------------------------------section--------------------------------*/
 section {
     max-width: 1000px;
-    margin: 150px auto;    
+    margin: 120px auto;    
+}
+
+section:first-of-type {
+    margin-top: 0px;
 }
 
 section::after {
@@ -143,17 +147,16 @@ section#employee {
 /*------------------------------navigation and logo-----------------------------*/
 .logo {
     max-width: 85vw;
-    position: absolute;
+    position: relative;
     top: 0px;    
     display: block;
-    margin-top: 0px;   
-    margin-bottom: 80px;       
+    margin-top: 10px;          
 }
 
 .main-nav {
     position: sticky;
     top: 0px;
-    margin-top: 77px;
+    margin-top: 0px;
     margin-left: -5vw;
     margin-right: -5vw;    
 }
@@ -166,6 +169,8 @@ nav ul {
     /*background-color: rgb(68, 5, 82);*/
     background: rgb(61,3,74);
     background: linear-gradient(135deg, rgba(61,3,74,0.9) 0%, rgba(135,74,150,0.9) 100%);
+    margin-top: 10px;
+    margin-bottom: 120px;   
 }
 
 nav ul li {
@@ -206,6 +211,11 @@ img {
     height: auto;
     margin-top: 40px;   
     margin-bottom: 80px;         
+}
+
+img.logo {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 section > img {
@@ -256,7 +266,8 @@ ol, ul {
 }
 
 form {
-    background-color: rgb(247, 247, 247);     
+    background-color: rgb(247, 247, 247);
+    margin-top: 80px;     
  }
 
 
