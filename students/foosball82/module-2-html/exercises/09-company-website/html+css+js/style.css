@@ -51,7 +51,7 @@ p {
 
 /*-------------------------------section--------------------------------*/
 section {
-    max-width: 1000px;
+    max-width: 700px;
     margin: 120px auto;    
 }
 
@@ -159,7 +159,8 @@ section#employee {
     top: 0px;
     margin-top: 0px;
     margin-left: -5vw;
-    margin-right: -5vw;    
+    margin-right: -5vw;
+    z-index: 8; 
 }
 
 nav ul {     
@@ -282,7 +283,7 @@ iframe#chat {
     position: fixed; 
     bottom: 20px; 
     right: 20px;
-    z-index: 5;
+    z-index: 9;
 }
 
 @keyframes showChatInitial {
