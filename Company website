@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>company website-hompage</title>
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Company logo">
+
+        <h1>Company - Better Together</h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <header>
+                <h2 id="home">Boring can be fun</h2>
+            </header>
+
+            <p>Tech virtual drone online browser platform through in a system. But stream software offline. Professor install angel sector anywhere create at components smart. Document fab developers encryption smartphone powered, bespoke blockstack edit atoms. Companies a storage adopters. Hardware company planet, torrent ut developers stream, engineering keyphrase end. Document reality edit, install strategy startups hardware stream, analytics e-commerce smart. Privacy news data policies analytics documents.</p>
+
+            <p>Now digital designs id anywhere atoms. Now strategy startups documents designs. Venture crypto adopters niche. Video algorithm system ultra-private policies engineering. Users takedowns. In apps torrent, decentralized bespoke IPO funding, change word company. e-commerce components goods support in file system edit steem on videos engineering algorithm hundreds; Pocketable strategy startups e-commerce system. Document 1,000 how torrent, non security mi sell crypto. Despite clever designers how, word steem ability analytics.</p>
+        </section>
+        
+        <section>
+            <header>
+                <h2 id="products">How we can help</h2>
+            </header>
+
+            <img src="product-1.jpg" alt="Company products">
+
+            <p>Tech virtual drone online browser platform through in a system. But stream software offline. Professor install angel sector anywhere create at components smart. Document fab developers encryption smartphone powered, bespoke blockstack edit atoms. Companies a storage adopters.</p>
+            <p> Hardware company planet, torrent ut developers stream, engineering keyphrase end. Document reality edit, install strategy startups hardware stream, analytics e-commerce smart. Privacy news data policies analytics documents.</p>
+
+            <ul>
+                <li>Now digital designs id anywhere atoms.</li>
+                <li>Venture crypto adopters niche.</li>
+                <li>Video algorithm system ultra-private policies engineering.</li>
+                <li>In apps torrent, decentralized bespoke IPO funding, change word company.</li>
+            </ul>
+            <p>Read more about our products...
+            <a href="products.html">LINK</a></p>
+        </section>
+
+        <section>
+            <header>
+                <h2 id="about">What we do and why we do it</h2>
+            </header>
+
+            <figure>
+                <img src="billy-corgan.jpg" alt="Billy Corgan, Company CEO">
+                <figcaption>Billy Corgan, CEO</figcaption>
+            </figure>
+
+            <blockquote>"Ipsa netus consequatur blanditiis nostrum pretium phasellus sollicitudin, quae ad aut taciti, inventore purus, natus hymenaeos totam labore dictumst harum explicabo, pede sint? Molestiae! Numquam aut. Mus mollit distinctio? Imperdiet, fugit. Similique conubia torquent. Consequatur parturient, consequuntur omnis quia minima quam hymenaeos, taciti distinctio, expedita quos vestibulum exercitation." &mdash; <cite>Billy Corgan, CEO</cite></blockquote>
+
+            <ol>
+                <li>Aenean imperdiet nostrud minus asperiores at commodo laboriosam volutpat consectetuer, dolorum habitant placeat habitasse, aspernatur veniam reiciendis in!</li>
+                <li>Proin excepturi, metus adipiscing exercitationem mauris congue ipsum, labore fringilla nobis hac, iste illo, ipsam temporibus!</li>
+                <li>Laboris, sollicitudin? Nam euismod? Similique ante quos aut lorem erat tortor vitae commodo congue.</li>
+            </ol>
+
+            <p>Distinctio diam curabitur sociosqu class senectus hic, quisque eu ab? </p>
+            <p>Quis ratione sapiente adipisci ligula mauris erat, et hic debitis culpa ab vel quia, dictumst iusto eros.
+            Proident facere blandit pariatur habitant per fuga quisquam! Ornare! Vitae doloremque facilis ullam penatibus ac, diam molestias molestias velit adipiscing eget.</p>     
+            <p>Read more about us...
+            <a href="about.html">LINK</a></p><br>
+        </section>
+
+        <section>
+            <header>
+                <h2 id="contact">Get in touch</h2>
+            </header>
+
+            <form action="contact.html" method="GET">
+                <fieldset>
+                    <label for="full_name">First and last name:</label>
+                    <br>
+                    <input id="full_name" type="text" name="full_name" placeholder="Pero Peric" required>
+                    <br><br>
+                    
+                    <label for="email">Email:</label>
+                    <br>
+                    <input id="email" type="email" name="email" placeholder="pero.peric@example.com" required>
+                    <br><br>                 
+                    <label for="message">Message:</label>
+                    <br>
+                    <textarea id="message" name="message" rows="10" cols="50" required></textarea>
+                    <br><br>
+
+                    <button type="submit">Contact us</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <a href="mailto:info@company.example.com">info@company.example.com</a>
+        </address>
+        <small>&copy; Company &mdash; 2019-2010</small>
+    </footer>
+</body>
+</html>
