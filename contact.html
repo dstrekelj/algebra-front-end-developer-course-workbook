@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>company website-contact</title>
+</head>
+
+<body>
+    <header>
+        <img src="logo.svg" alt="Company logo">
+
+        <h1>Company - Better Together</h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="#contact_home">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <header>
+                <h1 id="contact_home">Contact site</h1>
+            </header>
+        </section>
+
+        <section>
+            <header>Contact form:</header>
+            <form action="index.html#contact" method="GET">
+                <fieldset>
+
+                    <label for="message">Message:</label>
+                    <br>
+                    <textarea id="message" name="message" rows="30" cols="50" required></textarea>
+                    <br><br>
+                    <button type="submit">Contact us</button>
+                </fieldset>
+            </form>
+
+        </section>
+        <section>
+            <!--Get in touch (link to contact form on index.html)-->
+            <p>Get in touch...</p>
+            <a href="index.html#contact" alt="Contact">CONTACT </a>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <a href="mailto:info@company.example.com">info@company.example.com</a>
+        </address>
+        <small>&copy; Company &mdash; 2019-2010</small>
+    </footer>
+</body>
+
+</html>
