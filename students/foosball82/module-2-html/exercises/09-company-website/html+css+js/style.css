@@ -210,7 +210,7 @@ nav ul li a:hover:not(.active) {
 
 /*---------------------images and figures, blockqoutes, lists, forms----------------------*/
 img {    
-    max-width: 350px;
+    max-width: 100%;
     height: auto;
     margin-top: 40px;   
     margin-bottom: 80px;         
@@ -270,8 +270,9 @@ ol, ul {
 
 form {
     background-color: rgb(247, 247, 247);
-    margin-top: 80px;     
- }
+    margin: 80px 0px 0px 0px;
+    max-width: 100%;    
+}
 
 
 /*-----------------------------------iframe, animation--------------------------*/
@@ -284,7 +285,12 @@ iframe#chat {
     z-index: 5;
 }
 
-@keyframes showChat {
+@keyframes showChatInitial {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes showChatInitial {
     from {opacity: 0;}
     to {opacity: 1;}
 }
@@ -300,7 +306,27 @@ iframe#chat {
     }
 }
 
+@-webkit-keyframes fadeZoomIn {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+
 @keyframes zoomIn {
+    from {
+        transform: scale(1);      
+    }
+    to {
+        transform: scale(1.2);    
+    }
+}
+
+@-webkit-keyframes zoomIn {
     from {
         transform: scale(1);      
     }

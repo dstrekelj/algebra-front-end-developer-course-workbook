@@ -54,11 +54,10 @@ button#start-chat {
     margin-top: 13px;
     padding: 5px 6px 6px 6px;
     border-radius: 8px;
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: rgb(255, 255, 255);
     border: 1px solid #2eabff;
     outline:none;
-    color: rgb(15, 15, 15);
-      
+    color: rgb(15, 15, 15);      
 }
 
 button#start-chat:hover {    
@@ -74,34 +73,51 @@ img {
     position: fixed;
     bottom: 0px;
     right: 0px;
-    display: none;
+    display: none;    
     transition: 0.4s;
-        
+    -webkit-transition: 0.4s;
+            
 }
 
 img:hover {
     transform: scale(1.25);
+    -webkit-transform: scale(1.25);
     cursor: pointer;    
 }
 
 img#icon-open-chat {
     display: block;
     opacity: 1;
+    -webkit-opacity: 1;
     transition: 0.4s;
+    -webkit-transition: 0.4s;
 }
 
 img#icon-close-chat {
     display: none;
     opacity: 0;
+    -webkit-opacity: 0;
     transition: 0.4s;
+    -webkit-transition: 0.4s;
+    
 }
 
-@keyframes showChat {
+@keyframes showChatBox {
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
-@keyframes hideChat {
+@-webkit-keyframes showChatBox {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes hideChatBox {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@-webkit-keyframes hideChatBox {
     from {opacity: 1;}
     to {opacity: 0;}
 }
