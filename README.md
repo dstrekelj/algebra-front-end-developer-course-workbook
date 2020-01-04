@@ -10,7 +10,7 @@ Course materials for my take on Algebra's "Front End Developer" course.
 
 1. Module 1 - Introduction to Modern Front End Development
 2. [Module 2 - HTML](module-2-html/)
-3. CSS
+3. [Module 3 - CSS](module-3-css/)
 4. JavaScript
 5. Development Environment
 6. React JS
