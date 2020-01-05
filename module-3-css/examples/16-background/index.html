@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>16 - Background</title>
+    <style>
+        /*
+        An element background can be set to a colour using supported colour 
+        space or other agreed upon notation.
+        */
+        body {
+            background-color: lightpink;
+        }
+
+        /*
+        An image can be used as an element background. Background images can be
+        additionally configured:
+        
+        - background-repeat - the axis along which the image repeats.
+        - background-size - the size of the image.
+        - background-position - the starting position of the image.
+        - background-attachment - if the image should scroll with the rest of
+        the page or not.
+        */
+        h1 {
+            background-image: url('let-there-be-sun.png');
+            background-repeat: repeat-x;
+            background-size: 600px;
+            background-position-y: -42px;
+        }
+
+        /*
+        The background shorthand can be used to set all of the above properties
+        at once. Background colour is always drawn underneath the image if both
+        properties are set.
+        */
+        p {
+            background: lightgreen url('white_carbon.png') repeat-Y top left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quos veritatis suscipit, dolor, maiores dicta beatae modi ut repellendus iure nobis provident, pariatur officiis perspiciatis ab laudantium vitae. Odit, in! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quos veritatis suscipit, dolor, maiores dicta beatae modi ut repellendus iure nobis provident, pariatur officiis perspiciatis ab laudantium vitae. Odit, in! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quos veritatis suscipit, dolor, maiores dicta beatae modi ut repellendus iure nobis provident, pariatur officiis perspiciatis ab laudantium vitae. Odit, in! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quos veritatis suscipit, dolor, maiores dicta beatae modi ut repellendus iure nobis provident, pariatur officiis perspiciatis ab laudantium vitae. Odit, in! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quos veritatis suscipit, dolor, maiores dicta beatae modi ut repellendus iure nobis provident, pariatur officiis perspiciatis ab laudantium vitae. Odit, in!</p>
+</body>
+</html>

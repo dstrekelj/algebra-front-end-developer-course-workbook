@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>04 - Selector - Basic</title>
+    <style>
+        /*
+        Styles are applied to select elements using selectors. Using and 
+        combining different selectors makes the selection more specific.
+
+        The more specific the selection the higher the priority of the style 
+        rules, so the styling applied by less specific selectors is overwritten. 
+        This is part of the cascading nature of style sheets.
+
+        Simple selectors are:
+        - universal selector
+        - element selector
+        - class selector
+        - id selector
+        */
+
+        /*
+        Universal selector. Selects all elements. No specificity.
+        */
+        * {
+            color: magenta;
+        }
+
+        /*
+        Element selector. Least specific.
+        */
+        h1 {
+            color: red;
+        }
+
+        /*
+        Class selector. Selects element based on "class" attribute value. More 
+        specific.
+        */
+        .page-title {
+            color: blue;
+        }
+
+        /*
+        ID selector. Selects element based on "id" attribute value. Most 
+        specific.
+        */
+        #index {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="index" class="page-title">Hello world!</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse asperiores id mollitia vel eum eius ab ad ratione iure illum ut tempore repellat est nihil neque suscipit, laboriosam molestias. Aperiam.</p>
+
+    <h2 class="page-title">Hello world!</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse asperiores id mollitia vel eum eius ab ad ratione iure illum ut tempore repellat est nihil neque suscipit, laboriosam molestias. Aperiam.</p>
+
+    <h2>Hello world!</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse asperiores id mollitia vel eum eius ab ad ratione iure illum ut tempore repellat est nihil neque suscipit, laboriosam molestias. Aperiam.</p>
+</body>
+</html>

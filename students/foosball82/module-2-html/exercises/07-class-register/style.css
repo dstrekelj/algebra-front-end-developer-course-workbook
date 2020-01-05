@@ -1,0 +1,36 @@
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #24292e;
+    
+}
+
+table {
+    border-color: grey;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;    
+}
+
+th {
+    font-weight: 600;
+}
+
+#students-1a tr:nth-child(odd), #students-1b tr:nth-child(odd) {
+    background-color: #f6f8fa;
+}
+
+#students-1a th, #students-1b th {
+    background-color: #ffffff;
+}
+.schedule {
+    display: inline-table;
+    margin-left: 50px;
+    margin-top: 20px;
+    text-align: center;
+}

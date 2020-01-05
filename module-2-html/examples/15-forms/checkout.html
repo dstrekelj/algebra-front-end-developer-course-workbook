@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Checkout | 15 - Forms</title>
 </head>
 <body>
     <p>
@@ -13,9 +13,21 @@
         <a href="login.html">Login</a>,
         <a href="login-autocomplete-off.html">Login (Autocomplete Off)</a>,
         <a href="login-validation-off.html">Login (Validation Off)</a>,
+        <a href="contact.html">Contact</a>,
+        <a href="booking.html">Booking</a>,
+        <a href="gateway.html">Gateway</a>,
+        <a href="newsletter.html">Newsletter</a>,
+        <a href="poll.html">Poll</a>,
+        <a href="checkout.html">Checkout</a>,
+        <a href="register.html">Register</a>,
+        <a href="job-application.html">Job application</a>,
+        <a href="add-to-cart.html">Add to cart</a>,
+        <a href="meal-order.html">Meal order</a>
     </p>
-    <p><strong>Checkout form:</strong></p>
-    <form action="" method="GET">
+
+    <form action="" method="POST">
+        <h1>Checkout</h1>
+
         <fieldset>
             <legend>Shipping information</legend>
             <label for="first_name">First name: *</label><br>
@@ -42,11 +54,17 @@
             <label for="">Country: *</label><br>
             <select name="country" required>
                 <option selected disabled>Choose...</option>
+                <option value="al">Albania</option>
+                <option value="br">Brazil</option>
                 <option value="hr">Croatia</option>
+                <option value="dk">Denmark</option>
                 <option value="en">England</option>
+                <option value="fr">France</option>
                 <option value="de">Germany</option>
             </select>
         </fieldset>
+        <br>
+
         <fieldset>
             <legend>Payment information</legend>
             <fieldset>
@@ -69,6 +87,8 @@
             <input id="cvv" name="cvv" type="text" pattern="\d" required>
             <br><br>
         </fieldset>
+        <br>
+
         <button type="submit">Continue to checkout</button>
         <p><small>* - Required</small></p>
     </form>
