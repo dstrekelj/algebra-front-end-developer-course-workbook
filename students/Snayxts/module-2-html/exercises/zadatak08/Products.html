@@ -21,7 +21,8 @@
                 <input type="hidden" name="product_sku" value="SKU: P101">
 
                 <label for="quantity">quantity:</label><br>
-                <input id="quantity" type="number" name="quantity" min="1" max="99" value="1" required>
+                <input id="quantity" type="number" name="quantity" min="1" max="99" value="1" required><br>
+                <button type="button">Add to cart</button>
             </form>
             <br>
         </li>
@@ -35,7 +36,8 @@
                 <input type="hidden" name="product_sku" value="SKU: P102">
                 
                 <label for="quantity1">quantity:</label><br>
-                <input id="quantity1" type="number" name="quantity1" min="1" max="99" value="1" required>
+                <input id="quantity1" type="number" name="quantity1" min="1" max="99" value="1" required><br>
+                <button type="button">Add to cart</button>
             </form>
             <br>
         </li>
@@ -49,13 +51,15 @@
                 <input type="hidden" name="product_sku" value="SKU: P103">
                 
                 <label for="quantity2">quantity:</label><br>
-                <input id="quantity2" type="number" name="quantity2" min="1" max="99" value="1" required>
+                <input id="quantity2" type="number" name="quantity2" min="1" max="99" value="1" required><br>
+                <button type="button">Add to cart</button>
             </form>
             <br>
         </li>
     </ul>
 
     <form action="checkout.html" method="GET">
+        <button type="reset">Reset</button>
         <button type="submit">Proceed to checkout</button>
     </form>
 </body>
