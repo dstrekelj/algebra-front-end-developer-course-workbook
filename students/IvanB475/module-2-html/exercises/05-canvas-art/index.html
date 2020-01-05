@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Canvas art</title>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="325" height="400" style="border:1px solid #d3d3d3;"></canvas>
+            
+            <script>
+                    var c = document.getElementById("myCanvas");
+                    var ctx = c.getContext("2d");
+                    ctx.fillStyle = "#b3ff99";
+                    ctx.fillRect(0, 0, c.width, c.height);
+                    ctx.moveTo(100,120);
+                    ctx.lineTo(100,270);
+                    ctx.lineTo(210,270);
+                    ctx.lineTo(210,120);
+                    ctx.lineTo(100,120);
+                    ctx.fillStyle = '#ffe0b3';
+                    ctx.fill();
+                    
+                    
+                    ctx.beginPath();
+                    ctx.moveTo(100,100);
+                    ctx.lineTo(100,120);
+                    ctx.lineTo(210,120);
+                    ctx.lineTo(210,100);
+                    ctx.lineTo(100,100);
+                    ctx.fillStyle = '#1a1a00';
+                    ctx.fill();
+                    ctx.stroke();
+                                        
+                    ctx.beginPath();
+                    ctx.arc(130,150,10,0,2*Math.PI);
+                    ctx.fillStyle = 'white';
+                    ctx.fill();
+                    
+                    ctx.beginPath();
+                    ctx.arc(130,150,5,0,2*Math.PI);
+                    ctx.fillStyle = 'green';
+                    ctx.fill();
+                    
+                    ctx.beginPath();
+                    ctx.arc(180,150,10,0,2*Math.PI);
+                    ctx.fillStyle = 'white';
+                    ctx.fill();
+
+                    ctx.beginPath();
+                    ctx.arc(180,150,5,0,2*Math.PI);
+                    ctx.fillStyle = 'green';
+                    ctx.fill();
+                    
+                    ctx.beginPath();
+                    ctx.moveTo(153,185);
+                    ctx.lineTo(138,200);
+                    ctx.lineTo(168,200);
+                    ctx.lineTo(153,185);
+                    ctx.fillStyle = '#ffb84d';
+                    ctx.fill();
+                    
+                    
+                    ctx.beginPath();
+                    ctx.arc(153, 220, 30, 0, Math.PI, false);
+                    ctx.closePath();
+                    ctx.fillStyle = 'red';
+                    ctx.fill();
+                    
+            </script>
+
+    </body>
+</html>
