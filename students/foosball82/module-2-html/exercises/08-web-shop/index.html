@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create an account | Web Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Web shop</h1>
+
+    <h2>Create an account</h2>
+
+    <p>Create an account to purchase items on our web shop!</p>
+
+    <!-- sign up form -->
+    <form action="login.html" method="GET">
+        <label for="first_name">First name: *</label><br>
+        <input id="first_name" name="first_name" type="text" pattern="\D+" required>
+        <br><br>
+
+        <label for="last_name">Last name: *</label><br>
+        <input id="last_name" name="last_name" type="text" pattern="\D+" required>
+        <br><br>
+
+        <label for="email">E-mail: *</label><br>
+        <input id="email" name="email" type="email" required>
+        <br><br>
+ 
+        <label for="phone">Phone number: *</label><br>
+        <input id="phone" name="phone" type="tel">
+        <br><br>
+
+        <label for="password">Password (min. 6 characters): *</label><br>
+        <input id="password" name="password" type="password" minlength="6" required>
+        <br><br>
+
+        <label for="gdpr">
+            <input id="gdpr" name="gdpr" type="checkbox" required> I agree to have my personal data processed by "this site" in accordance to the General Data Protection Regulation *</label>
+        <br><br>
+        <small>* required</small>
+        <br><br>
+
+        <button onclick="storeCredentials()" type="submit">Create account</button>
+
+    </form>
+    <br>
+    
+    <img class="ltr" src="sm.gif" alt="Mario running">
+    <img class="rtl" src="sml.gif" alt="Mario still running">
+    
+
+    <script src="auth.js"></script>
+</body>
+</html>

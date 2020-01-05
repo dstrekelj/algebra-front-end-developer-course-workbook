@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Sign in | Web Shop</title>
+</head>
+<body>
+    <h1>Web shop</h1>
+
+    <h2>Sign in to continue</h2>
+
+    <p>Thank you for creating an account.</p>
+
+    <p>Sign into your account to activate it and begin shopping!</p>
+
+    <!-- sign in form -->
+    <form action="products.html" method="GET">
+        <label for="email"> E-mail: *</label ><br>
+        <input id="email" name="email" type="email" required>
+        <br><br>
+
+        <label for="password">Password: *</label><br>
+        <input id="password" name="password" type="password" minlength="6" required>
+        <br><br>
+
+        <small>* required</small><br><br>
+        <button onclick="getCredentials()" type="button">Sign in</button>
+        <button id="btn_hidden" type="submit" hidden></button>
+
+    </form>
+
+    <img class="ltr" src="sm.gif" alt="Mario running">
+    <img class="ltr1" src="bltl.gif" alt="Mario running">
+    <img class="ltry" src="yo.gif" alt="Mario still running">
+    <script src="auth.js"></script>
+</body>
+</html>

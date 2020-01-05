@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>08 - Selector - Combinator</title>
+    <style>
+        /*
+        Combinators describe relationships between selected elements. Combining 
+        selectors makes them more specific.
+        */
+        
+        /*
+        Descendant selector (space). Here, it selects all div elements that are
+        descendants of div elements.
+        */
+        div div {
+            color: red;
+        }
+
+        /*
+        Child selector (>). Here, it selects all p elements which are direct
+        descendants (children) of div elements.
+        */
+        div > p {
+            color: blue;
+        }
+
+        /*
+        General sibling selector (~). Here, it selects all p elements that are
+        siblings of p elements.
+        */
+        p ~ p {
+            color: purple;
+        }
+
+        /*
+        Adjacent sibling selector (+). Here, it selects all p elements that are
+        adjacent siblings to p elements, or all p elements that immediately 
+        follow other p elements.
+        */
+        p + p {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est tenetur rerum temporibus debitis aliquam officia exercitationem nam nesciunt ad quam. Corrupti officia quidem, eos animi mollitia asperiores nobis illum. Odio.</p>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores fuga explicabo aspernatur aperiam cum totam quod laborum corporis! Quia laborum assumenda aspernatur delectus iure dolores incidunt excepturi, ut adipisci quis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptatibus at numquam maxime placeat excepturi non aut delectus ducimus blanditiis explicabo perferendis voluptas, libero unde sapiente facere nostrum aliquam autem.</p>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque non maxime eum saepe perspiciatis suscipit odit quidem necessitatibus vitae rerum veniam ab omnis assumenda, incidunt labore! Ipsa repudiandae pariatur voluptate!</div>
+    <div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quisquam voluptate maiores nulla modi nostrum suscipit. Tenetur, quia corporis, odio accusamus aperiam quidem ex facere veritatis harum exercitationem itaque earum!</div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptatibus at numquam maxime placeat excepturi non aut delectus ducimus blanditiis explicabo perferendis voluptas, libero unde sapiente facere nostrum aliquam autem.</p>
+</body>
+</html>

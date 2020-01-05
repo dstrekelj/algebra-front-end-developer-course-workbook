@@ -1,0 +1,105 @@
+body {    
+    margin: 20px 20px 0px 20px;
+    overflow-x: hidden;
+    background-color: rgb(187, 255, 223);
+    width: 100vw;
+}
+
+img.ltr {
+    width: 11vw;
+    position: absolute;
+    bottom: 5vh;
+    left: -40vw;   
+    animation-name: running;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-duration: 2s;    
+}  
+
+img.ltr1 {
+    width: 4vw;
+    position: absolute;
+    bottom: 6vh;
+    left: -40vw;   
+    animation-name: running;
+    animation-timing-function: linear;
+    animation-delay: 3.2s;
+    animation-duration: 1.95s;    
+} 
+
+img.ltr2 {
+    width: 4vw;
+    position: absolute;
+    bottom: 6vh;
+    left: -40vw;   
+    animation-name: rrunning;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-duration: 1.95s;    
+} 
+
+img.ltry1 {
+    width: 11vw;
+    position: absolute;
+    bottom: 5vh;
+    left: -40vw;     
+    animation-name: rrunning;
+    animation-timing-function: linear;
+    animation-delay: 0.2s;
+    animation-duration: 1.95s;    
+} 
+
+img.ltry {
+    width: 11vw;
+    position: absolute;
+    bottom: 5vh;
+    left: -40vw;   
+    animation-name: running;
+    animation-timing-function: linear;
+    animation-delay: 5.5s;
+    animation-duration: 1.4s;    
+}  
+ 
+img.rtl {
+    width: 11vw;
+    position: absolute;
+    bottom: 5vh;
+    left: -40vw;   
+    animation-name: rrunning;
+    animation-timing-function: linear;
+    animation-delay: 9s;
+    animation-duration: 2s;    
+}
+
+div#img_container {
+    position: fixed;
+    height: 109px;
+    bottom: 0px;     
+}
+
+img#bottom {    
+    position: relative;
+    bottom: -109px;
+    left: 45vw;    
+    animation-name: rising;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 2;
+    animation-direction: alternate;    
+    animation-duration: 2s;   
+}
+
+@keyframes running {
+    from {left: -30vw;}
+    to {left: 130vw;}
+}
+ 
+@keyframes rrunning {
+    from {left: 130vw;}
+    to {left: -30vw;}    
+}
+
+@keyframes rising {
+    from {bottom: -40px;}
+    to {bottom: 0px;}    
+}
+
