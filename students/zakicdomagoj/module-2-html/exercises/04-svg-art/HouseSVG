@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>House</title>
+</head>
+<body>
+
+<svg width="700" height="700">
+    <!--nebo-->
+    <rect x="0" y="0" height="700" width="700" fill="lightblue"></rect> 
+    <!--livada-->
+    <rect x="0" y="500" height="200" width="700" fill="lightgreen"></rect> 
+    <!--deblo-->
+    <rect x="150" y="400" height="100" width="30" fill="brown"></rect> 
+    <!--krosnja-->
+    <circle r="75" cx="165" cy="350" stroke="none" fill="green"></circle>
+    <!--zgrada-->
+    <rect x="350" y="300" height="200" width="150" fill="lightgrey"></rect>
+    <!--prozori-->
+    <rect x="365" y="350" height="35" width="35" fill="white" stroke="black" stroke-width="2px"></rect>
+    <rect x="442" y="350" height="35" width="35" fill="white" stroke="black" stroke-width="2px"></rect>
+    <rect x="365" y="420" height="35" width="35" fill="white" stroke="black" stroke-width="2px"></rect>
+    <!--vrata-->
+    <rect x="435" y="420" height="80" width="50" fill="brown"></rect>
+    <!--linije na prvom prozoru-->
+    <line x1="365" y1="367" x2="400" y2="367" stroke="black" stroke-width="2px"></line>
+    <line x1="382" y1="350" x2="382" y2="385" stroke="black" stroke-width="2px"></line>
+    <!--linije na drugom prozoru-->
+    <line x1="442" y1="367" x2="478" y2="367" stroke="black" stroke-width="2px"></line>
+    <line x1="460" y1="350" x2="460" y2="385" stroke="black" stroke-width="2px"></line>
+    <!--linije na trecem prozoru-->
+    <line x1="365" y1="437" x2="400" y2="437" stroke="black" stroke-width="2px"></line>
+    <line x1="382" y1="420" x2="382" y2="455" stroke="black" stroke-width="2px"></line>
+    <!--kvaka-->
+    <circle r="3" cx="445" cy="455" fill="yellow" stroke="none"></circle>
+    <!--krov-->
+    <polygon points="425,230 520,300.5 330,300.5" fill="red"></polygon>
+    <!--sunce-->
+    <circle r="30" cx="600" cy="70" fill="yellow" stroke="none"></circle>
+
+</svg>
+    
+</body>
+</html>
