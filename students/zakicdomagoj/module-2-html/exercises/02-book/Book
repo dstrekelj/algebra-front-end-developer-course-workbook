@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A book about markup languages</title>
+</head>
+<body>
+
+<h1>1. Markup languages</h1>
+
+<p>A markup language is a computer language that uses <strong>tags</strong> to define elements within a document. Markup languages are used to annotate a document in a way that is syntactically distinguishable from the text, and can assign <strong>semantic meaning</strong> to the text.</p>
+
+<dl>
+<p>
+    <strong>Types of markup languages</strong>
+</p>
+
+<dt>Presentational markup</dt> 
+    <dd><em>used by traditional word-processing systems, implemented as binary codes embedded within document text (e.g. Microsoft Word).</em></dd>
+<dt>Procedural markup</dt> 
+    <dd><em>markup is embedded in text, which then provides instructions for programs to process the text (e.g. TeX).</em></dd>
+<dt>Descriptive (logical) markup</dt> 
+    <dd><em>markup is used to label parts of the document rather than to provide specific instructions as to how they should be processed (e.g. HTML).</em></dd>
+</dl>
+
+<h2>1.2. HTML</h2>
+
+<p>HyperText Markup Language (HTML) is the <strong>standard markup language</strong> for documents designed to be displayed in a web browser.</p>
+
+<p>HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of the content to make it appear or act a certain way.</p>
+
+<h3>1.2.1. How the browser displays HTML</h3>
+<ol>
+    <li>The browser parses the HTML to construct the DOM tree.</li>
+    <li>The DOM tree is used to construct a render tree.</li>
+    <li>A layout is generated from the render tree.</li>
+    <li>The render three is painted to the screen according to the generated layout.</li>
+</ol>
+
+<h2>1.4. Definitions</h2>  
+<dl>
+<dt>HTML</dt>
+    <dd><em>HyperText Markup Language</em></dd>
+<dt>DOM</dt> 
+    <dd><em>Document Object Model</em></dd>
+</dl>
+
+</body>
+</html>
