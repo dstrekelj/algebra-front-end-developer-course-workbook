@@ -50,6 +50,15 @@
         margin: 1em;
     }
 
+    /*
+    Using the margin "auto" value has the browser calculate an element's margins
+    relative to the parent element. This can be useful for horizontal centering.
+    */
+    .example-5 {
+        width: 100px;
+        margin: 0 auto;
+    }
+
     .box {
         border: 1px solid hsl(0, 100%, 60%);
         background: hsl(0, 100%, 90%);
@@ -76,5 +85,10 @@
     <div class="box example-4">2</div>
     <div class="box example-4">3</div>
     <div class="box example-4">4</div>
+    <hr>
+    <div class="box example-5">1</div>
+    <div class="box example-5">2</div>
+    <div class="box example-5">3</div>
+    <div class="box example-5">4</div>
 </body>
 </html>
