@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>18 - Box model - Size</title>
+    <style>
+    /*
+    The size of an element box is specified with width and height properties.
+    Both relative and absolute units can be used for width and height values.
+    */
+    
+    .example-1 {
+        background: red;
+        width: 100px;
+        height: 100px;
+    }
+
+    .example-2 {
+        background: green;
+        width: 50%;
+        height: 100px;
+    }
+
+    .example-3 {
+        background: rgba(0, 0, 255, 0.25);
+        height: 200px;
+        width: 100px;
+    }
+
+    .example-3-1 {
+        background: rgba(0, 0, 255, 0.25);
+        height: 50%;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <div class="example-1"></div>    
+    <div class="example-2"></div>
+    <div class="example-3">
+        <div class="example-3-1">
+            <div class="example-3-1">
+                <div class="example-3-1"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

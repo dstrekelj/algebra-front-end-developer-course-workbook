@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>19 - Box model - Padding</title>
+    <style>
+    /*
+    The padding is the distance from the border of the element to its content.
+    */
+
+    /*
+    Padding can be defined through top, right, bottom, and left values using
+    absolute or relative units.
+    */
+    .example-1 {
+        padding-top: 1em;
+        padding-right: 2em;
+        padding-bottom: 3em;
+        padding-left: 4em;
+    }
+
+    /*
+    The padding shorthand makes it possible to write top, right, bottom, left 
+    values in a single line. Values are organised clockwise, starting from the
+    top padding.
+    */
+    .example-2 {
+        padding: 1em 2em 3em 4em;
+    }
+
+    /*
+    The padding shorthand makes it possible to write top-bottom and left-right
+    padding values in pairs.
+    */
+    .example-3 {
+        padding: 1em 2em;
+    }
+
+    /*
+    The padding shorthand makes it possible to use a single value for all
+    padding.
+    */
+    .example-4 {
+        padding: 1em;
+    }
+
+    .box {
+        border: 1px solid hsl(0, 100%, 60%);
+        background: hsl(0, 100%, 90%);
+    }
+    </style>
+</head>
+<body>
+    <div class="box example-1">1</div>
+    <div class="box example-1">2</div>
+    <div class="box example-1">3</div>
+    <div class="box example-1">4</div>
+    <hr>
+    <div class="box example-2">1</div>
+    <div class="box example-2">2</div>
+    <div class="box example-2">3</div>
+    <div class="box example-2">4</div>
+    <hr>
+    <div class="box example-3">1</div>
+    <div class="box example-3">2</div>
+    <div class="box example-3">3</div>
+    <div class="box example-3">4</div>
+    <hr>
+    <div class="box example-4">1</div>
+    <div class="box example-4">2</div>
+    <div class="box example-4">3</div>
+    <div class="box example-4">4</div>
+</body>
+</html>
