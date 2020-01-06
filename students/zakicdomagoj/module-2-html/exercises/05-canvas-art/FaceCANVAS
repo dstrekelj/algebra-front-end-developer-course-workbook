@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Face</title>
+</head>
+<body>
+    <canvas id="canvas" width="700" height="700"></canvas>
+
+    <script>
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+
+        <!--podloga-->
+        ctx.fillStyle = 'lightgreen';
+        ctx.fillRect(0, 0, 700, 700);
+
+        <!--lice-->
+        ctx.fillStyle = 'lightgrey';
+        ctx.fillRect(200, 200, 280, 350);
+
+        <!--kosa-->
+        ctx.fillStyle = 'black'
+        ctx.fillRect(200, 150, 280, 50);
+
+        <!--lijevo oko-->
+        ctx.beginPath();
+        ctx.arc(270, 300, 40, 0, Math.PI * 2);
+        ctx.fillStyle = 'white'
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.arc(270, 300, 20, 0, Math.PI * 2);
+        ctx.fillStyle = 'green'
+        ctx.fill();
+        ctx.closePath();
+
+        <!--desno oko-->
+        ctx.beginPath();
+        ctx.arc(410, 300, 40, 0, Math.PI * 2);
+        ctx.fillStyle = 'white'
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.arc(410, 300, 20, 0, Math.PI * 2);
+        ctx.fillStyle = 'green'
+        ctx.fill();
+        ctx.closePath();
+
+        <!--nos-->
+        ctx.beginPath();
+        ctx.moveTo(310,380);
+        ctx.lineTo(370,380);
+        ctx.lineTo(340,350);
+        ctx.lineTo(312,380);
+        ctx.fillStyle = 'grey';
+        ctx.fill();
+
+        <!--usta-->
+        ctx.beginPath();
+        ctx.arc(340, 420, 80, 0, Math.PI);
+        ctx.fillStyle = 'pink'
+        ctx.fill();
+        ctx.closePath();
+
+    </script>
+</body>
+</html>
