@@ -7,6 +7,59 @@
     <title>SVG art</title>
 </head>
 <body>
-    
-</body>
+    <svg width="700" height="700">
+        <!--Nebo-->
+        <rect width="600" height="400" style="fill:paleturquoise"></rect>
+        
+        <!--Trava-->
+        <rect x="0" y="400" width="600" height="100" style="fill:green"></rect>
+
+        <!--Drvo stablo-->
+        <rect x="100" y="280" width="50" height="120" style="fill:black"></rect>
+
+        <!--Drvo krošnja-->
+        <circle cx="125" cy="250" r="65" style="fill:green"></circle>
+
+        <!--Kučica-->
+        <rect x="300" y="200" width="190" height="200" style="fill:brown"></rect>
+
+        <!--Vrata-->
+        <rect x="450" y="350" width="30" height="50" style="fill:burlywood"></rect>
+
+        <!--Kvaka-->
+        <circle cx="455" cy="370" r="3" style="fill:aliceblue"></circle> 
+
+        <!--Prozor1-->
+        <rect x="420" y="220" width="60" height="60" style="fill:azure"></rect>
+
+        <!--Prozor2-->
+        <rect x="310" y="220" width="60" height="60" style="fill:azure"></rect>
+
+        <!--Obruč prozora 2 vertikalni-->
+        <line x1="340" y1="220" x2="340" y2="280" style="stroke:black; stroke-width: 2"></line>
+
+        <!--Obruč prozora 2 horizontalni-->
+        <line x1="310" y1="250" x2="370" y2="250" style="stroke:black; stroke-width: 2"></line>
+        
+
+        <!--Obruč prozora 1 vertikalni-->
+        <line x1="450" y1="220" x2="450" y2="280" style="stroke:black; stroke-width: 2"></line>
+
+        <!--Obruč prozora 1 horizontalni-->
+        <line x1="480" y1="250" x2="420" y2="250" style="stroke:black; stroke-width: 2"></line>
+
+        <!--Krov-->
+        <polygon points="400,80 550,200 250,200" style="fill:burlywood; stroke:crimson; stroke-width: 4;"></polygon>
+
+        <!--Sunce-->
+        <defs>
+            <filter id="blur-sunca" x="0" y="0" >
+              <feGaussianBlur stdDeviation="25" />
+            </filter>
+          </defs>
+
+        <circle cx="50" cy="50" r="70" style="fill:yellow"; filter="url(#blur-sunca)" ></circle>
+    </svg>
+
+    </body>
 </html>
