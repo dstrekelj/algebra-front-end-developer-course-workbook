@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>22 - Box shadow</title>
+    <style>
+    /*
+    Box shadow draws a shadow inside or underneath an element box.
+
+    Box shadow can have five properties:
+
+    - x offset
+    - y offset
+    - blur radius
+    - spread radius
+    - color
+    */
+    .example-1 {
+        box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    /*
+    An element can have multiple box shadows.
+    */
+    .example-2 {
+        box-shadow:
+            0 1px 4px 1px rgba(0, 0, 0, 0.1),
+            0 4px 12px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /*
+    Box shadows can be inset using the inset keyword.
+    */
+    .example-3 {
+        box-shadow:
+            inset 0px 0px 16px 4px red,
+            0px 0px 16px 4px blue;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background: #fafafa;
+        margin: 50px auto;
+    }
+    </style>
+</head>
+<body>
+    <div class="box example-1"></div>
+    <div class="box example-2"></div>
+    <div class="box example-3"></div>
+</body>
+</html>

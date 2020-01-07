@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>18 - Box model - Border</title>
+    <style>
+    /*
+    The border is drawn around the element box. The size of the border is added
+    to the size of the element.
+    */
+
+    /*
+    Borders have a width, style, and color. Borders come in different styles.
+    */
+    .example-1 {
+        border-width: 10px;
+        border-style: solid;
+        border-color: hsl(200, 60%, 30%);
+    }
+
+    .style-2 { border-style: dotted; }
+    .style-3 { border-style: double; }
+    .style-4 { border-style: groove; }
+    .style-5 { border-style: outset; }
+    .style-6 { border-style: ridge; }
+
+    /*
+    The border shorthand reduces makes it possible to specify all values in one
+    line.
+    */
+    .example-2 {
+        border: 10px solid hsl(200, 60%, 30%);
+    }
+
+    /*
+    Borders can be set separately for top, right, bottom, and left sides of an
+    element box. The border shorthand can be used for those as well.
+    */
+    .example-3 {
+        border-top: 10px dotted red;
+        border-right: 10px solid green;
+        border-bottom: 10px dashed blue;
+        border-left: 10px double black;
+    }
+
+    /*
+    Borders can have a radius. Border radius applies to element box corners.
+    */
+    .example-4 {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    /*
+    Border radius can be set using the border-radius shorthand. Border radius is
+    applied from the top left corner, clockwise.
+    */
+    .example-5 { border-radius: 10px 10px 10px 10px; }
+
+    /*
+    Border radius can be set for every other corner by passing a pair of values.
+    */
+    .example-6 { border-radius: 100px 0px; }
+
+    /*
+    Border radius can be set for all corners by passing a single value.
+    */
+    .example-7 { border-radius: 100%; }
+
+    .box {
+        background: hsl(200, 100%, 60%);
+        height: 50px;
+        width: 50px;
+    }
+    </style>
+</head>
+<body>
+    <div class="box example-1"></div>
+    <div class="box example-1 style-2"></div>
+    <div class="box example-1 style-3"></div>
+    <div class="box example-1 style-4"></div>
+    <div class="box example-1 style-5"></div>
+    <div class="box example-1 style-6"></div>
+    <hr>
+    <div class="box example-2"></div>
+    <hr>
+    <div class="box example-3"></div>
+    <hr>
+    <div class="box example-4"></div>
+    <hr>
+    <div class="box example-5"></div>
+    <hr>
+    <div class="box example-6"></div>
+    <hr>
+    <div class="box example-7"></div>
+</body>
+</html>

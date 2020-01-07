@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>23 - Display</title>
+    <style>
+    /*
+    Elements take up space in the flow of the document. Elements are positioned
+    in the flow starting from left to right, top to bottom.
+    
+    An element can be displayed in the document flow in one of four ways:
+    
+    - block
+    - inline
+    - inline-block
+    - none
+    */
+
+    /*
+    Elements with "block" display take up the space of one entire row in the
+    document flow, no matter their size. Box model properties apply.
+    */
+    .block { display: block; }
+
+    /*
+    Elements with "inline" display take up space equal to the size of their
+    content. Width and height box model properties do not apply.
+    */
+    .inline { display: inline; }
+
+    /*
+    Elements with "inline-block" display take up space equal to the size of
+    their content, but taking into account all box model properties.
+    */
+    .inline-block { display: inline-block; }
+
+    /*
+    Elements with "none" display are completely removed from the document flow
+    and therefore invisible, having no box model properties.
+    */
+    .none { display: none; }
+
+    .box {
+        box-sizing: border-box;
+        height: 100px;
+        background: hsl(10, 100%, 90%);
+        border: 1px solid hsl(10, 100%, 60%);
+        padding: 1em;
+    }
+    </style>
+</head>
+<body>
+    <div class="box block">1</div>
+    <div class="box block">2</div>
+    <div class="box block">3</div>
+    <hr>
+    <div class="box inline">1</div>
+    <div class="box inline">2</div>
+    <div class="box inline">3</div>
+    <hr>
+    <div class="box inline-block">1</div>
+    <div class="box inline-block">2</div>
+    <div class="box inline-block">3</div>
+    <hr>
+    <div class="box none">1</div>
+    <div class="box none">2</div>
+    <div class="box none">3</div>
+</body>
+</html>
