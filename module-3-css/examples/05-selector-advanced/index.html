@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>05 - Selector - Advanced</title>
+    <style>
+        /*
+        Attribute selectors are written inside angle brackets ([]). They select
+        elements with specified attributes and / or attribute values.
+        */
+
+        /*
+        Here, it selects all emenets with the "class" attribute.
+        */
+        [class] { color: red; }
+
+        /*
+        Here, it selects all elements with the "class" attribute whose attribute
+        value contains at least one occurrence of "text" within the string.
+        */
+        [class*="text"] { color: blue; }
+
+        /*
+        Here, it selects all elements with the "class" attribute whose attribute
+        value is a whitespace-separated list of words, one of which is exactly 
+        "text".
+        */
+        [class~="text"] { color: magenta; }
+
+        /*
+        Here, it selects all elements with the "class" attribute whose value is
+        prefixed (preceded) by "text".
+        */
+        [class^="text"] { color: yellow; }
+
+        /*
+        Here, it selects all elements with the "class" attribute whose attribute
+        value is exactly "text" or can begin with "text" immediately followed by
+        a hyphen.
+        */
+        [class|="text"] { color: cyan; }
+
+        /*
+        Here, it selects all elements with the "class" attribute whose value is
+        suffixed (followed) by "text".
+        */
+        [class$="text"] { color: orange; }
+
+        /*
+        Here, it selects all emenets with the "class" attribute whose attribute
+        value is exactly "text".
+        */
+        [class="text"] { color: green; }
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim similique dolore sunt vero accusantium officiis illo iste aperiam quibusdam soluta esse adipisci, asperiores cumque dolor voluptas repudiandae nostrum sequi non.</p>
+    <p class="foo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim similique dolore sunt vero accusantium officiis illo iste aperiam quibusdam soluta esse adipisci, asperiores cumque dolor voluptas repudiandae nostrum sequi non.</p>
+    <p class="footextfoo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim similique dolore sunt vero accusantium officiis illo iste aperiam quibusdam soluta esse adipisci, asperiores cumque dolor voluptas repudiandae nostrum sequi non.</p>
+    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim similique dolore sunt vero accusantium officiis illo iste aperiam quibusdam soluta esse adipisci, asperiores cumque dolor voluptas repudiandae nostrum sequi non.</p>
+    <p class="textfoo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim similique dolore sunt vero accusantium officiis illo iste aperiam quibusdam soluta esse adipisci, asperiores cumque dolor voluptas repudiandae nostrum sequi non.</p>
+    <p class="text-foo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim similique dolore sunt vero accusantium officiis illo iste aperiam quibusdam soluta esse adipisci, asperiores cumque dolor voluptas repudiandae nostrum sequi non.</p>
+    <p class="foo text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim similique dolore sunt vero accusantium officiis illo iste aperiam quibusdam soluta esse adipisci, asperiores cumque dolor voluptas repudiandae nostrum sequi non.</p>
+</body>
+</html>
