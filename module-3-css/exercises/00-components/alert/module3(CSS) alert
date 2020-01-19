@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alert</title>
+    <link rel="stylesheet" href="alert.css"  >
+</head>
+<body>
+
+    <div class="alertbox">
+        <dialog class="alertbox alertbox--primary">Earum euismod accusamus pellentesque proident.</dialog>
+    </div>
+</body>
+</html>
+
+--alert.css--
+ body {
+     text-align: center;
+     margin-top: 200px;
+ }
+
+ .alertbox {
+     display: inline-block;
+     box-sizing: border-box;
+     padding: 12px 24px;
+     line-height: 1;
+     font-size: 16px;
+     cursor: pointer;
+     border-radius: 1px;
+ }
+
+ .alertbox.alertbox--primary {
+     border: 1px solid hsl(210, 3%, 86%);
+     background: hsla(0, 0%, 95%, 0.87);
+     color: black;
+     border-radius: 0.5rem;
+ }
+
+ .alertbox.alertbox--primary:hover {
+     background: hsl(0, 58%, 42%);
+ }
