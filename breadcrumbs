@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Breadcrumbs</title>
+    <link rel="stylesheet" href="breadcrumbs.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#1">Home /</a>
+            <a href="#2">Men's /</a>
+            <a href="#3">Coats /</a>
+            <a href="#4">Cool Coat</a>
+
+        </nav>
+    </header> <br>
+    <header>
+        <nav >
+            <a href="#1">Home /</a>
+            <a href="#2">Men's /</a>
+            <a href="#3">Coats /</a>
+            <a href="#4">Cool Coat</a>
+
+        </nav>
+    </header>
+</body>
+
+</html>
+--breadcrumbs.css---
+/*
+         The states of links are:
+
+        - link - default, unvisited link.
+        - visited - visited link.
+        - hover - link hovered over with mouse.
+        - active - link clicked / pressed (but click / press not released).
+        */
+
+body {
+   text-align: center;
+   margin-top: 300px;
+  font-family:Arial, Helvetica, sans-serif ;
+  font-size: 30px;
+}
+
+a:link {
+    color: hsl(100, 10%, 70%);
+    text-decoration: none;
+}
+
+a:visited {
+    color: hsl(100, 10%, 70%)
+}
+
+a:active, a:hover {
+    color: hsla(0, 100%, 1%, 0.87);
+}
