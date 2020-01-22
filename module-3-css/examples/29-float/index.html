@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>29 - Float</title>
+    <style>
+    /*
+    The float CSS property places an element on the left or right side of its 
+    container, allowing text and inline elements to wrap around it.
+    
+    The element is removed from the normal flow of the page, though still 
+    remaining a part of the flow (in contrast to absolute positioning).
+
+    A floating element is one where the computed value of float is not none.
+
+    As float implies the use of the block layout, it modifies the computed value
+    of the display values, in some cases.
+
+    It is necessary to use an element or pseudoelement with the property clear
+    set to "both" in order to reestablish the normal flow of elements after
+    using floats.
+    */
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .container::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .container.container--left .container__aside {
+        float: left;
+        margin-right:  32px;
+    }
+
+    .container.container--right .container__aside {
+        float: right;
+        margin-left: 32px;
+    }
+
+    .container__aside {
+        background: #eee;
+        padding: 16px;
+        width: 150px;
+        margin-bottom: 16px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container container--left">
+        <div class="container__aside">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="container__content">Temporibus minima ducimus voluptatibus provident excepturi numquam at ullam, iusto et nisi quibusdam dolores, adipisci rerum recusandae corrupti natus officiis, eveniet praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laudantium at laboriosam doloribus, nihil ducimus incidunt cupiditate rerum omnis, perferendis ullam, tempora quis amet ex quisquam ab praesentium eligendi recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, deserunt? Similique, exercitationem eum. Qui vel facere inventore eum natus id assumenda voluptatum, voluptate culpa, autem, blanditiis ratione explicabo dignissimos fugit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ullam quidem vero debitis cum reiciendis, modi aut architecto aperiam atque veritatis nihil dignissimos cupiditate iusto dolorem quo a eligendi. Nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptate voluptatum nisi similique dicta quae ex ad at, sed, dolor maiores expedita placeat cupiditate ducimus, aliquid nobis ab quia incidunt? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur accusamus eos quas soluta iusto explicabo, corrupti facere aspernatur maxime dolorum nemo. Temporibus at quibusdam eveniet quidem, quis quam aliquid ab. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi nulla, quibusdam repellat distinctio, unde nesciunt, modi impedit quam doloribus vel odio amet deserunt. Nostrum officia, eius cumque inventore reprehenderit enim?</div>
+    </div>
+    <hr>
+    <div class="container container--right">
+        <div class="container__aside">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="container__content">Temporibus minima ducimus voluptatibus provident excepturi numquam at ullam, iusto et nisi quibusdam dolores, adipisci rerum recusandae corrupti natus officiis, eveniet praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quam nostrum consequuntur veniam cupiditate, odio inventore esse enim quas laboriosam quibusdam, labore est ex. Ipsa ipsam tempore facilis architecto minima? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, perferendis eaque exercitationem dolor repellendus nulla hic! Sit sint omnis dolore, modi praesentium necessitatibus aperiam, eos, magni voluptates nam laboriosam. Est? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt dolorum nulla facere eveniet qui quos expedita veniam id ipsum officiis voluptate quisquam, pariatur ab facilis est. Dicta adipisci expedita temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit totam sunt doloremque sint in possimus exercitationem veritatis laborum repellat similique veniam, dignissimos ex voluptatum quo sed maiores impedit porro alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illum dignissimos ad voluptates ratione, tempore, sed id natus molestiae quidem laboriosam vel pariatur qui doloribus obcaecati, aspernatur alias velit cum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, adipisci modi, aperiam reprehenderit iste enim iure eligendi cupiditate, tenetur at magnam optio voluptatibus! Laboriosam architecto corrupti, voluptas facere id expedita.</div>
+    </div>
+</body>
+</html>
