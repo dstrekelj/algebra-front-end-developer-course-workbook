@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alert</title>
+</head>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+        div {
+            text-align: center;
+        }
+        .alert {
+            display: inline-block;
+            border-radius: 5px;
+            padding: 5px 8px;
+            margin: 10px;
+        }
+        .alert.alert--primary {
+            color: black;
+            background: lightgray;
+            border: 1px solid #999;
+
+        }
+        .alert.alert--secondary {
+            color: black;
+            background: red;
+            border: 1px dashed #000;
+        }
+        
+    </style>
+<body>
+    <div>
+        <div class="alert alert--primary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+    </div>
+    <div>
+        <div class="alert alert--secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+    </div>    
+</body>
+</html>
