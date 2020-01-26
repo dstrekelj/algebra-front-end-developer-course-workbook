@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 16px;
+            border: none;
+            padding: 16px 32px;
+            margin-top: 50px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+        .button.button--primary {
+            background: black;
+            color: white;
+        }
+        .button.button--secondary {
+            background: none;
+            color: black;
+            border: 1px solid black;
+        }
+        .button.button--ternary {
+            background: none;
+            color: black;
+            text-decoration: underline;
+        }
+        .button:disabled {
+            margin-top: 10px;
+        }
+        .button.button--primary:disabled {
+            background: lightgray;
+            color: #999;
+        }
+        .button.button--secondary:disabled {
+            background: none;
+            color: #999;
+            border: 1px solid #999;
+        }
+        .button.button--ternary:disabled {
+            background: none;
+            border: none;
+            color: #999;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="button button--primary">Sign in</button>
+        <button class="button button--secondary">Sign in</button>
+        <button class="button button--ternary">Sign in</button>
+    </div>
+    <div>
+        <button class="button button--primary" disabled>Sign in</button>
+        <button class="button button--secondary" disabled>Sign in</button>
+        <button class="button button--ternary" disabled>Sign in</button>
+    </div>
+</body>
+</html>
