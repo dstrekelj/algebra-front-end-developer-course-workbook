@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>50 - Transition</title>
+    <style>
+    .box-1 {
+        transition-property: background-color;
+        transition-duration: 0.5s;
+    }
+    .box-1:hover {
+        background-color: blue;
+    }
+
+    .box-2 {
+        transition-property: background-color;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+    }
+    .box-2:hover {
+        background-color: blue;
+    }
+
+    .box-3 {
+        transition-property: background-color;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+        transition-delay: 0.5s;
+    }
+    .box-3:hover {
+        background-color: blue;
+    }
+
+    .box-4 {
+        transition: background-color 0.5s ease-in 0.5s;
+    }
+    .box-4:hover {
+        background-color: blue;
+    }
+
+    .box-5 {
+        transition:
+            background-color 0.5s ease-out,
+            transform 0.5s ease-in-out 0.5s;
+    }
+    .box-5:hover {
+        background-color: blue;
+        transform: scale(1.5);
+    }
+
+    /* Utility styles */
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        background: red;
+        width: 100px;
+        height: 100px;
+        margin: 100px auto;
+    }
+    </style>
+</head>
+<body>
+    <div class="box box-1"></div>
+    <div class="box box-2"></div>
+    <div class="box box-3"></div>
+    <div class="box box-4"></div>
+    <div class="box box-5"></div>
+</body>
+</html>
