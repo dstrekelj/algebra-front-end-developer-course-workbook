@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>49 - Transform</title>
+    <style>
+    .box-1:hover { transform: translate(50px, 50px); }
+    .box-2:hover { transform: rotate(180deg); }
+    .box-3:hover { transform: scale(1.5); }
+    .box-4:hover { transform: skew(10deg, 10deg); }
+    .box-5:hover { transform: rotate(180deg) translate(50px, 50px) scale(0.5); }
+    
+    .box-6 { transform-origin: top left; }
+    .box-6:hover { transform: rotate(180deg); }
+
+    .box-7:hover { transform: rotate3d(1, 1, 0, 180deg); }
+    .box-8:hover { transform: perspective(200px) translate3d(50px, 50px, 100px); }
+
+    /* Utility styles */
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        background: red;
+        width: 100px;
+        height: 100px;
+        margin: 100px auto;
+        transition: transform 1s ease;
+    }
+    </style>
+</head>
+<body>
+    <div class="box box-1"></div>
+    <div class="box box-2"></div>
+    <div class="box box-3"></div>
+    <div class="box box-4"></div>
+    <div class="box box-5"></div>
+    <div class="box box-6"></div>
+    <div class="box box-7"></div>
+    <div class="box box-8"></div>
+</body>
+</html>
