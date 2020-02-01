@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button Toolbar</title>
+    <style>
+        *, *::before, *::after{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+        .button-toolbar__1, .button-toolbar__2, .button-toolbar__3{
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .button {
+            display: inline-flex;
+            text-decoration: none;
+            background: none;
+            margin-bottom: 20px;
+            width: 80px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+        .button--view{
+            border: 1px solid black;
+            color: black;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            border-right: none;
+        }
+        .button--edit{
+            border: 1px solid black;
+            color: black;
+        }
+        .button--delete{
+            border: 1px solid black;
+            color: black;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border-left: none;
+        }
+        .button-toolbar__2 > .button--view:hover, .button-toolbar__2 > .button--edit:hover, .button-toolbar__2 > .button--delete:hover{
+            color: white;
+            background-color: black;
+            cursor: pointer;
+        }
+        .button-toolbar__3 > .button:disabled{
+            color: #999;
+            background-color: lightgray;
+            border-color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-toolbar__group">
+        <div class="button-toolbar__1">
+            <button class="button button--view">View</button>
+            <button class="button button--edit">Edit</button>
+            <button class="button button--delete">Delete</button>
+        </div>
+        <div class="button-toolbar__2">
+            <button class="button button--view">View</button>
+            <button class="button button--edit">Edit</button>
+            <button class="button button--delete">Delete</button>
+        </div>
+        <div class="button-toolbar__3">
+            <button class="button button--view" disabled>View</button>
+            <button class="button button--edit" disabled>Edit</button>
+            <button class="button button--delete" disabled>Delete</button>
+        </div>
+    </div>
+</body>
+</html>
