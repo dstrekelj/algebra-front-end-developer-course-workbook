@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Breadcrumbs</title>
+    <style>
+
+        body {
+            font-family: sans-serif;
+        }
+        
+        .breadcrumbs {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .breadcrumbs-item {
+            font-size: 26px;
+
+        }
+
+        .breadcrumbs-item a {
+            color: #afafaf;
+            text-decoration: none;
+        }
+
+        .breadcrumbs-item a:hover {
+            color: black;
+        }
+
+        .breadcrumbs-item::after {
+            content: '/';
+            margin: 0 5px;
+            color: #afafaf;
+        }
+
+        .breadcrumbs-item:last-child::after {
+            content: '';
+        }
+
+       .breadcrumbs-item:last-child a {
+           color: rgb(119, 119, 119);
+       }
+
+        .breadcrumbs-item:last-child a:hover {
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ol class="breadcrumbs">
+            <li class="breadcrumbs-item"><a href="#">Home</a></li>
+            <li class="breadcrumbs-item"><a href="#">Mens</a></li>
+            <li class="breadcrumbs-item"><a href="#">Coats</a></li>
+            <li class="breadcrumbs-item"><a href="#">Cool Coat</a></li>
+        </ol>
+    </nav>
+</body>
+</html>
