@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>51 - Animation</title>
+    <style>
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    .box-1 {
+        animation-name: spin;
+        animation-duration: 3s;
+    }
+
+    .box-2 {
+        animation-name: spin;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+    }
+
+    .box-3 {
+        animation-name: spin;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: 2;
+    }
+
+    .box-4 {
+        animation-name: spin;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    .box-5 {
+        animation-name: spin;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes blink {
+        0% {
+            background-color: red;
+        }
+        50% {
+            background-color: blue;
+        }
+        100% {
+            background-color: green;
+        }
+    }
+
+    .box-6 {
+        animation-name: blink;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+    }
+
+    .box-7 {
+        animation-name: blink;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+    }
+
+    .box-8 {
+        animation:
+            spin 3s ease-in-out forwards,
+            blink 1s ease-in-out forwards 1s;
+    }
+
+    /* Utility styles */
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        background: red;
+        width: 100px;
+        height: 100px;
+        margin: 75vh auto;
+    }
+    </style>
+</head>
+<body>
+    <div class="box box-1"></div>
+    <div class="box box-2"></div>
+    <div class="box box-3"></div>
+    <div class="box box-4"></div>
+    <div class="box box-5"></div>
+    <div class="box box-6"></div>
+    <div class="box box-7"></div>
+    <div class="box box-8"></div>
+</body>
+</html>
