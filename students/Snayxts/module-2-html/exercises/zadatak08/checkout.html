@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout | Web Shop</title>
+</head>
+<body>
+    <h1>Web shop</h1>
+
+    <h2>Checkout</h2>
+    <br>
+
+    <form id="checkout" action="success.html" method="GET">
+        <label for="fn">First name: *</label><br>
+        <input type="text" name="first_name" id="fn" required>
+        <br><br>
+    
+        <label for="ln">Last name: *</label><br>
+        <input type="text" name="last_name" id="ln" required>
+        <br><br>
+    
+        <label for="email">Email: *</label><br>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+    
+        <label for="phone">Phone: *</label><br>
+        <input type="tel" name="tel" id="phone" maxlength="25" required>
+        <br><br>
+    
+        <label for="address1">Address_line 1: *</label><br>
+        <input type="text" name="address1" id="address1" required>
+        <br><br>
+    
+        <label for="address2">Address_line 2: </label><br>
+        <input type="text" name="address2" id="address2">
+        <br><br>
+    
+        <label for="city">City: *</label><br>  
+        <input type="text" name="city" id="city" required>
+        <br><br>
+
+        <label for="zc">Zip code: *</label><br>  
+        <input type="number" name="zc" id="zc" required>
+        <br><br>
+
+        <label for="country">Country: *</label><br>
+        <select id="country" name="country" required>
+            <option disabled selected value="">choose</option> 
+            <option value="hr">Croatia</option>
+            <option value="rs">Serbia</option>
+            <option value="ba">Bosnia and Herzegovina</option>
+            <option value="si">Slovenia</option>
+            <option value="me">Montenegro</option>
+            <option value="al">Albania</option>
+            <option value="nk">Republic of North Macedonia</option>
+        </select>
+        <br><br>
+
+        <label for="pm">Payment method: *</label><br>
+        <select name="payment_method" id="pm" required>
+            <option disabled selected value="">choose</option>
+            <option value="">Credit</option>
+            <option value="">Debit</option>
+            <option value="">Paypal</option>
+        </select>
+        <br><br>
+
+        <label for="pch">Payment card holder: *</label><br>
+        <input type="text" name="payment_card_holder" id="pch" required>
+        <br><br>
+
+        <label for="pcn">Payment card number: *</label><br>
+        <input type="text" name="payment_card_number" id="pcn" pattern="\d" maxlength="22" required>
+        <br><br>
+
+        <label for="pcem">Payment card expiration month: *</label><br>
+        <input type="month" name="payment_card_expiration_month" id="pcem" min="2019-12" max="2020-12" required>
+        <br><br>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Finish</button> 
+    </form>
+</body>
+</html>
