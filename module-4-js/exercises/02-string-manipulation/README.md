@@ -1,4 +1,4 @@
-# Exercise #1 - String Manipulation
+# Exercise #2 - String Manipulation
 
 You're a developer at security company. Every day you receive emails from higher-ups containing sensitive information. This sensitive information is marked with an "XXX" at the beginning and end of one or more words.
 
