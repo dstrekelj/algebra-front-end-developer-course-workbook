@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign in | Web Shop</title>
+</head>
+<body>
+    <h1>Web shop</h1>
+    
+    <h2>Products:</h2>
+    <ul>
+        <li>
+            <strong>Great green goblin</strong>
+            <br>
+            <em>SKU: P101</em>
+            <br>
+            <!-- purchase form -->
+            <form action="checkout.html" method="GET">
+                <input type="hidden" name="product_sku" value="SKU: P101">
+
+                <label for="quantity">quantity:</label><br>
+                <input id="quantity" type="number" name="quantity" min="1" max="99" value="1" required><br>
+                <button type="submit">Prooced to checkout</button>
+            </form>
+            <br><br>
+        </li>   
+        <li>
+            <strong>Many mini millipedes</strong>
+            <br>
+            <em>SKU: P102</em>
+            <br>
+            <!-- purchase form -->
+            <form action="checkout.html" method="GET">
+                <input type="hidden" name="product_sku" value="SKU: P102">
+
+                <label for="quantity1">quantity:</label><br>
+                <input id="quantity1" type="number" name="quantity1" min="1" max="99" value="1" required><br>
+                <button type="submit">Prooced to checkout</button>
+            </form>
+            <br><br>
+        </li>
+        <li>
+            <strong>Prickly pink pufferfish</strong>
+            <br>
+            <em>SKU: P103</em>
+            <br>
+            <!-- purchase form -->
+            <form action="checkout.html" method="GET">
+                <input type="hidden" name="product_sku" value="SKU: P103">
+
+                <label for="quantity2">quantity:</label><br>
+                <input id="quantity2" type="number" name="quantity2" min="1" max="99" value="1" required><br>
+                <button type="submit">Prooced to checkout</button>
+            </form>
+        </li>
+    </ul>
+</body>
+</html>

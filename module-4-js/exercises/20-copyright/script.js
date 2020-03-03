@@ -1,0 +1,3 @@
+function showCopyrightYear(selector) {
+    // Your code goes here...
+}

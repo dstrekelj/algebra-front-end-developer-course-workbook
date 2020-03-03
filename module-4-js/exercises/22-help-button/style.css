@@ -1,0 +1,25 @@
+.floating-help-button {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    transform: scale(0);
+    z-index: -1;
+    transition: transform 0.5s ease;
+}
+.floating-help-button:hover {
+    transform: scale(1.1);
+}
+.floating-help-button--visible {
+    z-index: 10;
+    transform: scale(1);
+}
+
+.button {
+    border: none;
+    background: #ddddee;
+    border-radius: 4px;
+    padding: 1.5em;
+    box-shadow: 0px 4px 12px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+  
