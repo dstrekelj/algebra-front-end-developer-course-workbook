@@ -14,7 +14,7 @@ function countPrimeNumbers(from, to) {
     array[i - from] = i;
   }
 
-  //petlja kroz svaki element niza
+  //petlja kroz svaki element niza (arrow funkcija ne radi u IE)
   array.forEach(element => {
     var test = 0;
 
