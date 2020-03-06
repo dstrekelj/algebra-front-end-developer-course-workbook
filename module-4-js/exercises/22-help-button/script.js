@@ -1,4 +1,10 @@
 function showHelpButton(selector, timeout) {
+  /*
+  if (typeof timeout !== "number") {
+    alert("Please specify a timeout peroid in milliseconds.");
+  } else {...}   
+  */
+
   setTimeout(function() {
     document
       .querySelector(selector)
