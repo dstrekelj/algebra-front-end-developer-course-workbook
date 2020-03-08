@@ -5,7 +5,7 @@ index.html
   <head>
     <title>Exercise #20 - Copyright</title>
   </head>
-  <body onload="showCopyrightYear()">
+  <body>
     <h1>Exercise #20 - Copyright</h1>
 
     <div class="content">
@@ -28,11 +28,9 @@ index.html
 script.js
 --------------------------
 var year = document.querySelector('.year');
-
-function showCopyrightYear(d) {
+function showCopyrightYear(selector) {
   var d = new Date();
-  var n = d.getFullYear();
-  year.innerText = n;
+  year.innerText = d.getFullYear();
 }
 
-
+showCopyrightYear(year);
