@@ -1,78 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Checkout | Web Shop</title>
 </head>
+
 <body>
     <h1>Web shop</h1>
 
     <h2>Checkout</h2>
 
     <form action="success.html" method="GET">
-    <fieldset>
-        <legend>Shipping information</legend>
-        <label for="sender_first_name">First name:</label><br>
-        <input id="sender_first_name" type="text" name="sender_first_name" placeholder="First name (required)" required>
-        <br><br>
-        <label for="sender_last_name">Last name:</label><br>
-        <input id="sender_last_name" type="text" name="sender_last_name" placeholder="Last name (required)" required>
-        <br><br>
-        <label for="sender_email">Email:</label><br>
-        <input id="sender_email" type="email" name="sender_email" placeholder="Email (required)" required>
-        <br><br>
-        <label for="sender_phone">Phone:</label><br>
-        <input id="sender_phone" type="tel" name="sender_phone" placeholder="Phone (required)" required>
-        <br><br>
-        <label for="sender_address_line_1">Address 1:</label><br>
-        <input id="sender_address_line_1" type="text" name="sender_address_line_1" placeholder="Address 1" required>
-        <br><br>
-        <label for="sender_address_line_2">Address 2:</label><br>
-        <input id="sender_address_line_2" type="text" name="sender_address_line_2" placeholder="Address 2">
-        <br><br>
-        <label for="sender_city">City:</label><br>
-        <input id="sender_city" type="text" name="sender_city" placeholder="City (required)" required>
-        <br><br>
-        <label for="sender_zip">ZIP Code:</label><br>
-        <input id="sender_zip" type="text" name="sender_zip" placeholder="ZIP Code (required)" required>
-        <br><br>
-        <label for="sender_country">Country:</label><br>
-        <select id="sender_country" name="country" required>
-            <option selected disabled value="">Select country</option>
-            <option value="si">Slovenia</option>
-            <option value="de">Germany</option>
-            <option value="rs">Serbia</option>
-            <option value="en">England</option>
-            <option value="fr">France</option>
-            <option value="it">Italy</option>
-            <option value="nl">Netherlands</option>
-            <option value="es">Spain</option>
-            <option value="hr">Croatia</option>
-        </select>
-        <br><br>
-    </fieldset>
-    <fieldset>
-        <legend>Paying information</legend>
         <fieldset>
-            <legend>Payment method</legend>
-            <label><input type="radio" name="payment_method" required>Credit card</label>
-            <label><input type="radio" name="payment_method" required>Debit card</label>
-            <label><input type="radio" name="payment_method" required>PayPal</label>
+            <legend>Shipping information</legend>
+            <label for="sender_first_name">First name:</label><br>
+            <input id="sender_first_name" type="text" name="sender_first_name" placeholder="First name (required)"
+                required>
+            <br><br>
+            <label for="sender_last_name">Last name:</label><br>
+            <input id="sender_last_name" type="text" name="sender_last_name" placeholder="Last name (required)"
+                required>
+            <br><br>
+            <label for="sender_email">Email:</label><br>
+            <input id="sender_email" type="email" name="sender_email" placeholder="Email (required)" required>
+            <br><br>
+            <label for="sender_phone">Phone:</label><br>
+            <input id="sender_phone" type="tel" name="sender_phone" placeholder="Phone (required)"
+                pattern="(\+385)[0-9]{2}\d{4}\d{3}" required>
+            <br><br>
+            <label for="sender_address_line_1">Address 1:</label><br>
+            <input id="sender_address_line_1" type="text" name="sender_address_line_1" placeholder="Address 1" required>
+            <br><br>
+            <label for="sender_address_line_2">Address 2:</label><br>
+            <input id="sender_address_line_2" type="text" name="sender_address_line_2" placeholder="Address 2">
+            <br><br>
+            <label for="sender_city">City:</label><br>
+            <input id="sender_city" type="text" name="sender_city" placeholder="City (required)" required>
+            <br><br>
+            <label for="sender_zip">ZIP Code:</label><br>
+            <input id="sender_zip" type="text" name="sender_zip" placeholder="ZIP Code (required)" required>
+            <br><br>
+            <label for="sender_country">Country:</label><br>
+            <select id="sender_country" name="country" required>
+                <option selected disabled value="">Select country</option>
+                <option value="si">Slovenia</option>
+                <option value="de">Germany</option>
+                <option value="rs">Serbia</option>
+                <option value="en">England</option>
+                <option value="fr">France</option>
+                <option value="it">Italy</option>
+                <option value="nl">Netherlands</option>
+                <option value="es">Spain</option>
+                <option value="hr">Croatia</option>
+            </select>
+            <br><br>
         </fieldset>
-        <br>
-        <label for="payment_card_hold">Card owner:</label><br>
-        <input id="payment_card_hold" type="text" name="payment_card_hold" placeholder="(required)" required>
-        <br><br>
-        <label for="payment_card_number">Card number:</label><br>
-        <input id="payment_card_number" type="text" name="payment_card_number" placeholder="(required)" required>
-        <br><br>
-        <label for="payment_card_expiration_month">Expiration date:</label><br>
-        <input id="payment_card_expiration_month" type="month" name="payment_card_expiration_month" min="2020-01" max="2025-12">
-        <br><br>
-        <button type="submit">Finish your order.</button>
-    </fieldset>
+        <fieldset>
+            <legend>Paying information</legend>
+            <fieldset>
+                <legend>Payment method</legend>
+                <label><input type="radio" name="payment_method" required>Credit card</label>
+                <label><input type="radio" name="payment_method" required>Debit card</label>
+                <label><input type="radio" name="payment_method" required>PayPal</label>
+            </fieldset>
+            <br>
+            <label for="payment_card_hold">Card owner:</label><br>
+            <input id="payment_card_hold" type="text" name="payment_card_hold" placeholder="(required)" required>
+            <br><br>
+            <label for="payment_card_number">Card number:</label><br>
+            <input id="payment_card_number" type="text" name="payment_card_number" placeholder="(required)" required>
+            <br><br>
+            <label for="payment_card_expiration_month">Expiration date:</label><br>
+            <input id="payment_card_expiration_month" type="month" name="payment_card_expiration_month" min="2020-01"
+                max="2025-12" placeholder="(required)" required>
+            <br><br>
+            <button type="submit">Finish your order.</button>
+        </fieldset>
     </form>
 </body>
+
 </html>
