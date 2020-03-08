@@ -5,7 +5,7 @@ index.html
   <head>
     <title>Exercise #20 - Copyright</title>
   </head>
-  <body>
+  <body onload="showCopyrightYear()">
     <h1>Exercise #20 - Copyright</h1>
 
     <div class="content">
@@ -35,4 +35,4 @@ function showCopyrightYear(d) {
   year.innerText = n;
 }
 
-showCopyrightYear();
+
