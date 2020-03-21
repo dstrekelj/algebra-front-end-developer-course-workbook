@@ -1,0 +1,16 @@
+{
+  "name": "p0-notes-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "author": "dstrekelj <domagojstrekelj@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}

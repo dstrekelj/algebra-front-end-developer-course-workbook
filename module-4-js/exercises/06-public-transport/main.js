@@ -1,0 +1,3 @@
+function getTravelRoute(input, fromStation, toStation) {
+  // Your code goes here...
+}
