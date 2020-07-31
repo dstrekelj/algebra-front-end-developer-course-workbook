@@ -1,0 +1,92 @@
+[
+    {
+        "rank": 1,
+        "team": "Dinamo",
+        "games_played": 35,
+        "wins": 24,
+        "draws": 5,
+        "losses": 6,
+        "points": 77
+    },
+    {
+        "rank": 2,
+        "team": "Osijek",
+        "games_played": 35,
+        "wins": 17,
+        "draws": 11,
+        "losses": 7,
+        "points": 62
+    },
+    {
+        "rank": 3,
+        "team": "Lokomotiva",
+        "games_played": 34,
+        "wins": 18,
+        "draws": 7,
+        "losses": 9,
+        "points": 61
+    },
+    {
+        "rank": 4,
+        "team": "Rijeka",
+        "games_played": 34,
+        "wins": 17,
+        "draws": 7,
+        "losses": 10,
+        "points": 58
+    },
+    {
+        "rank": 5,
+        "team": "Hajduk",
+        "games_played": 34,
+        "wins": 17,
+        "draws": 6,
+        "losses": 11,
+        "points": 57
+    },
+    {
+        "rank": 6,
+        "team": "Gorica",
+        "games_played": 34,
+        "wins": 12,
+        "draws": 11,
+        "losses": 11,
+        "points": 47
+    },
+    {
+        "rank": 7,
+        "team": "Slaven Belupo",
+        "games_played": 35,
+        "wins": 10,
+        "draws": 8,
+        "losses": 17,
+        "points": 38
+    },
+    {
+        "rank": 8,
+        "team": "Varaždin",
+        "games_played": 35,
+        "wins": 9,
+        "draws": 9,
+        "losses": 17,
+        "points": 36
+    },
+    {
+        "rank": 9,
+        "team": "Istra 1961",
+        "games_played": 35,
+        "wins": 5,
+        "draws": 10,
+        "losses": 20,
+        "points": 25
+    },
+    {
+        "rank": 10,
+        "team": "Inter",
+        "games_played": 35,
+        "wins": 3,
+        "draws": 8,
+        "losses": 24,
+        "points": 17
+    }
+]
