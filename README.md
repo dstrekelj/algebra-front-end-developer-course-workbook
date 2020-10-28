@@ -13,4 +13,4 @@ Course materials for my take on Algebra's "Front End Developer" course.
 3. [Module 3 - CSS](module-3-css/)
 4. [Module 4 - JavaScript](module-4-js/)
 5. Development Environment
-6. React JS
+6. [Module 6 - React JS](module-6-react/)
