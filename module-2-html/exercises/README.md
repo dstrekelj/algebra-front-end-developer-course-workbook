@@ -1,6 +1,6 @@
 # Exercises
 
-[:arrow_backward: Algebra / Front End Developer / Module 2 - HTML](../)
+[:arrow_backward: Front End Developer / Module 2 - HTML](../)
 
 ---
 

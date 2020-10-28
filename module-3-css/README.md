@@ -1,6 +1,6 @@
-# Algebra / Front End Developer / Module 3 - CSS
+# Front End Developer / Module 3 - CSS
 
-[:arrow_backward: Algebra / Front End Developer](../)
+[:arrow_backward: Front End Developer](../)
 
 ---
 

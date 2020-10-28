@@ -1,4 +1,4 @@
-# Front End Developer / Module 6 - React
+# Front End Developer / Module 1 - Introduction to Modern Front End Development
 
 [:arrow_backward: Front End Developer](../)
 

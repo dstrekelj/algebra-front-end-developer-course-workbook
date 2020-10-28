@@ -1,6 +1,6 @@
-# Algebra / Front End Developer / Module 4 - JavaScript
+# Front End Developer / Module 4 - JavaScript
 
-[:arrow_backward: Algebra / Front End Developer](../)
+[:arrow_backward: Front End Developer](../)
 
 ---
 

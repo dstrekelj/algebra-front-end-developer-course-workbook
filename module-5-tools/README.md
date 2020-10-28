@@ -1,4 +1,4 @@
-# Front End Developer / Module 6 - React
+# Front End Developer / Module 5 - Tools
 
 [:arrow_backward: Front End Developer](../)
 

@@ -1,4 +1,4 @@
-# Algebra / Front End Developer
+# Front End Developer
 
 Course materials for my take on Algebra's "Front End Developer" course.
 

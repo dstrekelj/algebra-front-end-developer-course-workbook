@@ -1,4 +1,8 @@
-# Module 2 - HTML
+# Front End Developer / Module 2 - HTML / Notes
+
+[:arrow_backward: Front End Developer / Module 2 - HTML](./README.md)
+
+---
 
 ## Markup languages
 

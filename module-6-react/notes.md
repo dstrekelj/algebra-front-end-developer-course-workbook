@@ -1,12 +1,12 @@
-# Algebra / Front End Developer / Module 6 - React / Notes
+# Front End Developer / Module 6 - React / Notes
 
-[:arrow_backward: Algebra / Front End Developer / Module 6 - React](./README.md)
+[:arrow_backward: Front End Developer / Module 6 - React](./README.md)
 
 ---
 
 ## Table of contents
 
-- [Algebra / Front End Developer / Module 6 - React / Notes](#algebra--front-end-developer--module-6---react--notes)
+- [Front End Developer / Module 6 - React / Notes](#front-end-developer--module-6---react--notes)
   - [Table of contents](#table-of-contents)
   - [Requirements:](#requirements)
   - [Quick start](#quick-start)
