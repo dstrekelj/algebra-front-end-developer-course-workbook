@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout | Web Shop</title>
+</head>
+<body>
+    <h1>Web shop</h1>
+
+    <h2>Checkout</h2>
+
+    <!-- checkout form -->
+    <form action="success.html" method="GET">
+
+        <label for="sender_first_name">First Name: *</label><br>
+        <input id="sender_first_name" type="text" name="sender_first_name" required><br><br>
+
+        <label for="sender_last_name">Last Name: *</label><br>
+        <input id="sender_last_name" type="text" name="sender_last_name" required><br><br>
+
+        <label for="email">Email: *</label><br>
+        <input id="email" type="email" name="email" required><br><br>
+
+        <label for="phone">Phone: *</label><br>
+        <input id="phone" type="tel" name="phone" required><br><br>
+
+        <label for="sender_address_line_1">Address 1: *</label><br>
+        <input id="sender_address_line_1" type="text" name="sender_address_line_1" required><br><br>
+
+        <label for="sender_address_line_2">Address 2</label><br>
+        <input id="sender_address_line_2" type="text" placeholder="Optional" name="sender_address_line_2"><br><br>
+
+        <label for="sender_city">City: *</label><br>
+        <input id="sender_city" type="text" name="sender_city" required><br><br>
+        
+        <label for="sender_zip">ZIP: *</label><br>
+        <input id="sender_zip" type="text" name="sender_zip" required><br><br>
+        
+        <label for="country">Country: *</label><br>
+        <select id="country" name="country" required>
+            <option value="" selected disabled>Choose...</option>
+            <option value="hr">Croatia</option>
+            <option value="rs">Serbia</option>
+            <option value="ba">Bosnia and Herzegovina</option>
+            <option value="si">Slovenia</option>
+            <option value="me">Montenegro</option>
+            <option value="al">Albania</option>
+            <option value="mk">Republic of North Macedonia</option>
+        </select><br><br>
+
+            <p>Payment method</p>
+            <label><input type="radio" name="payment_method" required>Credit card</label>
+            <label><input type="radio" name="payment_method" required>Debit card</label>
+            <label><input type="radio" name="payment_method" required>PayPal</label>
+            <br><br>
+
+        <label for="payment_card_hold">Name on card: *</label><br>
+        <input id="payment_card_hold" type="text" name="payment_card_hold" required><br><br>
+
+        <label for="payment_card_number">Payment card number: *</label><br>
+        <input id="payment_card_number" type="text" name="payment_card_number" pattern="\d{16}" required><br><br>
+
+        <label for="payment_card_expiration_month">Payment card expiration month/year: *</label><br>
+        <input id="payment_card_expiration_month" type="text" name="payment_card_expiration_month" placeholder="12/22" pattern="\d{2}/\d{2}" required><br><br>
+
+        <button type="submit">Send</button>
+
+    </form>
+</body>
+</html>
