@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagination</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: sans-serif;;
+        }
+        .pagination2 {
+            margin-top: 20px;
+        }
+        .pagination-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .pagination-item {
+            margin: 0 4px;
+        }
+        .pagination-link {
+            text-decoration: none;
+            width: 50px;
+            height: 50px;
+            color: #666;
+            border: 1px solid #999;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pagination-dot {
+            color: #666;
+            width: 50px;
+            height: 50px;
+            font-weight: bold;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pagination-link.pagination--back::before {
+            content: '';
+            display: block;
+            background-image: url("./jam_chevron-left.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 50px;
+            height: 50px;
+            background-size: 20px;
+        }
+        .pagination-link.pagination--forward::before {
+            content: '';
+            display: block;
+            background-image: url("./jam_chevron-right.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 50px;
+            height: 50px;
+            background-size: 20px;
+        }
+        .pagination-link:hover, .pagination-link.pagination-link--active {
+            border-color: black;
+            color: black;
+            cursor: pointer;
+        }
+        .pagination-link.pagination-link--disabled {
+            color: #aaa;
+            background-color: #ccc;
+            border-color: #999;
+            pointer-events: none;
+        }
+        .pagination-link.pagination-link--disabled::before {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="pagination">
+        <ol class="pagination-list">
+            <li class="pagination-item"><a class="pagination-link pagination--back" href="#"></a></li>
+            <li class="pagination-item"><a class="pagination-link" href="#">1</a></li>
+            <li class="pagination-item"><span class="pagination-dot">&sdot;&sdot;&sdot;</span></li>
+            <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
+            <li class="pagination-item"><a class="pagination-link pagination-link--active" href="#">5</a></li>
+            <li class="pagination-item"><a class="pagination-link" href="#">6</a></li>
+            <li class="pagination-item"><span class="pagination-dot">&sdot;&sdot;&sdot;</span></li>
+            <li class="pagination-item"><a class="pagination-link" href="#">10</a></li>
+            <li class="pagination-item"><a class="pagination-link pagination--forward" href="#"></a></li>
+        </ol>
+    </div>
+    <div class="pagination2">
+        <ol class="pagination-list">
+            <li class="pagination-item"><a class="pagination-link pagination--back pagination-link--disabled" href="#"></a></li>
+            <li class="pagination-item"><a class="pagination-link pagination-link--disabled" href="#">1</a></li>
+            <li class="pagination-item"><span class="pagination-dot">&sdot;&sdot;&sdot;</span></li>
+            <li class="pagination-item"><a class="pagination-link pagination-link--disabled" href="#">4</a></li>
+            <li class="pagination-item"><a class="pagination-link pagination-link--active pagination-link--disabled" href="#">5</a></li>
+            <li class="pagination-item"><a class="pagination-link pagination-link--disabled" href="#">6</a></li>
+            <li class="pagination-item"><span class="pagination-dot">&sdot;&sdot;&sdot;</span></li>
+            <li class="pagination-item"><a class="pagination-link pagination-link--disabled" href="#">10</a></li>
+            <li class="pagination-item"><a class="pagination-link pagination--forward pagination-link--disabled" href="#"></a></li>
+        </ol>
+    </div>
+</body>
+</html>

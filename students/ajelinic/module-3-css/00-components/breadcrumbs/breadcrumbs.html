@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Breadcrumbs</title>
+</head>
+<style>
+    body {
+        font-size: 20px;
+        font-family: sans-serif;
+        color: black;
+    }
+    .navigation {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+    }
+    .navigation .nav-item {
+        display: inline;
+        color: #666;
+    }
+    .nav-item + .nav-item::before {
+        padding: 5px;
+        color: black;
+        content: "/";
+    }
+    .navigation .nav-item > a {
+        text-decoration: none;
+        cursor: pointer;
+        color: inherit;
+    }
+    .nav-item:last-child {
+        color: #333;
+    }
+    .nav-item:hover > a {
+        color: black;
+    }
+</style>
+<body>
+    <nav>
+        <ol class="navigation">
+            <li class="nav-item"><a href="#home">Home</a></li>
+            <li class="nav-item"><a href="#mens">Men's</a></li>
+            <li class="nav-item"><a href="#coats">Coats</a></li>
+            <li class="nav-item"><a href="#coolcoat">Cool Coat</a></li>
+        </ol>
+    </nav>
+</body>
+</html>
