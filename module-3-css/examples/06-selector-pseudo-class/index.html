@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>06 - Selector - Pseudo-class</title>
+    <style>
+        /*
+        CSS pseudo-classes style elements with special states. Listed below are
+        some common pseudo-classes, but not all of them.
+
+        Pseudo-class selectors are prefixed with ":".
+        */
+
+        /*
+        Selects p elements under the user's mouse cursor.
+        */
+        p:hover { background: black; }
+
+        /*
+        Selects p elements with no children.
+        */
+        p:empty { background: grey; }
+
+        /*
+        Selects every other p child of their parent.
+        */
+        p:nth-child(2n + 1) { background: blue; }
+
+        /*
+        Selects every other p child of their parent, starting from the bottom.
+        */
+        p:nth-last-child(2n + 1) { background: magenta; }
+
+        /*
+        Selects p elements that are the first child of their parent.
+        */
+        p:first-child { background: red; }
+
+        /*
+        Selects p elements that are the last child of their parent.
+        */
+        p:last-child { background: green; }
+
+        /*
+        Selects every p element which is the first child of its parent.
+        */
+        p:nth-of-type(2n + 1) { color: yellow; }
+
+        /*
+        Selects every p element which is the first child of its parent.
+        */
+        p:nth-last-of-type(2n + 1) { color: blue; }
+
+        /*
+        Selects every p element which is the first child of its parent.
+        */
+        p:first-of-type { color: cyan; }
+
+        /*
+        Selects every p element which is the last child of its parent.
+        */
+        p:last-of-type { color: magenta; }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est libero aliquid quis harum obcaecati nam, beatae unde doloribus voluptatibus ipsa fuga exercitationem. Sed totam dignissimos unde ratione impedit nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est libero aliquid quis harum obcaecati nam, beatae unde doloribus voluptatibus ipsa fuga exercitationem. Sed totam dignissimos unde ratione impedit nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est libero aliquid quis harum obcaecati nam, beatae unde doloribus voluptatibus ipsa fuga exercitationem. Sed totam dignissimos unde ratione impedit nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est libero aliquid quis harum obcaecati nam, beatae unde doloribus voluptatibus ipsa fuga exercitationem. Sed totam dignissimos unde ratione impedit nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est libero aliquid quis harum obcaecati nam, beatae unde doloribus voluptatibus ipsa fuga exercitationem. Sed totam dignissimos unde ratione impedit nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est libero aliquid quis harum obcaecati nam, beatae unde doloribus voluptatibus ipsa fuga exercitationem. Sed totam dignissimos unde ratione impedit nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est libero aliquid quis harum obcaecati nam, beatae unde doloribus voluptatibus ipsa fuga exercitationem. Sed totam dignissimos unde ratione impedit nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est libero aliquid quis harum obcaecati nam, beatae unde doloribus voluptatibus ipsa fuga exercitationem. Sed totam dignissimos unde ratione impedit nesciunt.</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est libero aliquid quis harum obcaecati nam, beatae unde doloribus voluptatibus ipsa fuga exercitationem. Sed totam dignissimos unde ratione impedit nesciunt.</p>
+    </div>
+</body>
+</html>

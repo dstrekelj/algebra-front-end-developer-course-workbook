@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>24 - Position - Static</title>
+    <style>
+    /*
+    The position property sets how an element is positioned in a document.
+    
+    The top, right, bottom, and left properties determine the final location of 
+    positioned elements. The z-index property determines the order in which
+    elements are drawn on the screen (from below to above other elements).
+
+    Types of positioning:
+
+    - A positioned element is an element whose computed position value is
+    anything except sticky
+    - A relatively positioned element is an element whose computed position 
+    value is relative; the top and bottom properties specify the vertical offset
+    from its normal position, and left and right properties the horizontal 
+    offset from its normal position
+    - An absolutely positioned element is an element whose computed position 
+    value is absolute or fixed; the top, right, bottom, and left properties 
+    specify offsets relative to the parent block, establishing a new block
+    formatting context
+    - A stickily positioned element is an element whose computed position value 
+    is sticky; it is treated as relatively positioned until its containing block
+    crosses a specified threshold, at which point it is treated as "stuck" until
+    meeting he opposite edge of its containing block
+
+    Elements are positioned statically by default. The top, right, bottom, left
+    and z-index properties have no effect.
+    */
+
+    .box {
+        display: inline-block;
+        box-sizing: border-box;
+        height: 100px;
+        width: 100px;
+        background: hsl(10, 100%, 90%);
+        border: 1px solid hsl(10, 100%, 60%);
+        padding: 1em;
+    }
+    .box--positioned {
+        position: static;
+    }
+    .container {
+    }
+    .spacer {
+        height: 500px;
+        background: #eee;
+    }
+    </style>
+</head>
+<body>
+    <div class="spacer"></div>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box box--positioned"></div>
+        <div class="box"></div>
+    </div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+</body>
+</html>

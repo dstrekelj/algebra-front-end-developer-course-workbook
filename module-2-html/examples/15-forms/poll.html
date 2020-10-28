@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weekly poll | 15 - Forms</title>
+</head>
+<body>
+    <p>
+        <a href="index.html">Index</a>,
+        <a href="search.html">Search</a>,
+        <a href="login.html">Login</a>,
+        <a href="login-autocomplete-off.html">Login (Autocomplete Off)</a>,
+        <a href="login-validation-off.html">Login (Validation Off)</a>,
+        <a href="contact.html">Contact</a>,
+        <a href="booking.html">Booking</a>,
+        <a href="gateway.html">Gateway</a>,
+        <a href="newsletter.html">Newsletter</a>,
+        <a href="poll.html">Poll</a>,
+        <a href="checkout.html">Checkout</a>,
+        <a href="register.html">Register</a>,
+        <a href="job-application.html">Job application</a>,
+        <a href="add-to-cart.html">Add to cart</a>,
+        <a href="meal-order.html">Meal order</a>
+    </p>
+
+    <form action="" method="POST">
+        <h1>Weekly poll</h1>
+
+        <fieldset>
+            <legend>How would you rate this course?</legend>
+            <label for="q1-a">
+                <input id="q1-a" type="radio" name="q1" value="1"> 1
+            </label><br>
+            <label for="q1-b">
+                <input id="q1-b" type="radio" name="q1" value="2"> 2
+            </label><br>
+            <label for="q1-c">
+                <input id="q1-c" type="radio" name="q1" value="3"> 3
+            </label><br>
+            <label for="q1-d">
+                <input id="q1-d" type="radio" name="q1" value="4"> 4
+            </label><br>
+            <label for="q1-e">
+                <input id="q1-e" type="radio" name="q1" value="5"> 5
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>What were your favourite topics?</legend>
+            <label for="q2-a">
+                <input id="q2-a" type="checkbox" name="q2[]" value="politics"> Headings
+            </label><br>
+            <label for="q2-b">
+                <input id="q2-b" type="checkbox" name="q2[]" value="sports"> Links
+            </label><br>
+            <label for="q3-c">
+                <input id="q3-c" type="checkbox" name="q2[]" value="entertainment"> Tables
+            </label><br>
+            <label for="q3-d">
+                <input id="q3-d" type="checkbox" name="q2[]" value="entertainment"> SVG
+            </label><br>
+            <label for="q3-e">
+                <input id="q3-e" type="checkbox" name="q2[]" value="entertainment"> Canvas
+            </label><br>
+            <label for="q3-f">
+                <input id="q3-f" type="checkbox" name="q2[]" value="entertainment"> Forms
+            </label><br>
+            <label for="q3-g">
+                <input id="q3-g" type="checkbox" name="q2[]" value="entertainment"> All topics
+            </label>
+        </fieldset>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

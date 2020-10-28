@@ -1,0 +1,24 @@
+HTML
+
+1. Sintaksa i pravila pisanja
+
+2. Struktura i sadržaj dokumenta
+2.1. Naslovi
+2.2. Paragrafi
+2.3. Liste
+2.3.1. Uređene liste
+2.3.2. Neuređene liste
+2.3.3. Opisne liste
+
+3. Multimedijski sadržaji
+3.1. Slike
+3.2. Audio
+3.3. Video
+
+4. Poveznice
+
+5. Tablice
+
+6. Obrasci
+
+7. Pristupačnost

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buy product | 15 - Forms</title>
+</head>
+<body>
+    <p>
+        <a href="index.html">Index</a>,
+        <a href="search.html">Search</a>,
+        <a href="login.html">Login</a>,
+        <a href="login-autocomplete-off.html">Login (Autocomplete Off)</a>,
+        <a href="login-validation-off.html">Login (Validation Off)</a>,
+        <a href="contact.html">Contact</a>,
+        <a href="booking.html">Booking</a>,
+        <a href="gateway.html">Gateway</a>,
+        <a href="newsletter.html">Newsletter</a>,
+        <a href="poll.html">Poll</a>,
+        <a href="checkout.html">Checkout</a>,
+        <a href="register.html">Register</a>,
+        <a href="job-application.html">Job application</a>,
+        <a href="add-to-cart.html">Add to cart</a>,
+        <a href="meal-order.html">Meal order</a>
+    </p>
+
+    <form action="" method="POST">
+        <h1>Buy product</h1>
+
+        <h2>Men's jacket</h2>
+
+        <!-- The hidden field contains the product ID -->
+        <input type="hidden" name="product_id" value="12345" required>
+
+        <label for="quantity">Quantity:</label>
+        <br>
+        <input id="quantity" type="number" name="quantity" min="1" max="99" value="1" required>
+        <br><br>
+
+        <button type="submit">Add to cart</button>
+    </form>
+</body>
+</html>

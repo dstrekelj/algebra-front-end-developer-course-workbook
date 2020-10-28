@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up for our newsletter | 15 - Forms</title>
+</head>
+<body>
+    <p>
+        <a href="index.html">Index</a>,
+        <a href="search.html">Search</a>,
+        <a href="login.html">Login</a>,
+        <a href="login-autocomplete-off.html">Login (Autocomplete Off)</a>,
+        <a href="login-validation-off.html">Login (Validation Off)</a>,
+        <a href="contact.html">Contact</a>,
+        <a href="booking.html">Booking</a>,
+        <a href="gateway.html">Gateway</a>,
+        <a href="newsletter.html">Newsletter</a>,
+        <a href="poll.html">Poll</a>,
+        <a href="checkout.html">Checkout</a>,
+        <a href="register.html">Register</a>,
+        <a href="job-application.html">Job application</a>,
+        <a href="add-to-cart.html">Add to cart</a>,
+        <a href="meal-order.html">Meal order</a>
+    </p>
+
+    <form action="" method="POST">
+        <h1>Sign up for our newsletter</h1>
+
+        <label for="email">Email:</label>
+        <br>
+        <input id="email" type="email" name="email" required>
+        <br><br>
+
+        <fieldset>
+            <legend>Subscription topics:</legend>
+            <label for="topics-politics">
+                <input id="topics-politics" type="checkbox" name="topics[]" value="politics"> Politics
+            </label><br>
+            <label for="topics-sports">
+                <input id="topics-sports" type="checkbox" name="topics[]" value="sports"> Sports
+            </label><br>
+            <label for="topics-entertainment">
+                <input id="topics-entertainment" type="checkbox" name="topics[]" value="entertainment"> Entertainment
+            </label>
+        </fieldset>
+        <br>
+
+        <label for="consent">
+            <input id="consent" type="checkbox" name="topics[]" value="entertainment">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam eligendi ullam quis amet quibusdam excepturi odio provident. Molestiae qui asperiores magni error commodi ratione ipsam sit exercitationem voluptate. Qui, officia. Read our <a href="#" target="_blank">privacy policy</a>.
+        </label>
+        <br><br>
+
+        <button type="submit">Sign up</button>
+    </form>
+</body>
+</html>

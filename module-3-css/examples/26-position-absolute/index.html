@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>26 - Position - Absolute</title>
+    <style>
+    /*
+    The position property sets how an element is positioned in a document.
+    
+    The top, right, bottom, and left properties determine the final location of 
+    positioned elements. The z-index property determines the order in which
+    elements are drawn on the screen (from below to above other elements).
+
+    Elements with an absolute position are removed from the normal document flow.
+    No space is created for the elements in the page layout. They are positioned
+    relative to its closest positioned ancestor.
+
+    The final position is determined by the values top, right, bottom. and left.
+    Z-index determines where the element is drawn in the stacking context.
+    */
+
+    .box {
+        display: inline-block;
+        box-sizing: border-box;
+        height: 100px;
+        width: 100px;
+        background: hsl(10, 100%, 90%);
+        border: 1px solid hsl(10, 100%, 60%);
+        padding: 1em;
+    }
+    .box--positioned {
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+    }
+    .spacer {
+        height: 500px;
+        background: #eee;
+    }
+    .container {
+        position: relative;
+    }
+    </style>
+</head>
+<body>
+    <div class="spacer"></div>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box box--positioned"></div>
+        <div class="box"></div>
+    </div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+</body>
+</html>

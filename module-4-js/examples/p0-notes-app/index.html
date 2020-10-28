@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>p0-notes-app</title>
+  </head>
+  <body>
+    <div>
+      <form id="note-app-form">
+        <div>
+          <label>Title:</label><br />
+          <input type="text" name="title" required />
+        </div>
+        <div>
+          <label>Body:</label><br />
+          <textarea name="body" id="" cols="30" rows="10" required></textarea>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <ul id="note-app-list"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>21 - Box sizing</title>
+    <style>
+    /*
+    Box sizing specifies how the size of an element's box is measured.
+    */
+
+    /*
+    Content box measures the size (width, height) based on element content only.
+    That is, the width and height properties take into account only content, but
+    not padding.
+    */
+    .content-box {
+        box-sizing: content-box;
+    }
+
+    /*
+    Border box measures the size based on both content and padding. That is, the
+    width and height properties take into account padding as well as content 
+    size.
+    */
+    .border-box {
+        box-sizing: border-box;
+    }
+
+    .box {
+        background: yellow;
+        border: 4px solid red;
+        padding: 50px;
+        width: 200px;
+        height: 200px;
+    }
+    </style>
+</head>
+<body>
+    <div class="box content-box">Lorem ipsum dolor sit amet.</div>
+    <br>
+    <div class="box border-box">Lorem ipsum dolor sit amet.</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact us | 15 - Forms</title>
+</head>
+<body>
+    <p>
+        <a href="index.html">Index</a>,
+        <a href="search.html">Search</a>,
+        <a href="login.html">Login</a>,
+        <a href="login-autocomplete-off.html">Login (Autocomplete Off)</a>,
+        <a href="login-validation-off.html">Login (Validation Off)</a>,
+        <a href="contact.html">Contact</a>,
+        <a href="booking.html">Booking</a>,
+        <a href="gateway.html">Gateway</a>,
+        <a href="newsletter.html">Newsletter</a>,
+        <a href="poll.html">Poll</a>,
+        <a href="checkout.html">Checkout</a>,
+        <a href="register.html">Register</a>,
+        <a href="job-application.html">Job application</a>,
+        <a href="add-to-cart.html">Add to cart</a>,
+        <a href="meal-order.html">Meal order</a>
+    </p>
+
+    <form action="" method="POST">
+        <h1>Contact us</h1>
+
+        <label for="name">First and last name: *</label>
+        <br>
+        <input id="name" type="text" name="name" pattern="\D+\s{1}\D+" required placeholder="John Doe">
+        <br><br>
+
+        <label for="email">Email: *</label>
+        <br>
+        <input id="email" type="email" name="email" required>
+        <br><br>
+
+        <label for="subject">Subject: *</label>
+        <br>
+        <input id="subject" type="text" name="subject" required value="Hello">
+        <br><br>
+
+        <label for="message">Message: *</label>
+        <br>
+        <textarea id="message" name="message" required cols="50" rows="10">Lorem ipsum.</textarea>
+        <br><br>
+
+        <button type="submit">Send</button>
+        <p><small>* - Required</small></p>
+    </form>
+</body>
+</html>

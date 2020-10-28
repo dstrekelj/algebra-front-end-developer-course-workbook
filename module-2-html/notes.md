@@ -1,3 +1,7 @@
+# Module 2 - HTML
+
+## Markup languages
+
 A markup language is a computer language that uses tags to define elements within a document. Markup languages are used to annotate a document in a way that is syntactically distinguishable from the text, and can assign semantic meaning to the text.
 
 Types of markup languages:
@@ -6,9 +10,13 @@ Types of markup languages:
 - Procedural markup - markup is embedded in text, which then provides instructions for programs to process the text (e.g. TeX).
 - Descriptive (logical) markup - markup is used to label parts of the document rather than to provide specific instructions as to how they should be processed (e.g. HTML).
 
+## About HTML
+
 HyperText Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser.
 
 HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of the content to make it appear or act a certain way. The web browser parses the HTML to construct the DOM tree from which a render tree is constructed, then a layout is generated and the render tree is painted to the browser screen.
+
+### History
 
 HTML was initially developed by physicist Tim Berners-Lee at CERN as part of a proposed Internet-based hypertext system for CERN researchers to use and share documents.
 
@@ -23,6 +31,8 @@ HTML is standardised by the World Wide Web Consortium (W3C), founded and current
 | HTML 4.01 | 1999 |
 | XHTML     | 2000 |
 | HTML5     | 2014 |
+
+### HTML5
 
 Notable HTML5 features:
 
@@ -41,6 +51,8 @@ Fun facts:
 
 - HTML defined 14 elements, 11 of which still exist in HTML5.
 
+## Structure and syntax
+
 An HTML document has the following basic structure:
 
 ```html
@@ -56,7 +68,7 @@ An HTML document has the following basic structure:
 </html>
 ```
 
-A document type declaration (DOCTYPE) is an instruction that associates a particular standard generalised markup language (SGML) with a document type definition. The DOCTYPE is retained in HTML5 as a "mostly useless, but required" header only to trigger "standards mode" in common browsers.
+A document type declaration (`<!DOCTYPE>`) is an instruction that associates a particular standard generalised markup language (SGML) with a document type definition. The  document type declaration is retained in HTML5 as a "mostly useless, but required" header only to trigger "standards mode" in common browsers.
 
 The `<html>` element is the root element of the document and wraps all content on the entire page.
 
@@ -70,7 +82,9 @@ HTML comments aren't visible to users. They are written as follows:
 <!-- Comment -->
 ```
 
-W3C has recommended authoring practices for common design patterns and widgets. (https://www.w3.org/TR/wai-aria-practices-1.1/)
+W3C has recommended authoring practices for common design patterns and widgets. [Read more](https://www.w3.org/TR/wai-aria-practices-1.1/).
+
+## Metadata
 
 Meta elements in the head of the document provide metadata (data about the HTML). The HTML content is not displayed on the page, but informs the browser of what is displayed by the HTML body.
 
@@ -89,6 +103,8 @@ Metadata can sometimes be attributed to other HTML elements as well. For example
 
 - `<html lang="en-US">`
 - `<p lang="en-US">This text is is American English.</p>`
+
+## Text formatting
 
 Most structured text consists of headings and paragraphs. Structured content makes the reading experience easier and more enjoyable.
 
@@ -113,14 +129,16 @@ Text formatting tags:
 
 | Tag | Effect | Semantic alternative |
 | --- | --- | --- |
-| <b> | Bold   | <strong> |
-| <i> | Italic | <em> |
-| <u> | Underline | <ins> |
-| <s> | Strikethrough | <del> |
-| <mark> | Highlight | |
-| <sub> | Subscript | |
-| <sup> | Superscript | |
-| <small> | Small | |
+| `<b>` | Bold   | `<strong>` |
+| `<i>` | Italic | `<em>` |
+| `<u>` | Underline | `<ins>` |
+| `<s>` | Strikethrough | `<del>` |
+| `<mark>` | Highlight | |
+| `<sub>` | Subscript | |
+| `<sup>` | Superscript | |
+| `<small>` | Small | |
+
+## Lists
 
 An unordered list represents a list of items in no particular order.
 
@@ -177,6 +195,10 @@ A description list represents a list of terms and descriptions, like a glossary.
 </dl>
 ```
 
+## Media
+
+### Images
+
 Images are represented with the `<img>` tag.
 
 ```html
@@ -192,8 +214,142 @@ Image formats for the web:
 | GIF | Raster | Lossless format, limited to 256 colours, supports transparency and animations | Small, simple animated graphics |
 | SVG | Vector | Lossless, defined through XML markup | Scalable vector graphics, icons, logos |
 
+#### SVG
 
-Sources:
+TODO: SVG
+
+#### Canvas
+
+TODO: CANVAS
+
+### Audio
+
+The HTML `<audio>` element is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the `<source>` element: the browser will choose the most suitable one. It can also be the destination for streamed media. [Read more](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio).
+
+```html
+<audio src="foo.ogg" autoplay>
+    <p>
+        Your browser doesn't support HTML5 audio.
+        Here is a <a href="foo.ogg">link to download the audio</a> instead.
+    </p>
+</audio>
+```
+
+```html
+<audio controls>
+    <source src="foo.opus" type="audio/ogg; codecs=opus"/>
+    <source src="foo.ogg" type="audio/ogg; codecs=vorbis"/>
+    <source src="foo.mp3" type="audio/mpeg"/>
+    <p>Your browser doesn't support HTML5 audio.</p>
+</audio>
+```
+
+Commonly used attributes:
+
+| Attribute | Description |
+| --- | --- |
+| autoplay | Boolean. Default `false`. If specified, the audio will automatically begin playback as soon as it can do so, without waiting for the entire audio file to finish downloading. |
+| controls | If present, the browser will offer controls to allow the user to control audio playback, including volume, seeking, and pause/resume playback. |
+| loop | Boolean. Default `false`. If specified, the audio player will automatically seek back to the start upon reaching the end of the audio. |
+| muted | Boolean. Default `false`. Indicates whether the audio will be initially silenced. |
+| preload | Enum. Provides a hint to the browser about what the author thinks will lead to the best user experience. Values: `none` (audio should not be preloaded), `metadata` (audio metadata should be preloaded), `auto` (whole audio file should be preloaded). Spec advises `metadata`. |
+| src | URL of the audio to embed. Optional, as `<source>` elements can be used to specify which audio to embed. |
+
+The format of audio and video media files is defined in two parts (three if a file has both audio and video in it): the audio and/or video codecs used and the media container format (or file type) used.
+
+Common container formats (file types) and codecs:
+
+| Codec name | Full codec name | Container support | Browser support |
+| --- | --- | --- | --- |
+| AAC | Advanced Audio Coding | MP4, ADTS, 3GP | Chrome, IE 9> (MP4 only), Edge, Firefox, Opera, Safari |
+| FLAC | Free Lossless Audio Codec | MP4, Ogg, FLAC | Chrome, Edge, Firefox, Opera, Safari (FLAC only) |
+| PCM | Pulse Code Modulation | WAV | Chrome, Edge, Firefox, Opera, Safari |
+| MP3 | MPEG-1 Audio Layer III | MP4, ADTS, MPEG1, 3GP | Chrome, IE 9>, Edge, Firefox, Opera, Safari |
+| Opus | Opus | WebM, MP4, Ogg | Chrome, Edge, Firefox, Opera |
+| Vorbis | Vorbis | WebM, Ogg | Chrome, Edge, Firefox, Opera, Safari (Ogg only) |
+
+[Read more about containers](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers)
+
+[Read more about codecs](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Audio_codecs)
+
+[Read more about supported browsers](https://en.wikipedia.org/wiki/HTML5_audio)
+
+Automatically starting the playback of audio (or videos with audio tracks) immediately upon page load can be an unwelcome surprise to users. While autoplay of media serves a useful purpose, it should be used carefully and only when needed. In order to give users control over this, browsers often provide various forms of autoplay blocking. [Read more](https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide).
+
+Note: media with an active audio track are considered to be audible, and autoplay blocking applies to them. Inaudible media are not affected by autoplay blocking.
+
+> Chrome's autoplay policies are simple:
+> 
+> - Muted autoplay is always allowed.
+> - Autoplay with sound is allowed if:
+>   - User has interacted with the domain (click, tap, etc.).
+>   - On desktop, the user's Media Engagement Index threshold has been crossed, meaning the user has previously played video with sound.
+>   - The user has added the site to their home screen on mobile or installed the PWA on desktop.
+>  - Top frames can delegate autoplay permission to their iframes to allow autoplay with sound.
+>
+> [Read more](https://developers.google.com/web/updates/2017/09/autoplay-policy-changes)
+
+#### Accesibility concerns
+
+Audio with spoken dialog should provide both captions and transcripts that accurately describe its content. In addition to spoken dialog, subtitles and transcripts should also identify music and sound effects that communicate important information, including emotion and tone. This can be done using WebVTT (Web Video Text Tracks) format. [Read more](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API).
+
+The `<audio>` element doesn't directly support WebVTT. You will have to find a library or framework that provides the capability for you, or write the code to display captions yourself. One option is to play your audio using a `<video>` element, which does support WebVTT.
+
+Also it's a good practice to provide some content (such as the direct download link) as a fallback for viewers who use a browser in which the `<audio>` element is not supported.
+
+### Video
+
+The HTML Video element (`<video>`) embeds a media player which supports video playback into the document. [Read more](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video).
+
+```html
+<video controls width="250">
+    <source src="/media/examples/flower.webm"
+            type="video/webm">
+    <source src="/media/examples/flower.mp4"
+            type="video/mp4">
+    <p>Sorry, your browser doesn't support embedded videos.</p>
+</video>
+```
+
+Commonly used attributes:
+
+| Attribute | Description |
+| --- | --- |
+| autoplay | Boolean. Default `false`. If specified, the audio will automatically begin playback as soon as it can do so, without waiting for the entire audio file to finish downloading. |
+| controls | If present, the browser will offer controls to allow the user to control audio playback, including volume, seeking, and pause/resume playback. |
+| height | The height of the video's display area, in CSS pixels (absolute values only; no percentages). |
+| loop | Boolean. Default `false`. If specified, the audio player will automatically seek back to the start upon reaching the end of the audio. |
+| muted | Boolean. Default `false`. Indicates whether the audio will be initially silenced. |
+| playsinline | Boolean. Indicates that the video is to be played "inline", that is within the element's playback area. |
+| poster | A URL for an image to be shown while the video is downloading. If this attribute isn't specified, nothing is displayed until the first frame is available, then the first frame is shown as the poster frame. |
+| preload | Enum. Provides a hint to the browser about what the author thinks will lead to the best user experience. Values: `none` (audio should not be preloaded), `metadata` (audio metadata should be preloaded), `auto` (whole audio file should be preloaded). Spec advises `metadata`. |
+| src | URL of the audio to embed. Optional, as `<source>` elements can be used to specify which audio to embed. |
+| width | The width of the video's display area, in CSS pixels (absolute values only; no percentages). |
+
+Common container formats (file types) and codecs:
+
+| Codec and format name | Browser support |
+| --- | --- |
+| Theora (Ogg) | Chrome, Firefox, Opera |
+| H.264 (MP4) | Chrome, IE, Edge, Firefox, Opera, Safari |
+| HEVC (MP4) | Safari |
+| VP8 (WebM) | Chrome, Firefox, Opera |
+| VP9 (WebM) | Chrome, Firefox, Opera |
+| AV1 (WebM) | Chrome, Firefox, Opera |
+
+[Read more about supported browsers](https://en.wikipedia.org/wiki/HTML5_video)
+
+#### Accesibility concerns
+
+Videos should provide both captions and transcripts that accurately describe its content. In addition to spoken dialog, subtitles and transcripts should also identify music and sound effects that communicate important information, including emotion and tone. This can be done using WebVTT (Web Video Text Tracks) format. [Read more](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API).
+
+Also it's a good practice to provide some content (such as the direct download link) as a fallback for viewers who use a browser in which the `<video>` element is not supported.
+
+## Hyperlinks
+
+TODO
+
+## Sources
 
 - https://en.wikipedia.org/wiki/Markup_language
 - https://en.wikipedia.org/wiki/Document_type_declaration
