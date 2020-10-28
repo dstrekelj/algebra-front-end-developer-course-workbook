@@ -1,0 +1,55 @@
+Zadatak 1. JS -Arrays and Conditions
+
+1.option
+-------------
+function countPrimeNumbers(from, to) {
+    var filterPrim =[];
+  for (var i = from; i <= to; i++) {
+      var t =isPrime(i);
+    if (t==1) {
+        filterPrim.push(i);
+    }
+  }
+  function isPrime(a){
+    var k;
+    if (!(a%2)) {
+        return 0;
+    }  
+
+    for (k=3;k*k<a;k+=2){
+     if (a%k==0) return 0;
+    }
+    return 1;  
+   }
+  console.log(filterPrim.length);
+}
+
+2.option
+-------
+function countPrimeNumbers(from, to) {
+  var filterPrim = [];
+  for (var i = from; i <= to; i++) {
+    var t = isPrime(i);
+    if (t == true) {
+      filterPrim.push(i);
+    }
+  }
+
+  function isPrime(a) {
+    // 1_st cond.
+    if (a <= 1) {
+      return false;
+    }
+
+    // 2_st cond. .Check from 2 to n-1
+    for (var i = 2; i < a; i++) {
+      if (a % i == 0) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+  console.log(filterPrim.length);
+}
+-------------------
