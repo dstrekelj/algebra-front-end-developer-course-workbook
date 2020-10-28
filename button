@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="button.css">  
+</head>
+<body> 
+    <div class="button-distance1">
+        <button class="button button--black top">Sign in</button>
+        <button class="button button--white1">Sign in</button>
+        <button class="button button--text1">Sign in</button>    
+    </div>
+    <div class="button-distance2">
+        <button class="button button--gray">Sign in</button>
+        <button class="button button--white2">Sign in</button>
+        <button class="button button--text2">Sign in</button>    
+    </div>
+</body>
+</html>
+---button.css--
+body {
+    text-align: center;
+}
+
+.button {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 30px 150px;
+    line-height: 1;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1em;
+}
+
+.button.button--black {
+    border: 1px solid hsl(200, 50%, 10%);
+    background: hsl(200, 50%, 10%);
+    color: white;
+}
+
+.button.button--white1 {
+    border: 1px solid hsl(200, 50%, 10%);
+    background: none;
+    color: hsl(200, 50%, 10%);
+}
+
+.button.button--text1 {
+    border: none;
+    background: none;
+    color: hsl(200, 50%, 10%);
+    text-decoration: underline;
+}
+
+.button.button--gray {
+    border: 1px solid hsl(200, 0%, 65%);
+    background: hsl(200, 0%, 65%);
+    color: hsl(200, 0%, 35%);
+}
+
+.button.button--white2 {
+    border: 1px solid hsl(200, 0%, 35%);
+    background: none;
+    color: hsl(200, 0%, 35%);
+}
+
+.button.button--text2 {
+    border: none;
+    background: none;
+    color: hsl(200, 0%, 35%);
+}
+
+.button-distance1{
+    margin-top: 200px;
+}
+.button-distance2{
+    margin-top: 10px;
+}
+

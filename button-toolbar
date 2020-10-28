@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Button-toolbar</title>
+    <link rel="stylesheet" href="button-toolbar.css">
+</head>
+
+<body>
+    <div class="button-toolbar1">
+        <button class="button button--white">View</button>
+        <button class="button button--white">Edit</button>
+        <button class="button button--white">Delete</button>
+    </div>
+    <div class="button-toolbar2">
+        <button class="button button--white">View</button>
+        <button class="button button--white">Edit</button>
+        <button class="button button--white">Delete</button>
+
+    </div>
+    <div class="button-toolbar3">
+        <button class="button button--gray">View</button>
+        <button class="button button--gray">Edit</button>
+        <button class="button button--gray">Delete</button>
+    </div>
+</body>
+
+</html>
+
+---button-toolbar.css---
+body {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.button {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 30px 150px;
+    line-height: 1;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1em;
+    border-left: 10px;
+    margin-left: -20px;
+
+}
+
+.button.button--white{
+    border: 1px solid hsl(200, 50%, 10%);
+    background: none;
+    color: hsl(200, 50%, 10%);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.button.button--white:nth-child(2)
+{
+    border-radius:0px 0px 0px 0px;  
+}
+.button.button--white:nth-child(3)
+{
+    border-radius: 0px 10px 10px 0px;  
+}
+.button.button--white:hover {
+    color: white;
+    background-color: black;
+}
+
+.button-toolbar1{
+
+    margin: 0 auto;
+}
+.button-toolbar2{
+    margin: 0 auto;
+    }
+
+button.button--gray{
+    color:hsl(200, 0%, 35%);
+    background-color: hsl(200, 0%, 85%);
+    border-radius: 10px 0px 0px 10px;
+}
+.button.button--gray:nth-child(2)
+{
+    border-radius:0px 0px 0px 0px;  
+}
+.button.button--gray:nth-child(3)
+{
+    border-radius: 0px 10px 10px 0px;  
+}
+.button-toolbar3{
+    margin: 0 auto;
+    }
