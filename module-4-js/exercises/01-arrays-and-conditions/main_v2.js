@@ -1,5 +1,5 @@
 function countPrimeNumbers(from, to) {
-  //brojač prostih brojeva u nizu
+  var array = [];
   var count = 0;
 
   //ako zadani niz nije inkrementalan zamijeni from i to
@@ -9,27 +9,32 @@ function countPrimeNumbers(from, to) {
     to = temp;
   }
 
-  //petlja kroz svaki element niza
+  //generiraj niz
   for (var i = from; i <= to; i++) {
+    array[i - from] = i;
+  }
+
+  //petlja kroz svaki element niza (arrow funkcija ne radi u IE)
+  array.forEach(element => {
     var test = 0;
 
     //provjera je li pojedini element djeljiv brojevima od 2 do element/2
-    for (var j = 2; j <= i / 2; j++) {
-      if (i % j == 0) {
+    for (var i = 2; i <= element / 2; i++) {
+      if (element % i === 0) {
         test = 1;
       }
     }
 
     //u slučaju da je element niza manji od 2
-    if (i < 2) {
+    if (element < 2) {
       test = 1;
     }
 
-    //ako nakon provjere nema cjelobrojnih količnika, pridodaj brojaču prostih brojeva
-    if (test == 0) {
+    //ako nakon provjere nema cjelobrojnih količnika, uvećaj brojač prostih brojeva za 1
+    if (test === 0) {
       count += 1;
     }
-  }
+  });
 
   return count;
 }
