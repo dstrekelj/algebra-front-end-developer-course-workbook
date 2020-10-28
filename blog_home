@@ -1,0 +1,392 @@
+-------------------------------home_page---------------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+
+</head>
+
+<body>
+    <main class="article">
+        <section class="article_item">
+            <header class="article_header">
+                <h1 class="article_header--tag"> <a href="#">Welcome to my blog</a></h1>
+                <p class="article_header--title">Hello world, this is my blog about things!</p>
+            </header>
+        </section>
+
+        <section class="article_item article_content">
+            <header>
+                <h2 class="article_item--tag">Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur
+                    adipisicing elit</h2>
+                <p class="article_item--time">1. siječnja 2020.</p>
+            </header>
+            <article>
+                <p class="article_item text">Luctus ultrices quidem nostrud dolore occaecat habitasse? Mollit litora
+                    voluptatum quod porttitor! Ad fuga lacus delectus, maxime ab, consequuntur nonummy, anim ultricies!
+                    Massa? Debitis mollit, possimus eros, fames sem eos eu sollicitudin.
+                </p>
+                <nav class="article_item--link">
+                    <a href="Single.html">Read more</a>
+                </nav>
+            </article>
+        </section>
+
+        <section class="article_item article_content">
+            <header>
+                <h2 class="article_item--tag">Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur
+                    adipisicing elit</h2>
+                <p class="article_item--time">1. siječnja 2020.</p>
+            </header>
+            <article>
+                <p class="article_item text">Blog post content. Saepe voluptate et incididunt. Lacinia exercitation
+                    integer urna nunc volutpat urna! Pretium, temporibus laboriosam adipisci tempor scelerisque commodi
+                    iure lorem orci rutrum debitis nullam pariatur sociosqu. Nostrud varius! Tellus minus magni, labore
+                </p>
+                <nav class="article_item--link">
+                    <a href="Single.html">Read more</a>
+                </nav>
+            </article>
+        </section>
+
+        <section class="article_item article_content">
+            <header>
+                <h2 class="article_item--tag">Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur
+                    adipisicing elit</h2>
+                <p class="article_item--time">1. siječnja 2020.</p>
+            </header>
+            <article>
+                <p class="article_item text">Blog post content. Saepe voluptate et incididunt. Lacinia exercitation
+                    integer urna nunc volutpat urna! Pretium, temporibus laboriosam adipisci tempor scelerisque commodi
+                    iure lorem orci rutrum debitis nullam pariatur sociosqu. Nostrud varius! Tellus minus magni, labore
+                </p>
+                <nav class="article_item--link">
+                    <a href="Single.html">Read more</a>
+                </nav>
+            </article>
+        </section>
+        <section class="article_item">
+            <footer class="article_footer">
+
+                <address><small>© John Doe, 2020 —</small>
+                    <a href="mailto:john.doe@example.com">Email:john.doe@example.com</a>
+                </address>
+            </footer>
+            <section class="article_item">
+    </main>
+
+
+</body>
+
+</html>
+
+--------------------single page----------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Single</title>
+
+</head>
+
+<body>
+    <main class="article">
+        <section class="article_item2">
+            <header class="article_header">
+                <h1 class="article_header--tag"> <a href="#">Welcome to my blog</a></h1>
+                <p class="article_header--title">Hello world, this is my blog about things!</p>
+            </header>
+        </section>
+
+        <section class="article_item2 article_content">
+            <nav class="article_item--link2">
+                <a href="home.html">Back to blog</a>
+            </nav>
+        </section>
+
+        <section class="article_item2 article_content">
+            <header>
+                <h2 class="article_item--tag">Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur
+                    adipisicing elit</h2>
+                <p class="article_item--time">1. siječnja 2020.</p>
+            </header>
+            <article>
+                <p class="article_item text">Luctus ultrices quidem nostrud dolore occaecat habitasse? Mollit litora
+                    voluptatum quod porttitor! Ad fuga lacus delectus, maxime ab, consequuntur nonummy, anim ultricies!
+                    Massa? Debitis mollit, possimus eros, fames sem eos eu sollicitudin. </p> <br>
+                <p class="article_item text">Rutrum inventore nam, cubilia dolorum hac eleifend aenean. Maiores, harum
+                    nibh. Debitis expedita qui, reiciendis architecto aenean aliquet dolorem blanditiis, dis? Dolorum
+                    cupidatat non fermentum aperiam dignissim maiores. Irure lacinia? Consequuntur, beatae.</p>
+            </article>
+        </section>
+        <section class="article_item2">
+            <article>
+                <figure>
+                    <img src="dog.png" alt="some dog">
+                </figure>
+            </article>
+        </section>
+        <section class="article_item2 article_content">
+            <article>
+                <p class="article_item text">Luctus ultrices quidem nostrud dolore occaecat habitasse? Mollit litora
+                    voluptatum quod porttitor! Ad fuga lacus delectus, maxime ab, consequuntur nonummy, anim ultricies!
+                    Massa? Debitis mollit, possimus eros, fames sem eos eu sollicitudin. </p> <br>
+                <p class="article_item text">Rutrum inventore nam, cubilia dolorum hac eleifend aenean. Maiores, harum
+                    nibh. Debitis expedita qui, reiciendis architecto aenean aliquet dolorem blanditiis, dis? Dolorum
+                    cupidatat non fermentum aperiam dignissim maiores. Irure lacinia? Consequuntur, beatae.</p>
+            </article>
+        </section>
+        <section class="article_item2 article_content">
+            <nav class="article_item--link2">
+                <a href="home.html">Back to blog</a>
+            </nav>
+        </section>
+
+
+        <section class="article_item2">
+            <footer class="article_footer">
+
+                <address><small>© John Doe, 2020 —</small>
+                    <a href="mailto:john.doe@example.com">Email:john.doe@example.com</a>
+                </address>
+            </footer>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
+----------------------------------style_css-----------------------
+html {
+    position: relative;
+    width: 1440px;
+    height: 1805px;
+    background: #FFFFFF;
+}
+
+body {
+    position: absolute;
+    width: 1152px;
+    height: 1805px;
+    left: 144px;
+    top: 0px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    color: #1A1A1A;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 1120px;
+    height: 1697px;
+    left: 16px;
+    top: 54px;
+    padding: 0px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 20%;
+}
+
+.article_item {
+    padding: 0;
+    position: static;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+}
+
+.article_item:nth-of-type(1) {
+    flex-basis: 10%;
+}
+
+.article_item:nth-of-type(2) {
+    flex-basis: 20%;
+}
+
+.article_item:nth-of-type(3) {
+    flex-basis: 20%;
+}
+
+.article_item:nth-of-type(4) {
+    flex-basis: 20%;
+}
+
+.article_item:nth-of-type(5) {
+    flex-basis: 5%;
+}
+
+.article_item2 {
+    padding: 0;
+    position: static;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+}
+
+.article_item2:nth-of-type(1) {
+    flex-basis: 10%;
+}
+
+.article_item2:nth-of-type(2) {
+    flex-basis: 5%;
+}
+
+.article_item2:nth-of-type(3) {
+    flex-basis: 10%;
+}
+
+.article_item2:nth-of-type(4) {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article_item2:nth-of-type(5) {
+    flex-basis: 20%;
+}
+
+.article_item2:nth-of-type(6) {
+    flex-basis: 10%;
+}
+
+.article_item2:nth-of-type(7) {
+    flex-basis: 10%;
+}
+
+/*content*/
+
+.article_header {
+    position: static;
+    width: 1120px;
+    height: 117px;
+    left: 0px;
+    top: 0px;
+    font-style: normal;
+}
+
+.article_header--tag {
+    font-weight: bold;
+    font-size: 54px;
+    color: #006699;
+}
+
+.article_header--title {
+    display: inline;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.article_content {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.article_item--tag {
+    height: 90px;
+    font-size: 36px;
+    color: #006699;
+    flex: none;
+    margin: 0px 0px;
+    line-height: 125%;
+}
+
+.article_item--time {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.article_item--time::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 19px;
+    background: url('./pencil.svg');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.article_item--link {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.article_item--link::after {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url('./fwd_link.svg');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.article_item--link2 {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.article_item--link2::before {
+    content: '';
+    display: inline-flex;
+    width: 1em;
+    height: 1em;
+    background: url('./back_link.svg');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.article_footer {
+    display: inline;
+    position: relative;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.article_header--tag a {
+    color: #006699;
+}
+
+.article_item--link a {
+    color: inherit;
+}
+
+.article_item--link2 a {
+    color: inherit;
+}
