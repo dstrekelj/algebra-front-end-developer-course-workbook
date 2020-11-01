@@ -4,6 +4,26 @@
 
 ---
 
+- [Front End Developer / Module 2 - HTML / Notes](#front-end-developer--module-2---html--notes)
+  - [Markup languages](#markup-languages)
+  - [About HTML](#about-html)
+    - [History](#history)
+    - [HTML5](#html5)
+  - [Structure and syntax](#structure-and-syntax)
+  - [Metadata](#metadata)
+  - [Text formatting](#text-formatting)
+  - [Lists](#lists)
+  - [Media](#media)
+    - [Images](#images)
+      - [SVG](#svg)
+      - [Canvas](#canvas)
+    - [Audio](#audio)
+      - [Accesibility concerns](#accesibility-concerns)
+    - [Video](#video)
+      - [Accesibility concerns](#accesibility-concerns-1)
+  - [Hyperlinks](#hyperlinks)
+  - [Sources](#sources)
+
 ## Markup languages
 
 A markup language is a computer language that uses tags to define elements within a document. Markup languages are used to annotate a document in a way that is syntactically distinguishable from the text, and can assign semantic meaning to the text.
@@ -51,9 +71,11 @@ Notable HTML5 features:
 
 HTML5 adheres to the "separation of concerns" design principle, meaning it is separated into distinct sections so that each section addresses a separate concern: HTML provides information, CSS provides appearance, JavaScript provides behavior.
 
-Fun facts:
-
-- HTML defined 14 elements, 11 of which still exist in HTML5.
+> :clown: **Fun fact!**
+>
+> HTML originally defined 17 tags, 11 of which still exist as part of HTML5.
+> 
+> A comprehensive HTML tag history is presented on [Martin Rinehart's website](http://www.martinrinehart.com/frontend-engineering/engineers/html/html-tag-history.html).
 
 ## Structure and syntax
 
@@ -107,6 +129,10 @@ Metadata can sometimes be attributed to other HTML elements as well. For example
 
 - `<html lang="en-US">`
 - `<p lang="en-US">This text is is American English.</p>`
+
+> :point_up: **Note!**
+>
+> @todo metadata and seo
 
 ## Text formatting
 
@@ -220,11 +246,11 @@ Image formats for the web:
 
 #### SVG
 
-TODO: SVG
+@todo SVG
 
 #### Canvas
 
-TODO: CANVAS
+@todo CANVAS
 
 ### Audio
 
