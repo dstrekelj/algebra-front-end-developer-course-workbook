@@ -11,6 +11,12 @@
     - [GitHub Desktop](#github-desktop)
   - [Web Browsers](#web-browsers)
   - [Node.js and NPM](#nodejs-and-npm)
+  - [How Does the Internet Work?](#how-does-the-internet-work)
+    - [The Internet Protocol](#the-internet-protocol)
+    - [TCP and UDP protocols](#tcp-and-udp-protocols)
+    - [HTTP](#http)
+    - [DNS](#dns)
+    - [Hosting](#hosting)
 
 ## Visual Studio Code
 
@@ -175,3 +181,51 @@ npm --version
 ```
 6.14.8
 ```
+
+## How Does the Internet Work?
+
+The internet works much like the postal service. Let's begin by looking at how we communicate with each other by post.
+
+We want to send a package. We address it so the postal carrier knows who to deliver it to. When the package reaches the processing plant it is assigned a carrier that knows the address' general area. The carrier picks up the package, checks the address, and attempts to make the delivery. If the package cannot be delivered, the processing plant and sender are notified.
+
+Communication between computers over the internet is not much different. However, there are some additional steps involved.
+
+### The Internet Protocol
+
+Computers communicate by sending messages. Before being sent, messages are broken down into smaller pieces called packets. Packets are structured according to a set of rules called a protocol, in this case the Internet Protocol (IP). The data stored in the packet's structure is how the computer knows which message the packet belongs to and how to reconstruct the message from the packets it receives. Using our previous analogy, this is similar to us sending a package and having to address it beforehand by following the rules given by the post office.
+
+Packets are sent over the internet through a network of routers. Routers are specialised computers tasked with moving a packet from the source computer to the destination computer. Routers find computers on the network by the unique address each computer on the network is assigned. This unique address is called the Internet Protocol address or IP address. The IP address is a series of four numbers ranging from 0 to 255 separated by dots, e.g. `192.168.1.1`. Routers contain lists of addresses that point to computers or other routers which may know where a particular computer is located. This is how a packet can move through several routers in a routing network before reaching the destination computer. Again, this bears similarities to the processing plant and post carries from our previous analogy.
+
+> :point_up: **Note!**
+> 
+> Reserved IP addresses.
+
+> :point_up: **Note!**
+> 
+> @todo IPv4 vs IPv6
+
+### TCP and UDP protocols
+
+Once the packets arrive at their destination, their data structure is read and they are assembled into the message that was sent by the source computer. However, like with the post in real life, sometimes packets don't reach their destination and the message gets corrupted. This is known as packet loss.
+
+Packet loss and similar unfortunate occurrences are handled by transport protocols. Transport protocols define rules for packet communication, reliability, flow control, and more. Two of the most commonly used transport protocols are Transport Control Protocol (TCP) and User Datagram Protocol (UDP).
+
+TCP offers reliable packet transport even over unreliable networks. It establishes a connection between computers with the help of a three-way handshake: the connection is first initiated and acknowledged; then the connection is established and data transfer started; and finally the connection is terminated when the transfer is finished. The handshaking process makes TCP slower in comparison to other protocols, but enables the computer to perform error checking and recovery.
+
+UDP does not use handshake protocols to establish a connection and is thus considered connectionless. It also does not perform error checking and recovery, but instead discards all faulty packets upon their arrival. This makes UDP packets smaller and transport faster in comparison to other protocols. UDP is is widely used for audio and video stream broadcasting where packet loss can be observed in the form of degraded quality or glitching.
+
+> :point_up: **Note!**
+> 
+> @todo OSI model layers
+
+### HTTP
+
+@todo
+
+### DNS
+
+@todo
+
+### Hosting
+
+@todo
