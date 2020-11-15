@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create an account | Web Shop</title>
+</head>
+
+<body>
+    <h1>Web shop</h1>
+
+    <h2>Create an account</h2>
+
+    <p>Create an account to purchase items on our web shop!</p>
+
+    <h1>Sign up form:</h1>
+    <form method="get" action="login.html">
+        <div>
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" name="first_name" required>
+        </div>
+        <div>
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" name="last_name" required>
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="Email" required>
+        </div>
+        <div>
+            <label for="telephone">Phone number</label>
+            <input type="text" id="telephone" name="telephone">
+        </div>
+        <div>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="pass" minlength="6">
+        </div>
+        <br>
+        <div>
+            <label for="gdpr">By creating an account, you agree to the Privacy Policy</label>
+            <input id="gdpr" type="checkbox" name="gdpr" required>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Send</button>
+        </div>
+    </form>
+</body>
+
+</html>
