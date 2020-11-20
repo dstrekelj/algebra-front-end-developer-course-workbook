@@ -7,7 +7,7 @@
 </head>
 
 <body>
-   
+
     <h1>Web shop</h1>
 
     <h2>Sign in to continue</h2>
@@ -18,18 +18,20 @@
 
     <h1>Sign in</h1>
     <form method="GET" action="product.html">
-        <div>
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" minlength="6" required>
-        </div>
+
+        <input type="email" id="email" name="email" placeholder="E-mail" required>
         <br>
-        <div>
-            <button type="submit">Login</button>
-        </div>
+
+        <input type="password" id="password" name="password" minlength="6" placeholder="Password" required>
+        <br><br>
+
+        <label for="gdpr"><input id="gdpr" type="checkbox" name="gdpr" required>
+            By creating an account, you agree to the Privacy Policy</label>
+        <br>
+        <br>
+        
+        <button type="submit">Login</button>
+
     </form>
 </body>
 
