@@ -7,10 +7,86 @@
     <title>Checkout | Web Shop</title>
 </head>
 <body>
-    <h1>Web shop</h1>
+    <header>
+        <h1>Web shop</h1>
+    </header>
+    <main>
+        <header>
+            <h2>Checkout</h2>
+        </header>
 
-    <h2>Checkout</h2>
-
-    <!-- checkout form -->
+        <form action="success.html" method="GET">
+            <div>
+                <label for="sender-first-name">First name</label><br>
+                <input id="sender-first-name" type="text" name="sender_first_name" required>
+            </div>
+            <div>
+                <label for="sender-last-name">Last name</label><br>
+                <input id="sender-last-name" type="text" name="sender_last_name" required>
+            </div>
+            <div>
+                <label for="sender-email">Email</label><br>
+                <input id="sender-email" type="email" name="sender_email" required>
+            </div>
+            <div>
+                <label for="sender_phone_number">Phone number</label><br>
+                <input id="sender_phone_number" type="tel" name="sender_phone_number" placeholder="091-1234-567" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" required>
+            </div>
+            <div>
+                <label for="sender-address-line-1">Adress line 1</label><br>
+                <input id="sender-addres-line-1" type="text" name="sender_address_line_1" required>
+            </div>
+            <div>
+                <label for="sender-address-line-2">Address line 2 (optional)</label><br>
+                <input id="sender-address-line-2" type="text" name="sender_address_line_2">
+            </div>
+            <div>
+                <label for="sender-city">City</label><br>
+                <input id="sender-city" type="text" name="sender_city" required>
+            </div>
+            <div>
+                <label for="sender-zip">Zip code</label> <br>
+                <input id="sender-zip" type="number" min="0" name="sender_zip" required>
+            </div>  
+            <div>
+                <label for="sender-country">Country</label><br>
+                <select name="sender-country" required>
+                    <option selected disabled>Country</option>
+                    <option value="hr">Croatia</option>
+                    <option value="rs">Serbia</option>
+                    <option value="ba">Bosnia and Herzegovina</option>
+                    <option value="si">Slovenia</option>
+                    <option value="me">Montenegro</option>    
+                    <option value="al">Albania</option>
+                    <option value="mk">Macedonia</option>    
+                </select>
+            </div>
+            <div>
+                <label for="payment_method">Payment method</label><br>
+                <select name="payment_method" required>
+                    <option selected disabled>Payment method</option>
+                    <option value="credit">Credit</option>
+                    <option value="debit">Debit</option>
+                    <option value="paypal">Paypal</option>
+                </select>
+            </div>
+            <div>
+                <label for="payment-card-hold">Payment card holder</label><br>
+                <input id="payment-card-hold" type="text" name="payment_card_hold" required>
+            </div>
+            <div>
+                <label for="payment-card-number">Payment card number</label><br>
+                <input id="payment-card-number" type="number" minlength="13" min="0" name="payment_card_number" required>
+            </div>
+            <div>
+                <label for="payment-card-expiration-date">Payment card expiration date</label><br>
+                <input id="payment-card-expiration-date" type="datetime" placeholder="MM/YY" name="payment_card_expiration_date" required>
+            </div>
+            <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>

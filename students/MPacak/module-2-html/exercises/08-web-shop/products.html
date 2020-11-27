@@ -7,32 +7,43 @@
     <title>Products | Web Shop</title>
 </head>
 <body>
-    <h1>Web shop</h1>
+    <header>
+        <h1>Web shop</h1>
+    </header>
+    <main>
+        <header>
+            <h2>Products</h2>
+        </header>
 
-    <h2>Products</h2>
-
-    <ul>
-        <li>
-            <strong>Great green goblin</strong>
-            <br>
-            <em>SKU: P101</em>
-            <br>
-            <!-- purchase form -->
-        </li>
-        <li>
-            <strong>Many mini millipedes</strong>
-            <br>
-            <em>SKU: P102</em>
-            <br>
-            <!-- purchase form -->
-        </li>
-        <li>
-            <strong>Prickly pink pufferfish</strong>
-            <br>
-            <em>SKU: P103</em>
-            <br>
-            <!-- purchase form -->
-        </li>
-    </ul>
+        <form action="checkout.html" method="GET">
+            <ul>
+                <li>
+                    <strong>Great green goblin</strong>
+                    <br>
+                    <em>SKU: P101</em>
+                    <br>              
+                    <input type="hidden" name="product_P101" value="P101">
+                </li>
+                <li>
+                    <strong>Many mini millipedes</strong>
+                    <br>
+                    <em>SKU: P102</em>
+                    <br>
+                    <input type="hidden" name="product_P102" value="P102">
+                </li>
+                <li>
+                    <strong>Prickly pink pufferfish</strong>
+                    <br>
+                    <em>SKU: P103</em>
+                    <br>
+                    <input type="hidden" name="product_P103" value="P103">
+                </li>
+            </ul>
+            <p>To purchase the products listed here, press the button below.</p>
+            <div>
+                <button type="submit">Confirm purchase</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
