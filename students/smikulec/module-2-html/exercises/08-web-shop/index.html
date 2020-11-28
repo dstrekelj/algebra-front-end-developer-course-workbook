@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create an account | Web Shop</title>
+</head>
+<body>
+    <h1>Web shop</h1>
+
+    <h2>Create an account</h2>
+
+    <p>Create an account to purchase items on our web shop!</p>
+
+    <!-- sign up form -->
+    <form name="sign_up" action="login.html" method="GET">
+        <label for="first-name">First name: *</label><br>
+        <input id="first-name" name="first_name" type="text" placeholder="John" required>
+        <br><br>
+        <label for="last-name">Last name: *</label><br>
+        <input id="last-name" name="last_name" type="text" placeholder="Doe" required>
+        <br><br>
+        <label for="email">Email address: *</label><br>
+        <input id="email" name="email" type="email" placeholder="john.doe@example.com" required>
+        <br><br>
+        <label for="phone">Telephone number: </label><br>
+        <input id="phone" name="phone" type="tel" placeholder="+123456789">
+        <br><br>
+        <label for="password">Password: *</label><br>
+        <input id="password" name="password" type="password" minlength="6" required>
+        <br><br>
+        <label for="consent">GDPR consent: *</label>
+        <input id="consent" name="consent" type="checkbox" value="true" required>
+        <br><br>
+        <button type="submit">Sign up</button>
+        <p><small>* Required</small></p>
+    </form>
+</body>
+</html>
