@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas art</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <script>
+        (function draw() {
+            var canvas = document.getElementById('canvas');
+
+            if (!canvas.getContext) {
+                canvas.innerHTML = 'The <canvas> tag is not supported.';
+
+                return;
+            }
+
+            var ctx = canvas.getContext('2d');
+
+            // Background
+            ctx.fillStyle = "orange";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            // Skin
+            ctx.fillStyle = '#a1665e';
+            ctx.fillRect(150, 110, 200, 300);
+            // Hair
+            ctx.fillStyle = 'black';
+            ctx.fillRect(150, 110, 200, 50);
+            // Eyes
+            ctx.beginPath();
+            ctx.arc(200, 220, 20, 0, 2 * Math.PI);
+            ctx.fillStyle = 'white';
+            ctx.fill();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(300, 220, 20, 0, 2 * Math.PI);
+            ctx.fillStyle = 'white';
+            ctx.fill();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(200, 220, 10, 0, 2 * Math.PI);
+            ctx.fillStyle = 'black';
+            ctx.fill();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(300, 220, 10, 0, 2 * Math.PI);
+            ctx.fillStyle = 'black';
+            ctx.fill();
+            ctx.closePath();
+            // Nose
+            ctx.beginPath();
+            ctx.moveTo(255, 250);
+            ctx.lineTo(270, 295);
+            ctx.lineTo(240, 295);
+            ctx.fill();
+            // Mouth
+            ctx.fillStyle = "white";
+            ctx.fillRect(175, 320, 145, 60);
+
+            ctx.beginPath();
+            ctx.moveTo(175, 350);
+            ctx.lineTo(320, 350);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "black"
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(200, 320);
+            ctx.lineTo(200, 380);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "black"
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(230, 320);
+            ctx.lineTo(230, 380);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "black"
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(260, 320);
+            ctx.lineTo(260, 380);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "black"
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(290, 320);
+            ctx.lineTo(290, 380);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "black"
+            ctx.stroke();
+            // Ears
+            ctx.beginPath();
+            ctx.arc(150, 230, 30, 0, 2 * Math.PI);
+            ctx.fillStyle = '#a1665e';
+            ctx.fill();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(350, 230, 30, 0, 2 * Math.PI);
+            ctx.fillStyle = '#a1665e';
+            ctx.fill();
+            ctx.closePath();
+
+        })();
+    </script>
+
+</body>
+
+</html>
