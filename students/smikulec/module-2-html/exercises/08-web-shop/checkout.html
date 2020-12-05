@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout | Web Shop</title>
+</head>
+<body>
+    <h1>Web shop</h1>
+
+    <h2>Checkout</h2>
+
+    <!-- checkout form -->
+    <form name="checkout" action="success.html" method="GET">
+        <fieldset>
+            <legend>Shipping information</legend>
+            <label for="sender-first-name">First name: *</label><br>
+            <input id="sender-first-name" type="text" name="sender_first_name" placeholder="John" required>
+            <br><br>
+            <label for="sender-last-name">Last name: *</label><br>
+            <input id="sender-last-name" type="text" name="sender_last_name" placeholder="Doe" required>
+            <br><br>
+            <label for="sender-email">Email address: *</label><br>
+            <input id="sender-email" type="email" name="sender_email" placeholder="john.doe@example.com" required>
+            <br><br>
+            <label for="sender-phone">Telephone number: *</label><br>
+            <input id="sender-phone" type="tel" name="sender_phone" placeholder="+123456789" required>
+            <br><br>
+            <label for="sender-address-line-1">Address 1: *</label><br>
+            <input id="sender-address-line-1" type="text" name="sender_address_line_1" placeholder="Example Address" required>
+            <br><br>
+            <label for="sender-address-line-2">Address 2:</label><br>
+            <input id="sender-address-line-2" type="text" name="sender_address_line_2">
+            <br><br>
+            <label for="sender-city">City: *</label><br>
+            <input id="sender-city" type="text" name="sender_city" placeholder="Example City" required>
+            <br><br>
+            <label for="sender-zipcode">Zip code: *</label><br>
+            <input id="sender-zipcode" type="text" name="sender_zipcode" placeholder="12345" required>
+            <br><br>
+            <label for="sender-country">Country: *</label><br>
+            <select id="sender-country" name="sender_country" required>
+                <option selected disabled value="">Choose...</option>
+                <option value="hr">Croatia</option>
+                <option value="rs">Serbia</option>
+                <option value="ba">Bosnia and Herzegovina</option>
+                <option value="si">Slovenia</option>
+                <option value="me">Montenegro</option>
+                <option value="al">Albania</option>
+                <option value="mk">North Macedonia</option>
+            </select>
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Payment information</legend>        
+                <p>Payment method: *</p>
+                <label><input  type="radio" name="payment_method" value="credit" required>Credit card</label>
+                <label><input  type="radio" name="payment_method" value="debit" required>Debit card</label>
+                <label><input  type="radio" name="payment_method" value="paypal" required>Paypal card</label>       
+            <br><br>
+            <label for="payment-card-hold">Name on card: *</label><br>
+            <input id="payment-card-hold" type="text" name="payment_card_hold" pattern=".+ .+" required><br>
+            <br>
+            <label for="payment-card-number">Credit card number: *</label><br>
+            <input id="payment-card-number" type="text" name="payment_card_number" pattern="\d+" minlength="13" maxlength="16" required><br>
+            <br>
+            <label for="payment-card-expiration-month">Expiration date/valid to: *</label><br>
+            <input id="payment-card-expiration-month" type="text" name="payment_card_expiration_month" placeholder="MM/YY" pattern="\d{2}/\d{2}" required><br>
+            <br>
+        </fieldset>
+        <br>
+        <button type="submit">Finish</button>
+        <br>
+        <p><small>* Required</small></p>
+    </form>
+</body>
+</html>

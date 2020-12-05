@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products | Web Shop</title>
+</head>
+<body>
+    <h1>Web shop</h1>
+
+    <h2>Products</h2>
+    
+    <ul>
+        <li>
+            <strong>Great green goblin</strong>
+            <br>
+            <em>SKU: P101</em>
+            <br>
+            <!-- purchase form -->
+            <form action="checkout.html" method="GET">
+            <input type="hidden" name="product_sku[]"  value="P101"><br>
+            <label for="quantity1">Quantity:</label>
+            <input  type="number" id="quantity1" name="quantity"  min="1" max="99" value="0" required>
+            <button type="submit">Add to cart</button>
+            </form>
+        </li>        
+        <li>
+            <strong>Many mini millipedes</strong>
+            <br>
+            <em>SKU: P102</em>
+            <br>
+            <!-- purchase form -->
+            <form action="checkout.html" method="GET">
+                <input type="hidden" name="product_sku[]"  value="P102"><br>
+                <label for="quantity2">Quantity:</label>
+                <input type="number" id="quantity2" name="quantity" min="1" max="99" value="0" required>
+                <button type="submit">Add to cart</button>
+            </form>
+        </li>      
+        <li>
+            <strong>Prickly pink pufferfish</strong>
+            <br>
+            <em>SKU: P103</em>
+            <br>
+            <!-- purchase form -->
+            <form action="checkout.html" method="GET">
+                <input type="hidden" name="product_sku[]"  value="P103"><br>
+                <label for="quantity3">Quantity:</label>
+                <input type="number" id="quantity3" name="quantity" min="1" max="99" value="0" required>
+                <button type="submit">Add to cart</button>
+            </form>
+        </li>
+    </ul>      
+</body>
+</html>

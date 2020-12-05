@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas art</title>
+    </head>
+    <body>
+        <canvas id="canvas" width="300" height="300"></canvas>
+        <script>
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext('2d');
+
+            //background//
+            ctx.fillStyle = '#FFC1CC';
+            ctx.fillRect(0, 0, 400, 400);
+
+            //head//
+            ctx.beginPath();
+            ctx.arc(150, 180, 90, 0, 2*Math.PI);
+            ctx.strokeStyle = "black";
+            ctx.fillStyle = "black";
+            ctx.fill();
+            ctx.stroke();
+
+            //whiskers//
+            ctx.beginPath();
+            ctx.moveTo(120,220);
+            ctx.lineTo(30,190);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(120,220);
+            ctx.lineTo(30,210);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(120,220);
+            ctx.lineTo(30,230);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(180,220);
+            ctx.lineTo(270,190);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(180,220);
+            ctx.lineTo(270,210);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(180,220);
+            ctx.lineTo(270,230);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+
+            //ears// 
+            ctx.beginPath();
+            ctx.moveTo(50,80);
+            ctx.lineTo(65,150);
+            ctx.lineTo(125,110);
+            ctx.fillStyle = "black";
+            ctx.strokeStyle = "black";
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(250,80);
+            ctx.lineTo(235,150);
+            ctx.lineTo(175,110);
+            ctx.fillStyle = "black";
+            ctx.strokeStyle = "black";
+            ctx.fill();
+            ctx.stroke();
+
+            //eyes//
+            ctx.beginPath();
+            ctx.arc(110, 170, 20, 0, 2*Math.PI);
+            ctx.strokeStyle = "#FFDE00";
+            ctx.fillStyle = "#FFDE00";
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(190, 170, 20, 0, 2*Math.PI);
+            ctx.strokeStyle = "#FFDE00";
+            ctx.fillStyle = "#FFDE00";
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(115, 170, 15, 0, 2*Math.PI);
+            ctx.strokeStyle = "black";
+            ctx.fillStyle = "black";
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(195, 170, 15, 0, 2*Math.PI);
+            ctx.strokeStyle = "black";
+            ctx.fillStyle = "black";
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(122, 170, 3, 0, 2*Math.PI);
+            ctx.strokeStyle = "white";
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(202, 170, 3, 0, 2*Math.PI);
+            ctx.strokeStyle = "white";
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.stroke();
+
+            //nose//
+            ctx.beginPath();
+            ctx.moveTo(140,200);
+            ctx.lineTo(160,200);
+            ctx.lineTo(150,215);
+            ctx.fillStyle = "#FFBCD9";
+            ctx.strokeStyle = "#FFBCD9";
+            ctx.fill();
+            ctx.stroke();
+
+            //mouth//
+            ctx.beginPath();
+            ctx.moveTo(150,215);
+            ctx.lineTo(150,225);
+            ctx.strokeStyle = "#FFBCD9";
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(150,225);
+            ctx.lineTo(135,230);
+            ctx.strokeStyle = "#FFBCD9";
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(150,225);
+            ctx.lineTo(165,230);
+            ctx.strokeStyle = "#FFBCD9";
+            ctx.stroke(); 
+
+        </script>
+    </body>
+</html>
