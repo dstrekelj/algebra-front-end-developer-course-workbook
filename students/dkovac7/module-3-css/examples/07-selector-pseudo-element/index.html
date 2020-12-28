@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>07 - Selector - Pseudo-element</title>
+    <style>
+        /*
+        CSS pseudo-elements style specific parts of an element.
+
+        Pseudo-element selectors are prefixed with "::".
+        */
+
+        /*
+        Selects the space before content inside an element. The content property
+        makes it possible to prepend content to the element.
+        */
+        h1::before {
+            content: "~ ";
+        }
+
+        /*
+        Selects the space after content inside an element. The content property
+        makes it possible to append content to the element.
+        */
+        h1::after {
+            content: " ~";
+        }
+
+        /*
+        Selects the first letter of a text.
+        */
+        p::first-letter {
+            font-size: 32px;
+        }
+
+        /*
+        Selects the first line of a text.
+        */
+        p::first-line {
+            color: red;
+        }
+
+        /*
+        Selects the mouse selection of a text made by a user.
+        */
+        p::selection {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum enim dicta repellendus ipsa iure officia deleniti, tenetur molestiae voluptatibus sunt atque. Earum alias incidunt voluptates ipsum similique eum, molestias fugit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, amet sunt blanditiis vitae voluptate tempora tenetur ullam adipisci dolor magni exercitationem inventore doloremque dolores rerum animi expedita dolore, architecto corporis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis architecto non unde odit deserunt suscipit repellat dolor nulla! Accusamus beatae doloribus non eaque ea quis eum, sit culpa ullam quasi!</p>
+</body>
+</html>
