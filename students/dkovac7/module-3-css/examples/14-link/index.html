@@ -16,9 +16,13 @@
         - hover - link hovered over with mouse.
         - active - link clicked / pressed (but click / press not released).
         */
-        a:link { color: hsl(100, 50%, 50%)}
+        html{
+            font-size: 50px;
+            text-align: center;
+        }
+        a:link { color: hsl(100, 50%, 50%); text-decoration: none;}
         a:visited { color: hsl(100, 10%, 70%) }
-        a:hover { color: hsl(100, 100%, 50%) }
+        a:hover {transition-delay: 1s; color: hsl(100, 100%, 50%); text-decoration: underline; }
         a:active { color: hsl(30, 100%, 50%) }
     </style>
 </head>

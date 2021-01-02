@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgb(194, 194, 194);
+}
+
+.intro{
+    margin: auto auto;
+    padding: 10%;
+    border-radius: 2%;
+    border: 2px solid rgb(71, 71, 250);
+    background-color: white;
+    text-align: center;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+.intro a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.intro:hover{
+    border: 2px solid red;
+    box-shadow: 0px 0px 5px 2px red inset;
+    text-shadow: 0px 0px 3px red;
+    transition-duration: 1.5s;
+}
+
+main{
+    margin: 3% 4%;
+}
+
+.item{
+    margin: 2% 0;
+}
+
+.item:nth-child(1){
+    margin-top: 0;
+}
+
+header{
+    margin: 1% 4%;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: 800;
+    color: #006699;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 400;
+    color: #006699;
+}
+
+.time-stamp{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.margin{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.read{
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    transition: all 1s ease 0s;
+}
+
+.read:hover{
+    cursor: pointer;
+    color: #0088a9;
+}
+
+.back{
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    transition: all 1s ease 0s;
+}
+
+.back:hover{
+    cursor: pointer;
+    color: #0088a9;
+}
+
+.item p{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.center{
+    display: block;
+    margin: 2% auto;
+    width: 50%;
+    border-radius: 10%;
+}
+
+footer{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.foot{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.mail{
+    text-decoration: none;
+    color: black;
+    transition: all 1s ease 0s;
+}
+
+.mail:hover{
+    cursor: pointer;
+    color: #0088a9;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0.5% 0.5%;
+    font-size: 1.8em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav__links li a{
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+
+}
+
+.nav__links li a:hover{
+    color: #0088a9;
+}
+
+.nav__links li a:active{
+    text-decoration: underline;
+}
+
