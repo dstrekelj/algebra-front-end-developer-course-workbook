@@ -1,0 +1,21 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+[class^="tag"] {
+    font-family: Arial;
+    font-size: 16px;
+    border: 1.5px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background-color: rgba(243, 240, 240, 0.952);
+    padding: 8px;
+    margin: 0px 5px;
+}
+
+.tag-new {
+    border-style: dashed;
+    background-color: white;
+}
