@@ -40,6 +40,11 @@
         width: 100%;
         height: auto;
     }
+
+    .top-link svg {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1023px) {    
@@ -83,6 +88,11 @@
     .article-picture img {
         width: 100%;
         height: auto;
+    }
+
+    .top-link svg {
+        width: auto;
+        height: 22px;
     }
 }
 
@@ -129,8 +139,12 @@
         width: 100%;
         height: auto;
     }
-}
 
+    .top-link svg {
+        width: auto;
+        height: 18px;
+    }
+}
 
 html {
     font-family: 'Roboto Slab', serif;
@@ -153,6 +167,7 @@ h1, h2 {
 
 .article {
     margin-top: 70px;
+    position: relative;
 }
 
 .article-title {
@@ -205,6 +220,18 @@ h1, h2 {
 .link-back a {
     text-decoration: none;
     color: #1A1A1A;
+}
+
+.top-link {
+    position: absolute;
+    top: 10px;
+    right: -40px;
+}
+
+.top-link-page {
+    position: absolute;
+    bottom: -20px;
+    right: -60px;
 }
 
 .footer {
