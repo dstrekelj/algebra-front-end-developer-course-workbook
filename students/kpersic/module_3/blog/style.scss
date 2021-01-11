@@ -1,0 +1,45 @@
+@import "scss/reset";
+@import "scss/variables";
+@import "scss/typography";
+@import "scss/links";
+@import "scss/icons";
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1152px;
+    min-height: 1805px;
+    margin: 0 auto;
+    font-size: 24px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    margin: 54px 16px 0px 16px;
+}
+
+.section_wrapper {
+    margin: 80px 16px;
+}
+
+.section_part {
+    margin: 16px 0px;
+    line-height: 36px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+

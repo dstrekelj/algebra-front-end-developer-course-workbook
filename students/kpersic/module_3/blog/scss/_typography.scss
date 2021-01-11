@@ -1,0 +1,40 @@
+h1,h2 {
+    color: $primary;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: bold;
+    padding: 5px 0px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.greeting {
+    font-size: 24px;
+    font-weight: lighter;
+    margin-top: 14px;
+}
+
+.date {
+    font-size: $size-one;
+    font-weight: lighter;
+}
+
+.img {
+    margin: 36px auto;
+    text-align: center;
+    width: 100%;
+}
+
+.h2_page1 {
+    margin-bottom: 36px;
+}
+
+.mail {
+    text-decoration: none;
+    color: $secondary;
+}

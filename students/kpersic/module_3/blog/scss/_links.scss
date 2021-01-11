@@ -1,0 +1,34 @@
+.read_more {
+    font-size: $size-one;
+    font-weight: normal;
+}
+
+.blog_link {
+    color: $primary;
+}
+
+.blog_link:hover {
+    text-decoration: none;
+    color: $secondary;
+}
+
+.back_link {
+    color: $primary;
+}
+
+.back_link:hover {
+    text-decoration: none;
+    color: $secondary;
+}
+
+.section_part.back-one {
+        margin-bottom: 54px;
+        margin-top: 0;
+        font-size: $size-one;
+}
+
+.section_part.back-two {
+    margin-top: 54px;
+    margin-bottom: 0px;
+    font-size: $size-one;
+}
