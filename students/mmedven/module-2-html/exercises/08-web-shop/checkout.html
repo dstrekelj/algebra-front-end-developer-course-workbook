@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout | Web Shop</title>
+</head>
+
+<body>
+    <h1>Web shop</h1>
+
+    <h2>Checkout</h2>
+
+    <form name="checkout" action="success.html" method="GET">
+
+        <label for="sender-first-name">First name</label><br>
+        <input type="text" name="sender_first_name" id="sender-first-name" required><br>
+
+        <label for="sender-last-name">Last name</label><br>
+        <input type="text" name="sender_last_name" id="sender-last-name" required><br>
+
+        <label for="sender-email">Email</label><br>
+        <input type="email" name="sender_email" id="sender-email" required><br>
+
+        <label for="sender-phone">Phone</label><br>
+        <input type="tel" name="sender_phone" id="sender-phone" required><br>
+
+        <label for="sender-address-line-1">Address line 1</label><br>
+        <input type="text" name="sender_address_line_1" id="sender-address-line-1" required><br>
+
+        <label for="sender-address-line-2">Address line 2</label><br>
+        <input type="text" name="sender_address_line_2" id="sender-address-line-2"><br>
+
+        <label for="sender-city">City</label><br>
+        <input type="text" name="sender_city" id="sender-city" required><br>
+
+        <label for="sender-zip">ZIP code</label><br>
+        <input type="text" name="sender_zip" id="sender-zip" required><br>
+
+        <label for="sender-country">Country</label><br>
+        <select name="sender_country" id="sender-country">
+            <option value="hr">Croatia</option>
+            <option value="rs">Serbia</option>
+            <option value="ba">Bosnia and Herzegovina</option>
+            <option value="si">Slovenia</option>
+            <option value="me">Montenegro</option>
+            <option value="al">Albania</option>
+            <option value="mk">North Macedonia</option>
+        </select><br>
+
+        <p>Payment method:</p>
+
+        <label for="credit">
+            <input id="credit" type="radio" name="payment" value="credit"> Credit
+        </label><br>
+
+        <label for="debit">
+            <input id="debit" type="radio" name="payment" value="debit"> Debit
+        </label><br>
+
+        <label for="paypal">
+            <input id="paypal" type="radio" name="payment" value="paypal"> PayPal
+        </label><br>
+
+        <label for="payment-card-hold">Payment card owner</label><br>
+        <input type="text" name="payment_card_hold" id="payment-card-hold" required><br>
+
+        <label for="payment-card-number">Payment card number</label><br>
+        <input type="text" name="payment_card_number" id="payment-card-number" required><br>
+
+        <label for="payment-card-expiration-month">Payment card expiration month</label><br>
+        <input type="month" name="payment_card_expiration_month" id="payment-card-expiration-month" required><br>
+        <br>
+        <button type="submit">Submit</button>
+
+    </form>
+    <!-- checkout form -->
+</body>
+
+</html>

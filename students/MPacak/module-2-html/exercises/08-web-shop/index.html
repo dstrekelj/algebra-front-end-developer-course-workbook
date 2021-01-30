@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create an account | Web Shop</title>
+</head>
+<body>
+    <header>
+        <h1>Web shop</h1>
+    </header>
+    <main>
+        <header>
+            <h2>Create an account</h2>
+        </header>
+
+        <p>Create an account to purchase items on our web shop!</p>
+
+        <form action="login.html" method="GET">
+            <div>
+                <label for="first-name">FIrst Name (required)</label><br>
+                <input id="first-name" type="text" name="first_name" required>
+            </div>
+            <div>
+                <label for="last-name">Last Name (required)</label><br>
+                <input id="last-name" type="text" name="last_name" required>
+            </div>
+            <div>
+                <label for="email">Email (required)</label><br>
+                <input id="email" type="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone-number">Phone Number (optional)</label><br>
+                <input id="phone-number" type="tel" name="phone_number" placeholder="099-1234-567" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}">
+            </div>
+            <div>
+                <label for="password">Your password (required)</label><br>
+                <input id="password" type="password" minlength="6" name="password" required>
+            </div>
+            <div>
+                <label><input type="checkbox" name="gdpr" value="gdpr" required>I allow for my personal data to be saved</label>
+            </div>
+            <div>
+                <button type="submit">Sign up</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

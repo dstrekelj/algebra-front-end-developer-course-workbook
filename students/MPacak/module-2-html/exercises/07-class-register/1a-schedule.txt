@@ -1,0 +1,5 @@
+Monday: Ethics, Sociology, Music, Arts, Physical Education, Biology
+Tuesday: Geography, History, Computer science, Computer science, Ethics, Philosophy
+Wednesday: Chemistry, Chemistry, Biology, Physical Education, English, German
+Thursday: Music, Arts, English, German, History, Geography
+Friday: Sociology, Mathematics, Mathematics, Physics, Physics

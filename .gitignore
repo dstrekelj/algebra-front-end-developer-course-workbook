@@ -1,1 +1,12 @@
+# OSX specific ignores
+.DS_Store
+._*
+
+# Tool specific ignores
 node_modules
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
