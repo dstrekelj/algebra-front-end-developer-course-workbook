@@ -1,7 +1,5 @@
 # Exercise #22 - Help Button
 
-The application you're working on is gaining traction, and more users means more support. The customer support team devised a plan on how to run live support for users to get ahead of the problem. For that to work, their system must integrate with the application and give users the option to request help when they need it.
-
 You are tasked with writing a function that will display the help action button after a set timeout.
 
 **Deliverables:**

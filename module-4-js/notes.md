@@ -34,3 +34,4 @@ var x;
 let y;      // Available in ES6
 const z;    // Available in ES6
 ```
+~~~~
