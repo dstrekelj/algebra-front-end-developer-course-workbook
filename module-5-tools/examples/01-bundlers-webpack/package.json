@@ -1,0 +1,13 @@
+{
+  "name": "01-bundlers-webpack",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "nanoid": "^3.1.20"
+  }
+}
