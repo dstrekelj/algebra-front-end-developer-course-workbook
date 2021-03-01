@@ -124,7 +124,7 @@ const uglify = require('gulp-uglify');
 
 gulp.task('js', function () {
     return gulp.src('./main.js')
-        .pipe(babel({ presets: [ '@babel/env' ] }))
+        .pipe(babel({ presets: [ '@babel/preset-env' ] }))
         .pipe(uglify())
         .pipe(gulp.dest('build'));
 });
