@@ -1,0 +1,15 @@
+$font-body: 'Montserrat', sans-serif;
+$font-heading: 'Oswald', sans-serif;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-primary: #000;
+$color-shadow: #ddecee;
+
+$color-text-normal: #000;
+$color-text-muted: adjust-color($color-text-normal, $lightness: 60%);
+$color-text-inverted: #fff;
+
+$unit-radius: 4px;
+$unit-size: 4px;

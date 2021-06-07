@@ -1,0 +1,20 @@
+.card {
+  border-radius: $unit-radius * 2;
+  background: $color-white;
+  box-shadow: 0px 10px 16px 2px #D8ECEF;
+  padding: $unit-size * 8;
+
+  .card__image-row {
+    margin: $unit-size * 6 0 $unit-size * 4 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card__body-row {
+    padding: 0 $unit-size * 14;
+  }
+
+  .card__action-row {
+    margin-top: $unit-size * 4; 
+  }
+}

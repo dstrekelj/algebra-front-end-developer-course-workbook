@@ -1,0 +1,19 @@
+@import "./scss/abstracts/index";
+@import "./scss/base/index";
+@import "./scss/components/index";
+@import "./scss//layouts/index";
+
+input, button, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  font-family: $font-body;
+  line-height: 1.5;
+  background-color: #FAFCFE;
+}

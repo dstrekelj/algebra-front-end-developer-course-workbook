@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 0 32px;
+  border-radius: 40px;
+  height: 48px;
+  border: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 2px solid #000;
+  -webkit-transition: color 0.1s ease, background-color 0.1s ease;
+  transition: color 0.1s ease, background-color 0.1s ease;
+}
+
+.button.button--primary {
+  background-color: #000;
+  color: #fff;
+}
+
+.button.button--primary:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+.card {
+  border-radius: 8px;
+  background: #fff;
+  -webkit-box-shadow: 0px 10px 16px 2px #D8ECEF;
+          box-shadow: 0px 10px 16px 2px #D8ECEF;
+  padding: 32px;
+}
+
+.card .card__image-row {
+  margin: 24px 0 16px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .card__body-row {
+  padding: 0 56px;
+}
+
+.card .card__action-row {
+  margin-top: 16px;
+}
+
+.popup {
+  position: relative;
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+}
+
+.popup .popup__action {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.title-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+}
+
+.muted-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #999999;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  max-width: 100px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  width: 16px;
+  height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  position: relative;
+}
+
+.icon-button.icon-button--close::before, .icon-button.icon-button--close::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+}
+
+.icon-button.icon-button--close::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.icon-button.icon-button--close::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.centered-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+input, button, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  background-color: #FAFCFE;
+}
+/*# sourceMappingURL=style.css.map */

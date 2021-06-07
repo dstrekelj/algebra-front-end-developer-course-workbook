@@ -1,0 +1,12 @@
+.popup {
+  position: relative;
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+
+  .popup__action {
+    position: absolute;
+    top: $unit-size * 4;
+    right: $unit-size * 4;
+  }
+}

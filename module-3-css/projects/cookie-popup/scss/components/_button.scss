@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+  padding: 0 $unit-size * 8;
+  border-radius: $unit-radius * 10;
+  height: 48px;
+  border: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 2px solid $color-primary;
+  transition: color 0.1s ease, background-color 0.1s ease;
+
+  &.button--primary {
+    background-color: $color-primary;
+    color: $color-text-inverted;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-text-normal;
+      font-weight: bold;
+    }
+  }
+}
