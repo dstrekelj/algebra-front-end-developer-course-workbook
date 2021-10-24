@@ -22,6 +22,10 @@
     - [Video](#video)
       - [Accesibility concerns](#accesibility-concerns-1)
   - [Hyperlinks](#hyperlinks)
+  - [Tables](#tables)
+  - [Forms](#forms)
+    - [Non-semantic structural elements](#non-semantic-structural-elements)
+    - [Semantic structural elements](#semantic-structural-elements)
   - [Sources](#sources)
 
 ## Markup languages
@@ -78,6 +82,42 @@ HTML5 adheres to the "separation of concerns" design principle, meaning it is se
 > A comprehensive HTML tag history is presented on [Martin Rinehart's website](http://www.martinrinehart.com/frontend-engineering/engineers/html/html-tag-history.html).
 
 ## Structure and syntax
+
+The building block of an HTML document is the **HTML tag**.
+
+We use tags to _tag_ or _mark up_ plain text content in a way that gives it structure and meaning. This is why HTML and other languages are called _markup languages_.
+
+Every tag has its tag name written between `<` and `>` characters. For example, the paragraph tag is written as `<p>`. Tags can also contain other tags or plain text as content. The content is enclosed in a closing tag which uses the forward slash character `/` and is paired with the opening tag. For example, the closing paragraph tag is written as `</p>`.
+
+```html
+<p>This is a paragraph.</p>
+```
+
+Tags can also contain attribute-value pairs that assign the tag additional information.
+
+```html
+<tagname attribute="value">Content</tagname>
+```
+
+Some attributes are global, meaning they can be defined on any tag. Commonly used global attributes are:
+
+|Attribute|Example|Meaning|
+|-|-|-|
+|class|`<button class="button primary">Submit</button>`|A space-separated list of the classes of the element. Classess allow CSS and JavaScript to select and access specific elements via class selectors. More on that in the CSS and JS modules.|
+|data-*|`<span data-copyright></span>`|Forms a class of attributes, called custom data attributes, that allow proprietary information to be exchanged between the HTML and its DOM representation that may be used by scripts.|
+|hidden|`<a href="/profile" hidden>Profile</a>`|Indicates that the element is not yet, or is no longer, relevant. For example, it can be used to hide elements of the page that can't be used until the login process has been completed. The browser won't render such elements. The attribute must not be used to hide content that could legitimately be shown.|
+|id|`<section id="about-us"></section>`|Defines a unique identifier (ID) which must be unique in the whole document. Its purpose is to identify the element when linking (using a fragment identifier), scripting, or styling (with CSS).|
+
+A complete list of global attributes can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes).
+
+Some attributes are only available on specific tags. More on that later.
+
+HTML tags that expect no content are considered self-closing. Self-closing tags can have an optional forward slash (`/`) character at the end of the tag, but as of HTML5:
+
+```html
+<hr>
+<hr />
+```
 
 An HTML document has the following basic structure:
 
@@ -377,7 +417,29 @@ Also it's a good practice to provide some content (such as the direct download l
 
 ## Hyperlinks
 
-TODO
+```html
+<a href="#about">Jump to About section</a>
+<a href="products.html">Open Products</a>
+<a href="https://google.com" target="_blank">Open Google.com in a new tab</a>
+<a href="tel:+385123456789">Call me</a>
+<a href="mailto:hello@world.com">Email me</a>
+```
+
+## Tables
+
+@todo
+
+## Forms
+
+@todo
+
+### Non-semantic structural elements
+
+@todo
+
+### Semantic structural elements
+
+@todo
 
 ## Sources
 
