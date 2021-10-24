@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2 {
+  color: #006699;
+}
+
+h1 {
+  font-size: 54px;
+  font-weight: bold;
+  padding: 5px 0px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.greeting {
+  font-size: 24px;
+  font-weight: lighter;
+  margin-top: 14px;
+}
+
+.date {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.img {
+  margin: 36px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.h2_page1 {
+  margin-bottom: 36px;
+}
+
+.mail {
+  text-decoration: none;
+  color: black;
+}
+
+.read_more {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.blog_link {
+  color: #006699;
+}
+
+.blog_link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.back_link {
+  color: #006699;
+}
+
+.back_link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.section_part.back-one {
+  margin-bottom: 54px;
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.section_part.back-two {
+  margin-top: 54px;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.fa-pencil {
+  margin-right: 9.6px;
+}
+
+.fa-arrow-right {
+  margin-left: 8px;
+}
+
+.fa-arrow-left {
+  margin-right: 8px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto Slab", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1152px;
+  min-height: 1805px;
+  margin: 0 auto;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.header {
+  margin: 54px 16px 0px 16px;
+}
+
+.section_wrapper {
+  margin: 80px 16px;
+}
+
+.section_part {
+  margin: 16px 0px;
+  line-height: 36px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+}
+/*# sourceMappingURL=style.css.map */
