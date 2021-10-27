@@ -2,13 +2,13 @@
 
 Course materials for my take on Algebra's "Front End Developer" course.
 
-> Are you a student? Do you want to contribute your solution? Read the [contribution guidelines](GUIDELINES.md) to find out how!
+> Do you want to contribute? Read the [contribution guidelines](GUIDELINES.md) to find out how!
 
 ---
 
 # Hall of Fame
 
-These are notable contributors to the repository. Bronze is 10-20 commits, Silver is 20-30 commits, Gold is 30-40 commits, Platinum is 40-50 commits, UNICORN is over 50 commits. Want to see your name on the leaderboard? Try contributing by submitting solutions and fixing known issues.
+These are notable contributors to the repository. Bronze is 10-20 commits, Silver is 20-30 commits, Gold is 30-40 commits, Platinum is 40-50 commits, UNICORN is over 50 commits. Want to see your name on the leaderboard? Try contributing by submitting new content and fixing known issues.
 
 --------
 ![foosball82](https://img.shields.io/badge/@foosball82-UNICORN-FF007F.svg)

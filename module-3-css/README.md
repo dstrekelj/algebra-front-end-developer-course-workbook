@@ -4,8 +4,8 @@
 
 ---
 
-## Materials
-
-* [Examples](examples/)
-* [Exercises](exercises/)
-* [Notes](notes.md)
+See:
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- https://css-tricks.com/snippets/css/complete-guide-grid/
+- https://gridbyexample.com/examples/
+- https://caniuse.com/
