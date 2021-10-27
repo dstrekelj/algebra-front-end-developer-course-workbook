@@ -1,6 +1,6 @@
-# Front End Developer
+# Algebra Front-end Developer Course Workbook
 
-Course materials for my take on Algebra's "Front End Developer" course.
+Workbook for my take on Algebra's "Front End Developer" course.
 
 > Do you want to contribute? Read the [contribution guidelines](GUIDELINES.md) to find out how!
 
