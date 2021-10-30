@@ -142,7 +142,7 @@ The `<head>` element acts as a container for metadata such as keywords and page 
 
 The `<body>` element contains all the content that you want to show to the users.
 
-HTML comments aren't visible to users. They are written as follows:
+HTML comments aren't visible when the page is browsed. They are written as follows:
 
 ```html
 <!-- Comment -->
@@ -150,9 +150,13 @@ HTML comments aren't visible to users. They are written as follows:
 
 W3C has recommended authoring practices for common design patterns and widgets. [Read more](https://www.w3.org/TR/wai-aria-practices-1.1/).
 
+> :pencil: **Homework!**
+> 
+> Follow example [1](examples/01-document). Create a new HTML document, give it your own title, update the comment, and add some content inside the document body. Open the document in your browser of choice and note how comments and content are handled differently by the browser.
+
 ## Metadata
 
-Meta elements in the head of the document provide metadata (data about the HTML). The HTML content is not displayed on the page, but informs the browser of what is displayed by the HTML body.
+Meta elements in the head of the document provide metadata (data about the HTML document). Head content is not displayed on the page, but informs the browser of what is displayed by the document body and can affect its presentation.
 
 Examples:
 
@@ -173,6 +177,10 @@ Metadata can sometimes be attributed to other HTML elements as well. For example
 > :point_up: **Note!**
 >
 > @todo metadata and seo
+
+> :pencil: **Homework!**
+> 
+> Follow example [2](examples/02-metadata). Add metadata to an existing or new HTML document.
 
 ## Text formatting
 
@@ -207,6 +215,10 @@ Text formatting tags:
 | `<sub>` | Subscript | |
 | `<sup>` | Superscript | |
 | `<small>` | Small | |
+
+> :pencil: **Homework!**
+> 
+> Follow examples [3](examples/03-headings), [4](examples/04-text), [5](examples/05-text-attributes), and [6](examples/06-text-formatting). Try and use one of each element to mark-up your text and assign it the correct semantic meaning.
 
 ## Lists
 
@@ -264,6 +276,10 @@ A description list represents a list of terms and descriptions, like a glossary.
     <dd>Term description 5</dd>
 </dl>
 ```
+
+> :pencil: **Homework!**
+> 
+> Follow example [7](examples/07-lists). Add one of each list to an existing or new HTML document. Try using a different ordered list type, for example lowercase Roman numerals.
 
 ## Media
 
