@@ -75,7 +75,7 @@ Notable HTML5 features:
 
 HTML5 adheres to the "separation of concerns" design principle, meaning it is separated into distinct sections so that each section addresses a separate concern: HTML provides information, CSS provides appearance, JavaScript provides behavior.
 
-> :clown: **Fun fact!**
+> :clown_face: **Fun fact!**
 >
 > HTML originally defined 17 tags, 11 of which still exist as part of HTML5.
 > 
