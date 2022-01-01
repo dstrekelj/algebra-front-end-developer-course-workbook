@@ -1,0 +1,15 @@
+.overlay {
+  @include animate-fade-in;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: $z-overlay;
+  background-color: $color-overlay;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: $unit-size * 4;
+}

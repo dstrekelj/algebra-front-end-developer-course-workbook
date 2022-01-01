@@ -1,0 +1,16 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  font-family: $font-body;
+  line-height: 1.5;
+}
+
+@for $i from 1 through 6 {
+  h#{$i}, .h#{$i} {
+    font-size: 1rem * ((6 - $i) * 0.2 + 1);
+    font-weight: bold;
+  }
+}

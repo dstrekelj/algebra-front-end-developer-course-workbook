@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <title>Modal Popup</title>
+</head>
+<body>
+  <div id="popup" class="overlay" role="dialog" aria-labelledby="popup-label" aria-describedby="popup-description" aria-modal="true">
+    <div class="modal">
+      <div class="modal__content-container">
+        <h2 id="dialog-label" class="modal__content h5">Confirm delete action</h2>
+        <p id="popup-description" class="modal__content">Are you sure you want to delete this list item?</p>
+      </div>
+      <div class="modal__divider"></div>
+      <div class="modal__action-container">
+        <button class="modal__action button button--ghost">Cancel</button>
+        <button class="modal__action button button--primary">Delete</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+.modal {
+  @include border($color-border);
+  @include animate-ascend-in;
+  background: $color-white;
+  max-width: 400px;
+  animation: ascend-in 0.6s ease;
+
+  .modal__content-container {
+    padding: $unit-size * 4 $unit-size * 8;
+    text-align: center;
+  }
+
+  .modal__content + .modal__content {
+    margin-top: $unit-size * 2;
+  }
+
+  .modal__divider {
+    width: 100%;
+    height: 1px;
+    background: $color-border;
+  }
+
+  .modal__action-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding: $unit-size * 4;
+    margin: -$unit-size;
+  }
+
+  .modal__action {
+    margin: $unit-size;
+  }
+}

@@ -1,0 +1,21 @@
+$font-body: monospace;
+$font-heading: monospace;
+
+$color-white: #fff;
+$color-black: #000;
+$color-border: adjust-color($color-white, $lightness: -10%);
+
+$color-primary: #fda;
+$color-primary-border: adjust-color($color-primary, $lightness: -10%);
+$color-primary-text: adjust-color($color-primary, $lightness: -60%);
+
+$color-text-normal: #000;
+$color-text-muted: adjust-color($color-text-normal, $lightness: 60%);
+$color-text-inverted: #fff;
+
+$color-overlay: rgba($color-black, 0.1);
+
+$unit-radius: 4px;
+$unit-size: 4px;
+
+$z-overlay: 100;

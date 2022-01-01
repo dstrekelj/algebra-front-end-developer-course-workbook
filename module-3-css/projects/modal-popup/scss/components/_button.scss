@@ -1,0 +1,26 @@
+.button {
+  @include border($color-primary-border);
+  display: inline-block;
+  padding: 0 $unit-size * 6;
+  height: $unit-size * 10;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+
+  &.button--primary {
+    background-color: $color-primary;
+    color: $color-primary-text;
+
+    &:hover {
+      background-color: $color-primary-border;
+    }
+  }
+
+  &.button--ghost {
+    border: none;
+    font-weight: normal;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

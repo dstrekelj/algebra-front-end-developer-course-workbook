@@ -1,0 +1,35 @@
+/**
+ * Ascend in.
+ */
+
+@keyframes ascend-in {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@mixin animate-ascend-in {
+  animation: ascend-in 0.6s ease;
+}
+
+/**
+ * Fade in.
+ */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@mixin animate-fade-in {
+  animation: fade-in 0.3s ease;
+}
