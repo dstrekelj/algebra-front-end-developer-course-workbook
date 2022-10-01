@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>53 - CSS variables</title>
+    <style>
+    /*
+    CSS variables (or custom properties) are entities defined by CSS authors
+    that contain specific values to be reused throughout a document.
+
+    Declare a custom property by using a custom property name that begins with a
+    double hyphen (`--`), e.g. `--color-primary`.
+
+    Use the custom property value by specifying the custom property name in the
+    `var()` function, e.g. `var(--color-primary)`.
+
+    Custom properties can be declared on any selector, which makes them
+    available within that selector. To define global custom properties, declare
+    them on the `:root` pseudo-class.
+    */
+
+    :root {
+        --color-text: #333;
+        --size-rem: 20px;
+    }
+
+    html {
+        font-size: var(--size-rem);
+    }
+
+    body {
+        color: var(--color-text);
+    }
+
+    h1 {
+        --color-text: #d33;
+        color: var(--color-text);
+        font-size: 3rem;
+    }
+    </style>
+</head>
+<body>
+    <h1>Hello world!</h1>
+    <p>How are you today?</p>
+</body>
+</html>
