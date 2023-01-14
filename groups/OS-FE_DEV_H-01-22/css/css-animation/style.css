@@ -1,0 +1,43 @@
+@keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes ascend {
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    50% { opacity: 0; }
+    100% {
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+}
+@keyframes animation {
+    0% {
+        transform: translateY(1000px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px) scale(12);
+    }
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: green;
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}

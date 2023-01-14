@@ -1,0 +1,21 @@
+@import "./styles/keyframes";
+@import "./styles/variables";
+@import "./styles/mixins";
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    width: 100vw; // viewport width
+    height: 100vh; // viewport height
+    margin: 0;
+}
+.circle {
+    @include circle(200px);
+    background: $color-circle;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}

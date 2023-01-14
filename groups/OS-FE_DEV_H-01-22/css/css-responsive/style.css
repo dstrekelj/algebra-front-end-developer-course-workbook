@@ -1,0 +1,22 @@
+body {
+    background-color: green;
+    color: white;
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+    body {
+        background-color: greenyellow;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+@media print {
+    body {
+        color: red;
+    }
+}

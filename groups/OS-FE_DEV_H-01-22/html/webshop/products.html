@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Web Shop</title>
+</head>
+<body>
+    <h1>Products</h1>
+    <form action="checkout.html" method="get">
+        <div>
+            <h2>Product A</h2>
+            <p>Product A description</p>
+        </div>
+        <div>
+            <label for="PRODUCT-A-quantity">Quantity</label>
+            <input id="PRODUCT-A-quantity" type="number" name="quantity" min="1" max="99">
+            <input type="hidden" name="sku" value="PRODUCT-A">
+        </div>
+        <div>
+            <button type="submit">Buy</button>
+        </div>
+    </form>
+    <form action="checkout.html" method="get">
+        <div>
+            <h2>Product B</h2>
+            <p>Product B description</p>
+        </div>
+        <div>
+            <label for="PRODUCT-B-quantity">Quantity</label>
+            <input id="PRODUCT-B-quantity" type="number" name="quantity" min="1" max="99">
+            <input type="hidden" name="sku" value="PRODUCT-B">
+        </div>
+        <div>
+            <button type="submit">Buy</button>
+        </div>
+    </form>
+</body>
+</html>

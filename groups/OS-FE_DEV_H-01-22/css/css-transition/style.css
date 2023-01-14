@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: background-color 3s linear 1s, transform 3s linear 2s, border-radius 3s linear 3s;
+}
+.box:hover {
+    background-color: blue;
+    transform: rotate(2turn);
+    border-radius: 100px;
+    transition: background-color 3s ease, transform 3s ease, border-radius 3s ease;
+}

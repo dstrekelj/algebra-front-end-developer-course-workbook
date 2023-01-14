@@ -1,0 +1,32 @@
+.avatar {
+    position: relative;
+    display: inline-block;
+}
+.avatar__image {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 1px 0px #00000040, 1px 1px 8px 0px #0000001A;
+}
+.avatar__status {
+    width: 16px;
+    height: 16px;
+    background-color: #00E500;
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 1px 0px #00000040, 1px 1px 8px 0px #0000001A;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.clear {
+    clear: both;
+}

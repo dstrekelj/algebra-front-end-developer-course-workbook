@@ -1,0 +1,14 @@
+@import "./styles/variables";
+@import "./styles/mixins";
+
+body {
+    background-color: $color-background;
+}
+.box {
+    @include box;
+    box-shadow: $box-shadow;
+}
+.box2 {
+    @include box(50px, green);
+    box-shadow: $box-shadow;
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Rubik+Marker+Hatch&display=swap');
+
+html {
+    font-size: 20px;
+}
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+p {
+    color: hsl(134, 33%, 21%);
+}
+.warning {
+    color: #ff9900;
+}
+.error {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+h1 {
+    color: red;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 1px 1px 0px black;
+}
+h2 { font-size: 1.8rem; text-decoration: underline; }
+h3 { font-size: 1.6rem;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red
+}
+h4 { font-size: 1.4rem; text-transform: uppercase;}
+h5 { font-size: 1.2rem; text-indent: 100px; }
+h6 { font-size: 1rem; }

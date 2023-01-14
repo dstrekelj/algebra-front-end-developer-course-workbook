@@ -1,0 +1,7 @@
+body {
+    min-height: 100vh;
+    background-color: black;
+    background:
+        linear-gradient(black, white),
+        url("./horse.jpg") top left / 200px repeat-y;
+}

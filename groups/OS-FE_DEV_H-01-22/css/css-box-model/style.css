@@ -1,0 +1,25 @@
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+.shape-1 {
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: lightblue;
+    background: green;
+}
+.shape-2 {
+    background-color: green;
+    height: 50px;
+}
+.shape-3 {
+    border: 5px solid black;
+    border-radius: 15px;
+}
+.shape-4 {
+    background-color: red;
+    border-radius: 100%;
+}
