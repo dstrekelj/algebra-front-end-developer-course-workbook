@@ -1,0 +1,25 @@
+{
+  "name": "gulp-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-styles": "gulp styles",
+    "build-scripts": "gulp scripts",
+    "watch": "gulp watch",
+    "dev": "gulp"
+  },
+  "keywords": [],
+  "author": "dstrekelj <domagojstrekelj@gmail.com>",
+  "license": "IDGAF",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.49.9"
+  }
+}

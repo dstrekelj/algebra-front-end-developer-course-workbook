@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "name": "npm-example",
+  "version": "1.0.0",
+  "description": "Example NPM project.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "dstrekelj <domagojstrekelj@gmail.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "nanoid": "^3.3.1"
+  }
+}
