@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Frontend Cheat Sheet</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Domagoj Štrekelj">
+    <meta name="description" content="This is my frontend cheat sheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="prism.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>This is my <span>frontend cheat sheet!</span></h1>
+      <p>I will fill it in as we learn new things!</p>
+      <p>Visit my <a href="https://github.com/dstrekelj" target="_blank">GitHub profile</a></p>
+      <p>Get in touch, <a href="mailto:example@email.com">send a message</a></p>
+      <p><a href="./about.html">To About</a></p>
+      <ol>
+        <li><a href="#video">Video</a></li>
+      </ol>
+      <h1>HTML</h1>
+      <a href="https://google.com" target="_blank"><img src="./html5.svg" alt="HTML5 logo" height="50"></a>
+      <h2>Basic HTML document structure</h2>
+      <pre>
+        <code class="language-html">
+&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;/head&gt;
+  &lt;body&gt;
+    Lorem ipsum dolor
+  &lt;/body&gt;
+&lt;/html&gt;
+        </code>
+      </pre>
+      <h2>Inline text elements</h2>
+      <p><strong>This is important.</strong> This is not, <em>but it can be useful.</em></p>
+      <ul>
+        <li>strong - this is important</li>
+        <li>em - this is useful</li>
+        <li>small - this is not important, but nice to have</li>
+      </ul>
+      <ol>
+        <li>If the content is important and good to know, use strong</li>
+        <li>If the content is good to know, use em</li>
+        <li>If the content is not important, but nice to have, use small</li>
+      </ol>
+      <dl>
+        <dt>strong</dt>
+        <dd>Used for important text.</dd>
+        <dt>em</dt>
+        <dd>Used for good to know text.</dd>
+        <dt>small</dt>
+        <dd>Used for footer text.</dd>
+      </dl>
+      <h2>SVG</h2>
+      <svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="50%" height="50px" fill="red"></rect>
+      </svg>
+      <h2>Audio</h2>
+      <audio controls>
+        <source src="./music.wav">
+      </audio>
+      <h2 id="video">Video</h2>
+      <video width="600" controls>
+        <source src="./mountains.webm">
+      </video>
+      <h2>Tables</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Proizvod</th>
+            <th>Količina</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Čaj od sljeza</td>
+            <td>1 kutija</td>
+          </tr>
+          <tr>
+            <td>Čokolada (neka skupa da se počastim)</td>
+            <td>2 komada</td>
+          </tr>
+        </tbody>
+      </table>
+      <table border="1">
+        <tr>
+          <td>#</td>
+          <td>Ponedjeljak</td>
+          <td>Utorak</td>
+          <td>Srijeda</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td rowspan="2">Matematika</td>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Hrvatski</td>
+          <td>Hrvatski</td>
+        </tr>
+      </table>
+      <h2>Forms</h2>
+      <h3>Search form</h3>
+      <form action="https://www.ecosia.org/search" method="get" target="_blank">
+        <label for="q">Search:</label>
+        <input id="q" type="text" name="q">
+        <button type="submit">Go!</button>
+      </form>
+      <h3>Login form</h3>
+      <form action="" novalidate autocomplete="off">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" minlength="8" required>
+        <button type="submit">Sign in</button>
+      </form>
+      <h3>Age gate form</h3>
+      <form action="">
+        <select name="month" id="month">
+          <option value="" disabled selected>Month</option>
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+        </select>
+        <button type="submit">Let me in!</button>
+      </form>
+      <h3>Survey form</h3>
+      <form action="">
+        <p>Dobro se snalazim u HTML. (1 - U potpunosti se ne slažem, 5 - U potpunosti se slažem)</p>
+        <label><input type="radio" name="answer" value="1"> 1</label>
+        <label><input type="radio" name="answer" value="2"> 2</label>
+        <label><input type="radio" name="answer" value="3" checked> 3</label>
+        <label><input type="radio" name="answer" value="4"> 4</label>
+        <label><input type="radio" name="answer" value="5"> 5</label>
+      </form>
+      <h3>Newsletter form</h3>
+      <form action="">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required>
+
+        <p>Pick your newsletter topics:</p>
+        <label><input type="checkbox" name="newsletter_topic" value="frontend" checked> Frontend</label>
+        <label><input type="checkbox" name="newsletter_topic" value="backend"> Backend</label>
+        <label><input type="checkbox" name="newsletter_topic" value="ux-ui-design"> UX/UI Design</label>
+        <label><input type="checkbox" name="newsletter_topic" value="marketing"> Marketing</label>
+
+        <button type="submit">Sign me up</button>
+      </form>
+      <p><a href="#">Back to top</a></p>
+      <h3>Food order form</h3>
+      <form action="">
+        <input list="food-recommendations-list" type="text">
+        <button>Submit order</button>
+        <datalist id="food-recommendations-list">
+          <option value="Classic Hamburger">100% mljevena junetina, salata, rajčica, sir, umak, brioche pecivo</option>
+          <option>Wrap</option>
+          <option>Čokolino</option>
+          <option>Ćevapi</option>
+          <option>Pizza</option>
+          <option>Čevapćići</option>
+          <option>Zagrebački odrezak</option>
+          <option>Palenta</option>
+        </datalist>
+      </form>
+      <h2>Semantic HTML</h2>
+      <a href="./cookbook-example/apple-pie.html">Apple pie example</a>
+    </div>
+    <script src="prism.js"></script>
+  </body>
+</html>
