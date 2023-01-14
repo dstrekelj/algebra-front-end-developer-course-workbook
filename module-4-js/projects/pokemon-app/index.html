@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon App</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <h1 class="title">PokéSearch</h1>
+      <form id="pokemon-form" class="pokemon-form" autocomplete="off">
+        <input id="pokemon-form-query" class="input" type="text" name="query" placeholder="e.g. Pikachu or 25" />
+        <button class="button" type="submit">Search</button>
+      </form>
+      <div id="pokemon-error" class="pokemon-error"></div>
+      <div id="pokemon-result" class="pokemon-result"></div>
+    </main>
+    <script src="app.min.js"></script>
+  </body>
+</html>

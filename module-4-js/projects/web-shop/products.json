@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "barcode": "051111407592",
+    "name": "Product A",
+    "image": "https://picsum.photos/300"
+  },
+  {
+    "id": "2",
+    "barcode": "051111407593",
+    "name": "Product B",
+    "image": "https://picsum.photos/300"
+  },
+  {
+    "id": "3",
+    "barcode": "051111407594",
+    "name": "Product C",
+    "image": "https://picsum.photos/300"
+  }
+]

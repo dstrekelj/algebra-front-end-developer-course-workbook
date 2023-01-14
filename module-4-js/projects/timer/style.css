@@ -1,0 +1,62 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 50%, hsl(345, 100%, 90%) 100%);
+}
+
+.timer-app {
+  text-align: center;
+}
+
+.timer {
+  font-family: monospace;
+  font-size: 10rem;
+  height: 20rem;
+  line-height: 20rem;
+}
+
+.button {
+  height: 40px;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border: 2px solid hsl(345, 100%, 50%);
+  font-weight: bold;
+  color: hsl(345, 100%, 50%);
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+.button:hover {
+  color: #fff;
+  background-color: hsl(345, 100%, 50%);
+}
+.button:active {
+  border-color: hsl(345, 100%, 30%);
+  background-color: hsl(345, 100%, 30%);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.expired {
+  color: hsl(345, 100%, 50%);
+}
+
+.blink {
+  animation: blink 0.25s infinite alternate;
+}
