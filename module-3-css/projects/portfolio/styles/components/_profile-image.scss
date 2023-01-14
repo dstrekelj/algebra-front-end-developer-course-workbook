@@ -1,0 +1,34 @@
+.profile-image {
+  @include box($size: 300px);
+  box-sizing: border-box;
+  display: block;
+  object-fit: cover;
+  object-position: -36px center;
+  border-radius: 100%;
+  background-color: $color-secondary;
+  border: 8px double $color-light;
+  box-shadow:
+    4px 4px 0 #00008B,
+    0px 4px 0 #00008B,
+    4px 0px 0 #00008B,
+    -4px -4px 0 #F7717D,
+    0px -4px 0 #F7717D,
+    -4px 0px 0 #F7717D;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.profile-image:hover {
+  background-color: #00008B;
+  box-shadow:
+    -4px -4px 0 #00008B,
+    0px -4px 0 #00008B,
+    -4px 0px 0 #00008B,
+    4px 4px 0 #F7717D,
+    0px 4px 0 #F7717D,
+    4px 0px 0 #F7717D;
+}
+@media screen and (max-width: 768px) {
+  .profile-image {
+    width: 240px;
+    height: 240px;
+  }
+}

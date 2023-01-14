@@ -1,0 +1,22 @@
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  color: #FDF7FA;
+  background-color: #000;
+  padding: 16px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.cookie-consent-text {
+  margin-right: 16px;
+}
+.cookie-consent-yes {
+  text-decoration: underline;
+  font-weight: bold;
+  margin-right: 16px;
+}
+.cookie-consent-no {
+  text-decoration: underline;
+}

@@ -1,0 +1,42 @@
+.fancy-button {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 4px solid black;
+  background: black;
+  padding: 0 16px;
+  margin: 0;
+  height: 40px;
+  color: #FDF7FA;
+  position: relative;
+  overflow: hidden;
+
+  & > span {
+    position: relative;
+    transition: color 1s ease;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #FDF7FA;
+    top: 0;
+    left: auto;
+    right: -15%;
+    width: 0;
+    height: 100%;
+    transform: skewX(-15deg);
+    transition: width 0.5s ease;
+  }
+
+  &:hover::before {
+    right: auto;
+    left: -15%;
+    width: 120%;
+    transition: width 0.5s ease;
+  }
+
+  &:hover {
+    color: black;
+  }
+}

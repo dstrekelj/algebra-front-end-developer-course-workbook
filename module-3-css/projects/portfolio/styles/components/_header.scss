@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  @include mq () {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.header-image {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.header-description {
+  flex-grow: 1;
+  margin-left: 32px;
+  @include mq() {
+    margin-left: 0;
+    text-align: center;
+  }
+}

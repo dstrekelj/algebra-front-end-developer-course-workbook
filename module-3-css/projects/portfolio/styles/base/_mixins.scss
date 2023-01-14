@@ -1,0 +1,9 @@
+@mixin box($size: 100px) {
+  width: $size;
+  height: $size;
+}
+@mixin mq() {
+  @media screen and (max-width: $breakpoint-tablet) {
+    @content
+  }
+}

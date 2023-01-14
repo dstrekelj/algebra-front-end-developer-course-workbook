@@ -1,0 +1,59 @@
+.project-list .project + .project {
+  margin-top: 16px;
+}
+.project {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #F7717D;
+  border-bottom: none;
+  border-right: none;
+  box-shadow: 4px 4px 0 #00008B;
+}
+.project-title {
+  color: #F7717D;
+  margin-bottom: 8px;
+}
+.project-description {
+  margin: 8px 0;
+}
+.project-link {
+  position: relative;
+  display: inline-block;
+  background-color: darkblue;
+  color: #FDF7FA;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 12px 16px;
+  bottom: 0;
+  transition:
+    bottom 0.2s ease,
+    background-color 0.2s ease 0.2s;
+}
+.project-link:hover {
+  background-color: #F7717D;
+  text-decoration: underline;
+  bottom: 4px;
+}
+.project-technology-list {
+  margin: 0;
+  padding: 0;
+}
+.project-technology-list li {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 4px 8px;
+  color: #666;
+  margin-right: 8px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 0.8rem;
+}
+.project-technology-list li:last-child {
+  margin-right: 0;
+}

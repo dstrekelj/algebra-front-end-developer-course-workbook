@@ -1,0 +1,13 @@
+.float-row {
+  margin: 0 -16px;
+}
+.float-row::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.float-column {
+  float: left;
+  width: calc(50% - 32px);
+  margin: 0 16px;
+}
