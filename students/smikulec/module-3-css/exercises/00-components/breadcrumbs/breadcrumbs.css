@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial;
+    font-size: 40px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.breadcrumb-box {
+    margin: 50px;
+    color: rgba(0,0,0,0.5);
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.5);
+    
+}
+
+.breadcrumb-item a:hover {
+    color: #010101;
+}
+
+

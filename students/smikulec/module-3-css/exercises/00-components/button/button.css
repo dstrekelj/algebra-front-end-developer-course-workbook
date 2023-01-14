@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+.button-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+
+}
+
+.button.sign-in {
+    font-family: Arial;
+    font-size: 30px;
+    height: 90px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 15px 30px;
+}
+
+.button--type-1 {
+    background-color: black;
+    color: white;
+}
+
+.button--type-2 {
+    background-color: white;
+}
+
+.button--type-3 {
+    border: none;
+    background: none;
+    text-decoration: underline;
+}
+
+.button--type-4 {
+    border: none;
+    background-color: rgba(0,0,0,0.1);
+    color: rgba(0,0,0,0.3);
+    
+}
+
+.button--type-5 {
+    background-color: white;
+    opacity: 0.35;
+}
+
+.button--type-6 {
+    border: none;
+    background: none;
+    opacity: 0.4;
+}

@@ -2,8 +2,6 @@
 
 ## About me
 
-Hello! My name is Example Student.
+Hello! My name is Sonja.
 
-I want to learn how to become a frontend web developer because I want to create cool stuff.
-
-This is my course folder where I will store my notes and exercises.
+In this folder I'll store my notes and exercises.
