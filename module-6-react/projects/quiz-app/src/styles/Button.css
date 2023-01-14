@@ -1,0 +1,19 @@
+.Button {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: bold;
+  min-width: 120px;
+  min-height: 40px;
+  padding: 4px 8px;
+  cursor: pointer;
+  text-align: center;
+}
+.Button.Button--primary {
+  background-color: var(--color-primary);
+}
+.Button.Button--secondary {
+  background-color: var(--color-secondary);
+}
+.Button.Button--ghost {
+  text-decoration: underline;
+}

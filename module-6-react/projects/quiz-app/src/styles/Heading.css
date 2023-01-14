@@ -1,0 +1,24 @@
+.h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.h4 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.h5 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.h6 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}

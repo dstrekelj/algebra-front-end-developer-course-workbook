@@ -1,0 +1,27 @@
+.ABCQuestion {
+  background: white;
+  border: 1px solid black;
+  color: black;
+  font-family: monospace;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.ABCQuestion__text {
+  margin-bottom: 2rem;
+}
+.ABCQuestion__answers {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.ABCQuestion__answer {
+  width: 100%;
+  min-height: 2rem;
+  border-radius: 0;
+  border: none;
+  background: darkblue;
+  color: white;
+  cursor: pointer;
+}
+.ABCQuestion__answer:nth-child(even) {
+  background: blue;
+}

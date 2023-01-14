@@ -1,0 +1,14 @@
+:root {
+  --color-primary: #6ac;
+  --color-secondary: #c6a;
+  --color-text: #333;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: monospace;
+  color: var(--color-text);
+}
