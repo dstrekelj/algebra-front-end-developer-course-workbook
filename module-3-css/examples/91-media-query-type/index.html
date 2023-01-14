@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>91 - Media query type</title>
+    <style>
+        @media screen {
+            body {
+                background: blue;
+                color: white;
+            }
+            .print-only {
+                display: none;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: blue;
+            }
+            .screen-only {
+                display: none;
+            }
+        }
+
+        /* Utility styles */
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="print-only">Hello print!</h1>
+    <h1 class="screen-only">Hello screen!</h1>
+</body>
+</html>
