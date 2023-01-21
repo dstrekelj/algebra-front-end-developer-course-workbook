@@ -1,0 +1,19 @@
+@keyframes pop-in {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: fixed;
+    border-radius: 100%;
+    animation-name: pop-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
