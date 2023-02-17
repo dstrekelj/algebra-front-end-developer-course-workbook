@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>29 - Float</title>
+    <style>
+    .page-container {
+        max-width: 1100px;
+        min-height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .page-container .header { flex: 0 0 auto; }
+    .page-container .content { flex: 1 0 auto; }
+    .page-container .footer { flex: 0 0 auto; }
+
+    .content-container {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .content-container .aside { flex: 0 0 25%; }
+    .content-container .main { flex: 0 0 75%; }
+
+    /* Utilities*/
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        width: 100%;
+        min-height: 200px;
+        background: rgba(255, 0, 0, 0.25);
+    }
+    .footer {
+        width: 100%;
+        min-height: 100px;
+        background: rgba(0, 255, 0, 0.25);
+    }
+    .aside {
+        min-height: 100px;
+        background: rgba(0, 0, 255, 0.25);
+    }
+    .main {
+        min-height: 100px;
+        background: rgba(0, 0, 0, 0.25);
+    }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="header"></div>
+        <div class="content content-container">
+            <div class="aside"></div>
+            <div class="main"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

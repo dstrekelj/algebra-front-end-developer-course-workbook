@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>14 - Link</title>
+    <style>
+        /*
+        The browser applies pseudoclasses to anchor elements (links). These
+        pseudoclasses indicate the state of the links on the page. The states
+        are:
+
+        - link - default, unvisited link.
+        - visited - visited link.
+        - hover - link hovered over with mouse.
+        - active - link clicked / pressed (but click / press not released).
+        */
+        html{
+            font-size: 50px;
+            text-align: center;
+        }
+        a:link { color: hsl(100, 50%, 50%); text-decoration: none;}
+        a:visited { color: hsl(100, 10%, 70%) }
+        a:hover {transition-delay: 1s; color: hsl(100, 100%, 50%); text-decoration: underline; }
+        a:active { color: hsl(30, 100%, 50%) }
+    </style>
+</head>
+<body>
+    <a href="#1">Link 1</a>
+    <a href="#2">Link 2</a>
+    <a href="#3">Link 3</a>
+    <a href="#4">Link 4</a>
+</body>
+</html>

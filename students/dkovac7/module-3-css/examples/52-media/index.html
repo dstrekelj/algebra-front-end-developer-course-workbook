@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>52 - Media</title>
+    <style>
+    @media screen and (min-width: 1024px) {
+        body { background: rgba(255, 0, 0, 0.25); }
+        .hide-desktop { display: none };
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 1023px) {
+        body { background: rgba(0, 255, 0, 0.25); }
+        .hide-tablet { display: none; }
+    }
+
+    @media screen and (max-width: 599px) {
+        body { background: rgba(0, 0, 255, 0.25); }
+        .hide-mobile { display: none; }
+    }
+
+    .print-only { display: none; }
+
+    @media print {
+        .print-only { display: block; }
+    }
+
+    /* Utility styles */
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+</head>
+<body>
+    <div class="hide-tablet hide-mobile">I'm visible on desktops only</div>
+    <div class="hide-desktop hide-mobile">I'm visible on tablets only</div>
+    <div class="hide-desktop hide-tablet">I'm visible on mobiles only</div>
+    <div class="print-only">Hello world!</div>
+</body>
+</html>

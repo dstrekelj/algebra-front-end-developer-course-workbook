@@ -10,12 +10,18 @@
         min-height: 600px;
         display: flex;
         flex-flow: row wrap;
-        /* align-content: space-between;*/
-        /*align-content: space-around;*/ 
-        /*  align-content: flex-start;  */
-        align-content: flex-end;
-        /* align-content: center; */
-        /* align-content: stretch; */
+        justify-content: stretch;
+        align-items: stretch;
+        align-content: stretch;
+    }
+    .item {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    .item:nth-child(4) {
+        flex-grow: 0;
+        flex-shrink: 1;
+        background: rgba(0, 0, 255, 0.25);
     }
 
     /* Utilities*/
